@@ -1,0 +1,67 @@
+name: agent konten harian
+
+on:
+  schedule:
+    - cron: "0 21 * * *"    # 04.00 WIB: buat konten hari ini + bersih
+    - cron: "45 4 * * *"    # 11.45 WIB: posting slot 12.00
+    - cron: "45 11 * * *"   # 18.45 WIB: posting slot 19.00
+  workflow_dispatch:
+    inputs:
+      tugas:
+        description: "buat | posting 12.00 | posting 19.00 | bersih"
+        required: true
+        default: "buat"
+
+concurrency:
+  group: agent-${{ github.event.schedule || github.event.inputs.tugas }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  jalan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+      GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+      GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      IG_ID_FISHTUDIO: ${{ secrets.IG_ID_FISHTUDIO }}
+      IG_ID_GOLDFISH: ${{ secrets.IG_ID_GOLDFISH }}
+      PYTHONUTF8: "1"
+    steps:
+      - name: Tentukan tugas
+        id: t
+        run: |
+          case "${{ github.event.schedule }}" in
+            "0 21 * * *")  echo "tugas=buat" >> "$GITHUB_OUTPUT" ;;
+            "45 4 * * *")  echo "tugas=posting 12.00" >> "$GITHUB_OUTPUT" ;;
+            "45 11 * * *") echo "tugas=posting 19.00" >> "$GITHUB_OUTPUT" ;;
+            *)             echo "tugas=${{ github.event.inputs.tugas }}" >> "$GITHUB_OUTPUT" ;;
+          esac
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Pasang ffmpeg
+        if: startsWith(steps.t.outputs.tugas, 'buat') || startsWith(steps.t.outputs.tugas, 'posting')
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji > /dev/null
+      - run: pip install -q -r agent/requirements.txt
+      - name: Jalankan
+        run: python agent/main.py ${{ steps.t.outputs.tugas }}
+      - name: Bersihkan folder lama
+        if: always() && startsWith(steps.t.outputs.tugas, 'buat')
+        run: python agent/main.py bersih
+      - name: Simpan riwayat judul
+        if: always() && startsWith(steps.t.outputs.tugas, 'buat')
+        run: |
+          git config user.name "agent konten"
+          git config user.email "agent@users.noreply.github.com"
+          git add data/riwayat.json
+          git diff --cached --quiet || (git commit -m "riwayat konten $(date -u +%F)" && git push)
