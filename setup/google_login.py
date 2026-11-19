@@ -8,6 +8,7 @@ import json
 import subprocess
 import sys
 import threading
+import time
 import urllib.parse
 import urllib.request
 import webbrowser
@@ -62,5 +63,11 @@ files = json.load(urllib.request.urlopen(req)).get("files", [])
 print("Folder Fish Studio ketemu." if files else "PERINGATAN: folder Fish Studio tidak ketemu di akun ini.")
 
 for k, v in {"GOOGLE_CLIENT_ID": cid, "GOOGLE_CLIENT_SECRET": secret, "GOOGLE_REFRESH_TOKEN": tok["refresh_token"]}.items():
-    subprocess.run([GH, "secret", "set", k, "--repo", REPO], input=v, text=True, check=True)
+    for coba in range(10):  # koneksi ke api.github.com kadang putus
+        if subprocess.run([GH, "secret", "set", k, "--repo", REPO], input=v, text=True).returncode == 0:
+            print(k, "tersimpan")
+            break
+        time.sleep(2)
+    else:
+        sys.exit(f"Gagal menyimpan {k}, jalankan ulang.")
 print("\nSelesai. Tiga rahasia Google tersimpan di GitHub.")
