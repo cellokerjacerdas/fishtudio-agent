@@ -22,7 +22,7 @@ import requests
 
 sys.path.insert(0, str(Path(__file__).parent))
 import gdrive  # noqa: E402
-from rencana import buat_rencana  # noqa: E402
+from rencana import buat_rencana  # noqa: E402  (cadangan berbayar, hanya kalau bank habis)
 
 REPO = Path(__file__).resolve().parent.parent
 TMP = Path(os.environ.get("RUNNER_TEMP", REPO / "_tmp")) / "agent"
@@ -133,6 +133,25 @@ def render(brand, jenis, item, musik, out):
     shutil.rmtree(work, ignore_errors=True)
 
 
+BANK, POS = REPO / "data/bank.json", REPO / "data/bank_pos.json"
+
+
+def ambil_naskah(d, riwayat):
+    """Naskah gratis dari bank (data/bank.json, satu entri per hari). Claude API hanya cadangan kalau bank habis."""
+    bank = json.loads(BANK.read_text(encoding="utf-8")) if BANK.exists() else []
+    pos = json.loads(POS.read_text(encoding="utf-8")).get("berikutnya", 0) if POS.exists() else 0
+    if pos < len(bank):
+        POS.write_text(json.dumps({"berikutnya": pos + 1}), encoding="utf-8")
+        sisa = len(bank) - pos - 1
+        lapor(f"Naskah bank hari ke-{pos + 1} dari {len(bank)}, sisa {sisa} hari")
+        if sisa <= 5:
+            lapor(f"PERINGATAN: bank naskah tinggal {sisa} hari. Minta Mbut 'isi bank naskah'.")
+        return bank[pos]
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        return buat_rencana(f"{d.day} {BULAN[d.month - 1]} {d.year}", riwayat)
+    raise SystemExit("Bank naskah habis dan tidak ada ANTHROPIC_API_KEY. Minta Mbut 'isi bank naskah'.")
+
+
 def cmd_buat(argumen):
     d = sekarang().date()
     if len(argumen) >= 2:
@@ -143,8 +162,7 @@ def cmd_buat(argumen):
         lapor(f"{d:%d/%m}: semua slot sudah ada di Drive")
         return
     riwayat = json.loads(RIWAYAT.read_text(encoding="utf-8")) if RIWAYAT.exists() else []
-    tgl = f"{d.day} {BULAN[d.month - 1]} {d.year}"
-    rencana = buat_rencana(tgl, riwayat)
+    rencana = ambil_naskah(d, riwayat)
     gagal = 0
     for brand, jenis in perlu:
         item = rencana[brand][jenis]

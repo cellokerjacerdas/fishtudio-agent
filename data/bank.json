@@ -1,0 +1,4818 @@
+[
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "ganti air jangan dikuras",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Ganti air akuarium itu jangan dikuras semua, ya.",
+      "headline": "Ganti air [jangan dikuras] semua.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Cukup sekitar tiga puluh persen, seminggu sekali.",
+      "headline": "Cukup [30%] seminggu sekali.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "30",
+       "satuan": "%",
+       "label": "air per minggu",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Bakteri baik tetap hidup, ikan juga nggak kaget.",
+      "headline": "Bakteri baik [tetap hidup].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Filter aman",
+        "Air stabil",
+        "Ikan tenang"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Ganti air cukup sebagian. Chat WA 08569990738, kirim kata RAWAT untuk jadwal perawatan akuarium.\n\nMenguras habis air akuarium bikin bakteri baik ikut hilang dan ikan stres karena kondisi air berubah drastis. Ganti sekitar 30 persen seminggu sekali sudah cukup untuk menjaga air tetap segar.\n\nTim Fishtudio melayani jasa perawatan akuarium di Malang, mulai dari ganti air, cek filter, sampai membersihkan kaca.",
+    "tagar_topik": "perawatanakuarium"
+   },
+   "footage": {
+    "judul": "mas koki lahap gold feeds",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Jam makan tiba, mas koki langsung naik ke permukaan.",
+      "teks": "Jam makan mas koki"
+     },
+     {
+      "vo": "Ini Gold Feeds, pakan special untuk grooming mas koki.",
+      "teks": "Gold Feeds, pakan special grooming"
+     },
+     {
+      "vo": "Ditabur sedikit, langsung habis disantap.",
+      "teks": "Sedikit saja, langsung habis"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WhatsApp Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Gold Feeds Rp43 ribu per 300 g. Chat WA 08569990738, kirim kata PAKAN untuk pesan.\n\nGold Feeds adalah pakan special untuk grooming mas koki. Cukup ditabur sedikit, mas koki langsung naik dan menyantapnya sampai habis.\n\nCocok untuk kamu yang mencari pakan mas koki di Malang untuk perawatan harian.",
+    "tagar_topik": "pakanmaskoki"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "ciri ikan oranda",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Kenali oranda dari wen yang tumbuh di kepalanya.",
+      "headline": "Oranda punya [wen] di kepala.",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sirip punggungnya ada dan tegak, beda dengan ranchu.",
+      "headline": "Ada [sirip punggung] tegak.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ekornya panjang terbelah, gerakannya anggun saat berenang.",
+      "headline": "Ekor [panjang] dan anggun.",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Wen di kepala",
+        "Sirip punggung",
+        "Ekor panjang"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Cari oranda sehat? Mampir ke Goldfish and Richman.",
+    "cta_teks": "Oranda pilihan di [Goldfish and Richman]",
+    "caption": "Kenalan sama oranda. Chat WA 08569990738, kirim kata ORANDA untuk lihat oranda yang ready.\n\nOranda paling mudah dikenali dari wen di kepalanya. Sirip punggungnya ada dan tegak, ekornya panjang terbelah, jadi gerakannya terlihat anggun.\n\nBuat kamu yang mencari mas koki oranda Malang, Goldfish and Richman punya pilihan warna dan bentuk wen yang beragam.",
+    "tagar_topik": "oranda"
+   },
+   "footage": {
+    "judul": "oranda ready minggu ini",
+    "kategori": "oranda",
+    "adegan": [
+     {
+      "vo": "Oranda dengan wen tebal, siap pindah ke akuariummu.",
+      "teks": "Oranda wen tebal siap pindah"
+     },
+     {
+      "vo": "Warnanya cerah, siripnya mengembang, berenangnya aktif.",
+      "teks": "Warna cerah, sirip mengembang"
+     },
+     {
+      "vo": "Pilih yang kamu suka, langsung tanya lewat WhatsApp.",
+      "teks": "Pilih favoritmu sekarang"
+     }
+    ],
+    "cta_vo": "Pesan oranda di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Oranda ready di Malang. Chat WA 08569990738, kirim kata ORANDA untuk lihat stok dan video ikannya.\n\nOranda minggu ini datang dengan wen tebal, warna cerah, dan sirip yang mengembang saat berenang.\n\nGoldfish and Richman adalah toko mas koki oranda Malang. Kamu bisa pilih ikannya lewat video sebelum memesan.",
+    "tagar_topik": "oranda"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "cuci filter pakai air sumur",
+    "klip": "bongkar media filter",
+    "adegan": [
+     {
+      "vo": "Cuci media filter jangan pakai air PDAM langsung.",
+      "headline": "Cuci filter [jangan pakai PDAM].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kaporitnya bisa membunuh bakteri baik di dalam filter.",
+      "headline": "Kaporit [membunuh bakteri baik].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pakai air sumur, atau bilas dengan air akuarium lama.",
+      "headline": "Pakai [air sumur] saja.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Bilas sebentar saja, jangan disikat sampai terlalu bersih.",
+      "headline": "Bilas, [jangan disikat] bersih.",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Air sumur",
+        "Bilas sebentar",
+        "Jangan disikat"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk servis filter akuariummu.",
+    "cta_teks": "Servis filter bareng [Fishtudio]",
+    "caption": "Filter bersih tanpa membunuh bakteri baik. Chat WA 08569990738, kirim kata FILTER untuk jadwal servis.\n\nAir PDAM mengandung kaporit yang bisa membunuh bakteri baik di media filter. Padahal bakteri inilah yang mengurai kotoran ikan supaya air tetap sehat.\n\nCuci media filter pakai air sumur atau air akuarium lama, cukup dibilas sebentar. Tim Fishtudio juga melayani servis filter akuarium di Malang.",
+    "tagar_topik": "filterakuarium"
+   },
+   "footage": {
+    "judul": "servis akuarium rumah klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Tim Fishtudio datang merawat akuarium di rumah klien.",
+      "teks": "Kunjungan perawatan ke rumah klien"
+     },
+     {
+      "vo": "Kaca dibersihkan, lumut diangkat, air diganti sebagian.",
+      "teks": "Kaca bersih, air diganti sebagian"
+     },
+     {
+      "vo": "Ikan tetap tenang, akuarium kembali jernih.",
+      "teks": "Akuarium kembali jernih"
+     }
+    ],
+    "cta_vo": "Jadwalkan perawatan akuariummu bersama Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Akuarium jernih tanpa repot. Chat WA 08569990738, kirim kata RAWAT untuk jadwal kunjungan.\n\nHari ini tim Fishtudio datang ke rumah klien. Kaca dibersihkan, lumut diangkat, dan air diganti sebagian supaya ikan tetap nyaman.\n\nLayanan Build & Care melayani jasa perawatan akuarium di Malang secara rutin, jadi kamu tinggal menikmati akuariumnya.",
+    "tagar_topik": "jasaperawatanakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "ciri ikan ryukin",
+    "klip": "kolam koki",
+    "adegan": [
+     {
+      "vo": "Ryukin gampang dikenali dari punggungnya yang tinggi.",
+      "headline": "Punggung ryukin [tinggi menonjol].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Badannya pendek membulat, dan nggak punya wen.",
+      "headline": "Badan bulat, [tanpa wen].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Badan pendek",
+        "Tanpa wen",
+        "Punggung tinggi"
+       ]
+      }
+     },
+     {
+      "vo": "Siripnya lengkap, ekornya panjang dan lebar.",
+      "headline": "Ekor [panjang dan lebar].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Lihat ryukin pilihan di Goldfish and Richman.",
+    "cta_teks": "Ryukin pilihan di [Goldfish and Richman]",
+    "caption": "Kenalan sama ryukin. Chat WA 08569990738, kirim kata RYUKIN untuk lihat ryukin yang ready.\n\nRyukin punya punggung tinggi yang menonjol di belakang kepala. Badannya pendek membulat, tanpa wen, dengan ekor panjang dan lebar.\n\nKalau kamu mencari mas koki ryukin Malang, Goldfish and Richman siap bantu pilihkan yang sehat.",
+    "tagar_topik": "ryukin"
+   },
+   "footage": {
+    "judul": "ryukin punggung tinggi ready",
+    "kategori": "ryukin",
+    "adegan": [
+     {
+      "vo": "Ryukin dengan punggung tinggi, lagi ready di toko.",
+      "teks": "Ryukin punggung tinggi ready"
+     },
+     {
+      "vo": "Warnanya tegas, gerakannya lincah saat jam makan.",
+      "teks": "Warna tegas, gerak lincah"
+     },
+     {
+      "vo": "Tinggal pilih, kami kirimkan videonya dulu lewat WhatsApp.",
+      "teks": "Pilih lewat video dulu"
+     }
+    ],
+    "cta_vo": "Pesan ryukin di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ryukin ready di Malang. Chat WA 08569990738, kirim kata RYUKIN untuk lihat stok terbaru.\n\nRyukin kali ini punya punggung tinggi, warna tegas, dan gerakan lincah saat jam makan.\n\nGoldfish and Richman adalah toko mas koki di Malang. Kamu bisa lihat video ikannya dulu sebelum memesan.",
+    "tagar_topik": "ryukin"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "endapkan air pdam semalam",
+    "klip": "fish studio 1",
+    "adegan": [
+     {
+      "vo": "Air PDAM jangan langsung dituang ke akuarium.",
+      "headline": "Air PDAM [jangan langsung] masuk.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Endapkan dulu semalam supaya kaporitnya menguap.",
+      "headline": "Endapkan [semalam] dulu.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "24",
+       "satuan": "",
+       "label": "jam diendapkan",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Biarkan wadahnya terbuka supaya kaporit bisa keluar.",
+      "headline": "Wadah [dibiarkan terbuka].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Butuh bantuan? Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Tanya [Fishtudio] dulu",
+    "caption": "Air PDAM perlu diendapkan dulu. Chat WA 08569990738, kirim kata AIR untuk konsultasi perawatan akuarium.\n\nKaporit di air PDAM bisa membuat ikan stres dan merusak bakteri baik. Endapkan air semalam di wadah terbuka supaya kaporitnya menguap sebelum dipakai ganti air.\n\nKalau nggak sempat menyiapkan air sendiri, jasa perawatan akuarium di Malang dari Fishtudio bisa bantu.",
+    "tagar_topik": "kualitasair"
+   },
+   "footage": {
+    "judul": "takaran gold feeds harian",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Sejumput kecil Gold Feeds sudah cukup untuk satu akuarium.",
+      "teks": "Sejumput kecil sudah cukup"
+     },
+     {
+      "vo": "Mas koki berebut, semuanya kebagian dalam hitungan menit.",
+      "teks": "Habis dalam hitungan menit"
+     },
+     {
+      "vo": "Pakan special untuk grooming, pas untuk perawatan harian.",
+      "teks": "Pakan special untuk grooming"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds sekarang lewat WhatsApp Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Gold Feeds untuk grooming mas koki. Chat WA 08569990738, kirim kata GROOMING untuk pesan.\n\nCukup sejumput kecil untuk satu akuarium. Mas koki berebut dan pakannya habis dalam hitungan menit, jadi air tetap bersih.\n\nGold Feeds Rp43 ribu per 300 g, pakan special untuk grooming yang bisa kamu pesan di Malang.",
+    "tagar_topik": "goldfeeds"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "ciri ikan ranchu",
+    "klip": "bak biru ranchu",
+    "adegan": [
+     {
+      "vo": "Ranchu nggak punya sirip punggung sama sekali.",
+      "headline": "Ranchu [tanpa sirip punggung].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Punggungnya melengkung halus kalau dilihat dari samping.",
+      "headline": "Punggung [melengkung halus].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kepalanya berwen, ekornya pendek dan sedikit menekuk.",
+      "headline": "Wen tebal, [ekor pendek].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Tanpa sirip punggung",
+        "Punggung melengkung",
+        "Ekor pendek"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Cari ranchu? Mampir ke Goldfish and Richman.",
+    "cta_teks": "Ranchu pilihan di [Goldfish and Richman]",
+    "caption": "Kenalan sama ranchu. Chat WA 08569990738, kirim kata RANCHU untuk lihat ranchu yang ready.\n\nRanchu nggak punya sirip punggung. Punggungnya melengkung halus, kepalanya berwen, dan ekornya pendek, jadi bentuknya terlihat padat dari atas maupun samping.\n\nGoldfish and Richman menyediakan mas koki ranchu Malang dengan pilihan warna yang beragam.",
+    "tagar_topik": "ranchu"
+   },
+   "footage": {
+    "judul": "ranchu gemuk siap pindah",
+    "kategori": "ranchu",
+    "adegan": [
+     {
+      "vo": "Ranchu dengan badan gemuk dan punggung mulus.",
+      "teks": "Ranchu gemuk punggung mulus"
+     },
+     {
+      "vo": "Wennya mulai tebal, gerakannya lucu saat berenang.",
+      "teks": "Wen mulai tebal"
+     },
+     {
+      "vo": "Siap pindah ke akuariummu minggu ini.",
+      "teks": "Siap pindah ke akuariummu"
+     }
+    ],
+    "cta_vo": "Pesan ranchu di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ranchu ready di Malang. Chat WA 08569990738, kirim kata RANCHU untuk lihat video ikannya.\n\nRanchu kali ini berbadan gemuk dengan punggung mulus tanpa sirip punggung. Wennya mulai tebal dan gerakannya lucu saat berenang.\n\nGoldfish and Richman adalah toko mas koki ranchu di Malang yang siap bantu kamu memilih.",
+    "tagar_topik": "ranchu"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "cycling akuarium baru",
+    "klip": "fish studio 2",
+    "adegan": [
+     {
+      "vo": "Akuarium baru jangan langsung diisi ikan, ya.",
+      "headline": "Akuarium baru [jangan langsung] diisi.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Lakukan cycling dulu supaya bakteri baik tumbuh di filter.",
+      "headline": "Lakukan [cycling] dulu.",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Biasanya butuh beberapa minggu sampai airnya stabil.",
+      "headline": "Tunggu [beberapa minggu].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Isi air",
+        "Nyalakan filter",
+        "Tunggu stabil"
+       ]
+      }
+     },
+     {
+      "vo": "Setelah stabil, masukkan ikan sedikit demi sedikit.",
+      "headline": "Masukkan ikan [bertahap].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Mau akuarium baru siap huni? Hubungi Fishtudio.",
+    "cta_teks": "Bangun akuarium bareng [Fishtudio]",
+    "caption": "Akuarium baru perlu cycling dulu. Chat WA 08569990738, kirim kata BUILD untuk konsultasi akuarium baru.\n\nCycling adalah proses menumbuhkan bakteri baik di filter sebelum ikan masuk. Tanpa proses ini, kotoran ikan berubah jadi amonia dan bisa membuat ikan sakit.\n\nLayanan Build & Care dari Fishtudio membantu pembuatan akuarium di Malang sampai airnya siap dihuni.",
+    "tagar_topik": "akuariumbaru"
+   },
+   "footage": {
+    "judul": "bersihkan ruang filter klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Ruang filter akuarium klien dibongkar dan dicek satu per satu.",
+      "teks": "Ruang filter dibongkar dan dicek"
+     },
+     {
+      "vo": "Media filter dibilas pakai air sumur, bukan PDAM.",
+      "teks": "Dibilas pakai air sumur"
+     },
+     {
+      "vo": "Aliran air kembali lancar, ikan pun lebih nyaman.",
+      "teks": "Aliran air kembali lancar"
+     }
+    ],
+    "cta_vo": "Jadwalkan servis filter akuariummu bersama Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Filter lancar, air lebih sehat. Chat WA 08569990738, kirim kata CEK untuk jadwal pengecekan filter.\n\nHari ini tim Fishtudio membongkar ruang filter akuarium klien. Media dibilas pakai air sumur supaya bakteri baiknya tetap hidup.\n\nPerawatan filter rutin bikin aliran air lancar dan akuarium jernih lebih lama. Fishtudio melayani jasa perawatan akuarium di Malang.",
+    "tagar_topik": "filterakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "beda panda dan tanco",
+    "klip": "keranjang koki",
+    "adegan": [
+     {
+      "vo": "Panda dan tanco sering dikira sama, padahal beda.",
+      "headline": "Panda dan tanco [beda].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Panda punya warna hitam putih seperti beruang panda.",
+      "headline": "Panda [hitam putih].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Tanco berbadan putih dengan bulatan merah di kepala.",
+      "headline": "Tanco [merah di kepala].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Badan putih",
+        "Kepala merah"
+       ]
+      }
+     },
+     {
+      "vo": "Keduanya cantik, tinggal pilih sesuai seleramu.",
+      "headline": "Pilih [sesuai selera].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Lihat panda dan tanco di Goldfish and Richman.",
+    "cta_teks": "Panda tanco di [Goldfish and Richman]",
+    "caption": "Panda atau tanco, pilih yang mana? Chat WA 08569990738, kirim kata PANDA untuk lihat yang ready.\n\nPanda dikenal dari warna hitam putihnya yang kontras. Tanco berbadan putih bersih dengan bulatan merah di kepala, seperti bendera.\n\nGoldfish and Richman punya pilihan mas koki panda dan tanco di Malang untuk mempercantik akuariummu.",
+    "tagar_topik": "tanco"
+   },
+   "footage": {
+    "judul": "panda dan tanco ready",
+    "kategori": "panda tanco",
+    "adegan": [
+     {
+      "vo": "Panda dengan corak hitam putih yang tegas.",
+      "teks": "Panda corak hitam putih"
+     },
+     {
+      "vo": "Tanco dengan mahkota merah di kepalanya.",
+      "teks": "Tanco mahkota merah"
+     },
+     {
+      "vo": "Dua duanya ready, tinggal pilih favoritmu.",
+      "teks": "Ready, pilih favoritmu"
+     }
+    ],
+    "cta_vo": "Pesan panda atau tanco di Goldfish and Richman.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Panda dan tanco ready di Malang. Chat WA 08569990738, kirim kata TANCO untuk lihat video ikannya.\n\nPanda dengan corak hitam putih yang tegas dan tanco dengan mahkota merah di kepala sedang ready di toko.\n\nGoldfish and Richman adalah toko mas koki di Malang. Kamu bisa pilih ikannya lewat video sebelum memesan.",
+    "tagar_topik": "tanco"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "pakan berlebih bikin air keruh",
+    "klip": "akuarium ranchu",
+    "adegan": [
+     {
+      "vo": "Air cepat keruh? Bisa jadi pakannya kebanyakan.",
+      "headline": "Air keruh karena [pakan berlebih].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sisa pakan membusuk dan memicu amonia di air.",
+      "headline": "Sisa pakan [jadi amonia].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Beri secukupnya, yang habis dalam dua sampai tiga menit.",
+      "headline": "Habis dalam [3 menit].",
+      "visual": {
+       "jenis": "angka",
+       "angka": "3",
+       "satuan": "",
+       "label": "menit paling lama",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sisa pakan yang tenggelam, segera diangkat.",
+      "headline": "Angkat [sisa pakan].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Konsultasi gratis di [Fishtudio]",
+    "caption": "Air keruh sering berawal dari pakan. Chat WA 08569990738, kirim kata PAKAN untuk tanya takaran yang pas.\n\nPakan yang nggak habis akan membusuk di dasar akuarium dan memicu amonia. Akibatnya air cepat keruh dan ikan gampang sakit.\n\nBeri pakan secukupnya, yang habis dalam dua sampai tiga menit, lalu angkat sisanya. Fishtudio juga menyediakan Gold Feeds, pakan special untuk grooming mas koki.",
+    "tagar_topik": "pakanikan"
+   },
+   "footage": {
+    "judul": "sarapan pagi gold feeds",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Pagi hari, waktunya sarapan untuk mas koki.",
+      "teks": "Sarapan pagi mas koki"
+     },
+     {
+      "vo": "Gold Feeds ditabur sedikit saja, secukupnya.",
+      "teks": "Ditabur sedikit, secukupnya"
+     },
+     {
+      "vo": "Habis tanpa sisa, air pun tetap jernih.",
+      "teks": "Habis, air tetap jernih"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WhatsApp Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Sarapan mas koki pakai Gold Feeds. Chat WA 08569990738, kirim kata FEEDS untuk pesan.\n\nGold Feeds cukup ditabur sedikit setiap pagi. Pakannya habis disantap, jadi nggak ada sisa yang bikin air keruh.\n\nGold Feeds Rp43 ribu per 300 g, pakan special untuk grooming mas koki yang bisa kamu dapatkan di Malang.",
+    "tagar_topik": "pakanmaskoki"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "cara pilih mas koki sehat",
+    "klip": "kolam koki ramai",
+    "adegan": [
+     {
+      "vo": "Pilih mas koki yang berenangnya seimbang dan aktif.",
+      "headline": "Berenang [seimbang dan aktif].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Siripnya mengembang, bukan terlipat atau robek.",
+      "headline": "Sirip [mengembang], bukan terlipat.",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Sirip mengembang",
+        "Sisik mulus",
+        "Mata jernih"
+       ]
+      }
+     },
+     {
+      "vo": "Hindari yang diam di dasar atau menyendiri.",
+      "headline": "Hindari yang [diam di dasar].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Lahap saat dikasih makan, itu tanda yang bagus.",
+      "headline": "Lahap saat [jam makan].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Pilih mas koki sehat di Goldfish and Richman.",
+    "cta_teks": "Koki sehat di [Goldfish and Richman]",
+    "caption": "Begini cara memilih mas koki sehat. Chat WA 08569990738, kirim kata KOKI untuk dibantu memilih.\n\nMas koki sehat berenang seimbang dan aktif, siripnya mengembang, sisiknya mulus, dan lahap saat diberi makan. Hindari ikan yang sering diam di dasar atau menyendiri.\n\nDi Goldfish and Richman, kamu bisa lihat video ikannya dulu sebelum membeli mas koki di Malang.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "mas koki campur siap pilih",
+    "kategori": "mas koki campur",
+    "adegan": [
+     {
+      "vo": "Oranda, ryukin, ranchu, semua lagi ramai di toko.",
+      "teks": "Aneka mas koki lagi ramai"
+     },
+     {
+      "vo": "Warnanya beragam, dari merah, putih, sampai hitam.",
+      "teks": "Merah, putih, sampai hitam"
+     },
+     {
+      "vo": "Ceritakan selera kamu, kami bantu pilihkan.",
+      "teks": "Kami bantu pilihkan"
+     }
+    ],
+    "cta_vo": "Pesan mas koki di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Aneka mas koki ready di Malang. Chat WA 08569990738, kirim kata KOKI untuk lihat semua stok.\n\nMinggu ini toko lagi ramai oranda, ryukin, dan ranchu dengan warna merah, putih, sampai hitam.\n\nBingung pilih yang mana? Ceritakan ukuran akuarium dan seleramu, tim Goldfish and Richman bantu pilihkan mas koki yang cocok.",
+    "tagar_topik": "maskoki"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "kepadatan ikan jangan berlebihan",
+    "klip": "fish studio 4",
+    "adegan": [
+     {
+      "vo": "Akuarium terlalu padat bikin ikan gampang stres.",
+      "headline": "Terlalu padat, [ikan stres].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Oksigen cepat habis dan kotoran menumpuk lebih cepat.",
+      "headline": "Oksigen [cepat habis].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Oksigen turun",
+        "Kotoran menumpuk",
+        "Air keruh"
+       ]
+      }
+     },
+     {
+      "vo": "Sesuaikan jumlah ikan dengan ukuran akuarium dan filter.",
+      "headline": "Sesuaikan dengan [ukuran akuarium].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Ragu soal kapasitas? Tanya Fishtudio dulu.",
+    "cta_teks": "Tanya kapasitas ke [Fishtudio]",
+    "caption": "Jangan isi akuarium terlalu padat. Chat WA 08569990738, kirim kata KONSULTASI untuk cek kapasitas akuariummu.\n\nIkan yang terlalu banyak membuat oksigen cepat habis dan kotoran menumpuk. Air jadi cepat keruh dan ikan gampang stres.\n\nSesuaikan jumlah ikan dengan ukuran akuarium dan kekuatan filter. Tim Fishtudio bisa bantu hitung lewat layanan perawatan akuarium di Malang.",
+    "tagar_topik": "akuariumsehat"
+   },
+   "footage": {
+    "judul": "ganti air sebagian akuarium klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Air akuarium klien diganti sebagian, bukan dikuras habis.",
+      "teks": "Ganti air sebagian, bukan dikuras"
+     },
+     {
+      "vo": "Air barunya sudah diendapkan dulu sebelum dituang.",
+      "teks": "Air baru sudah diendapkan"
+     },
+     {
+      "vo": "Ikan tetap tenang selama perawatan berlangsung.",
+      "teks": "Ikan tetap tenang"
+     }
+    ],
+    "cta_vo": "Jadwalkan perawatan akuariummu bersama Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ganti air yang benar ala Fishtudio. Chat WA 08569990738, kirim kata RAWAT untuk jadwal perawatan.\n\nTim Fishtudio mengganti sebagian air akuarium klien dengan air yang sudah diendapkan, jadi ikan nggak kaget dan bakteri baik tetap terjaga.\n\nLayanan Build & Care siap jadi jasa perawatan akuarium di Malang untuk rumah maupun kantor.",
+    "tagar_topik": "jasaperawatanakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "ukuran akuarium mas koki",
+    "klip": "fish studio 1",
+    "adegan": [
+     {
+      "vo": "Mas koki bisa tumbuh besar, jadi butuh ruang lega.",
+      "headline": "Mas koki butuh [ruang lega].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Akuarium terlalu kecil bikin ikan sesak dan stres.",
+      "headline": "Akuarium kecil, [ikan sesak].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pilih akuarium yang panjang supaya ikan leluasa berenang.",
+      "headline": "Pilih akuarium [yang panjang].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pakai filter kuat, karena kotoran mas koki banyak.",
+      "headline": "Pakai [filter kuat].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Ruang lega",
+        "Filter kuat",
+        "Air rutin"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Tanya ukuran akuarium ideal ke Goldfish and Richman.",
+    "cta_teks": "Tanya [Goldfish and Richman] dulu",
+    "caption": "Akuarium mas koki jangan kekecilan. Chat WA 08569990738, kirim kata UKURAN untuk tanya akuarium yang pas.\n\nMas koki terus tumbuh dan menghasilkan banyak kotoran. Akuarium yang terlalu kecil membuat ikan sesak dan air cepat kotor.\n\nPilih akuarium yang panjang dengan filter kuat. Tim Goldfish and Richman siap bantu sesuaikan jumlah mas koki dengan akuariummu.",
+    "tagar_topik": "akuariummaskoki"
+   },
+   "footage": {
+    "judul": "oranda merah putih ready",
+    "kategori": "oranda",
+    "adegan": [
+     {
+      "vo": "Oranda merah putih dengan wen yang mulai penuh.",
+      "teks": "Oranda merah putih ready"
+     },
+     {
+      "vo": "Siripnya panjang, berenangnya anggun dan aktif.",
+      "teks": "Sirip panjang, berenang anggun"
+     },
+     {
+      "vo": "Cocok jadi pusat perhatian di akuariummu.",
+      "teks": "Jadi pusat perhatian"
+     }
+    ],
+    "cta_vo": "Pesan oranda di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Oranda merah putih ready di Malang. Chat WA 08569990738, kirim kata ORANDA untuk lihat video ikannya.\n\nOranda kali ini berwarna merah putih dengan wen yang mulai penuh dan sirip panjang yang anggun.\n\nGoldfish and Richman adalah toko mas koki oranda Malang. Pilih lewat video, lalu ikan siap pindah ke akuariummu.",
+    "tagar_topik": "oranda"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "lama nyala lampu akuarium",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Lampu akuarium nggak perlu nyala seharian penuh.",
+      "headline": "Lampu [jangan nyala] seharian.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Cukup delapan sampai sepuluh jam sehari.",
+      "headline": "Cukup [8 sampai 10] jam.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "10",
+       "satuan": "",
+       "label": "jam paling lama",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Terlalu lama bikin lumut tumbuh dan ikan kurang istirahat.",
+      "headline": "Lumut tumbuh, [ikan capek].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Lumut tumbuh",
+        "Ikan kurang istirahat"
+       ]
+      }
+     },
+     {
+      "vo": "Pakai timer supaya jadwal nyalanya teratur.",
+      "headline": "Pakai [timer] biar teratur.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Atur akuarium bareng [Fishtudio]",
+    "caption": "Lampu akuarium cukup 8 sampai 10 jam. Chat WA 08569990738, kirim kata LAMPU untuk konsultasi.\n\nLampu yang menyala terlalu lama memicu lumut tumbuh di kaca dan membuat ikan kurang istirahat. Ikan juga butuh gelap untuk tidur.\n\nPasang timer supaya jadwal lampu teratur setiap hari. Butuh bantuan menata akuarium? Fishtudio melayani perawatan akuarium di Malang.",
+    "tagar_topik": "tipsakuarium"
+   },
+   "footage": {
+    "judul": "mas koki berebut pakan",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Begitu Gold Feeds ditabur, semua langsung berebut.",
+      "teks": "Semua berebut ke permukaan"
+     },
+     {
+      "vo": "Gold Feeds, Rp43 ribu per 300 gram.",
+      "teks": "Gold Feeds Rp43 ribu per 300 g"
+     },
+     {
+      "vo": "Pakan special untuk grooming, favorit mas koki di rumah.",
+      "teks": "Pakan special untuk grooming"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds sekarang lewat WhatsApp Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Mas koki berebut Gold Feeds. Chat WA 08569990738, kirim kata ORDER untuk pesan sekarang.\n\nBegitu ditabur, semua mas koki langsung naik ke permukaan. Gold Feeds adalah pakan special untuk grooming mas koki.\n\nHarganya Rp43 ribu per 300 g dan bisa dipesan untuk kebutuhan pakan mas koki di Malang.",
+    "tagar_topik": "goldfeeds"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "mas koki jangan dicampur ikan tropis",
+    "klip": "akuarium ranchu",
+    "adegan": [
+     {
+      "vo": "Mas koki sebaiknya nggak dicampur ikan tropis.",
+      "headline": "Jangan [campur ikan tropis].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ikan tropis butuh air hangat, mas koki suka air sejuk.",
+      "headline": "Beda [suhu air].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Tropis suka hangat",
+        "Koki suka sejuk"
+       ]
+      }
+     },
+     {
+      "vo": "Mas koki gerakannya lambat, sering kalah rebutan pakan.",
+      "headline": "Koki [kalah rebutan] pakan.",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Lebih aman, satu akuarium khusus mas koki saja.",
+      "headline": "Akuarium [khusus mas koki].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya teman akuarium yang cocok ke Goldfish and Richman.",
+    "cta_teks": "Tanya [Goldfish and Richman] dulu",
+    "caption": "Mas koki sebaiknya punya akuarium sendiri. Chat WA 08569990738, kirim kata TANYA untuk konsultasi.\n\nIkan tropis butuh air hangat, sementara mas koki lebih nyaman di air sejuk. Gerakan mas koki juga lambat, jadi sering kalah rebutan pakan.\n\nSupaya semua ikan sehat, siapkan akuarium khusus mas koki. Goldfish and Richman siap bantu kamu memilih mas koki di Malang.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "ryukin merah siap kirim",
+    "kategori": "ryukin",
+    "adegan": [
+     {
+      "vo": "Ryukin merah dengan punggung tinggi yang gagah.",
+      "teks": "Ryukin merah punggung gagah"
+     },
+     {
+      "vo": "Ekornya lebar, terlihat cantik dari depan maupun samping.",
+      "teks": "Ekor lebar dan cantik"
+     },
+     {
+      "vo": "Sudah ready, tinggal tunggu kabar darimu.",
+      "teks": "Ready, tinggal chat"
+     }
+    ],
+    "cta_vo": "Pesan ryukin di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ryukin merah ready di Malang. Chat WA 08569990738, kirim kata RYUKIN untuk lihat video ikannya.\n\nRyukin merah dengan punggung tinggi yang gagah dan ekor lebar ini sedang ready di toko.\n\nGoldfish and Richman adalah toko mas koki ryukin di Malang. Pilih lewat video, lalu ikan siap dikirim ke akuariummu.",
+    "tagar_topik": "ryukin"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "jauhkan akuarium dari matahari",
+    "klip": "teras rumah klien",
+    "adegan": [
+     {
+      "vo": "Jangan taruh akuarium di tempat kena sinar matahari langsung.",
+      "headline": "Hindari [sinar matahari] langsung.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Suhu air bisa naik turun dan bikin ikan stres.",
+      "headline": "Suhu air [naik turun].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Lumut juga tumbuh jauh lebih cepat.",
+      "headline": "Lumut [tumbuh cepat].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Air hijau",
+        "Kaca berlumut"
+       ]
+      }
+     },
+     {
+      "vo": "Taruh di tempat teduh, pakai lampu untuk pencahayaan.",
+      "headline": "Taruh di [tempat teduh].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Butuh saran posisi akuarium? Hubungi Fishtudio.",
+    "cta_teks": "Konsultasi posisi di [Fishtudio]",
+    "caption": "Akuarium jangan kena matahari langsung. Chat WA 08569990738, kirim kata LOKASI untuk konsultasi posisi.\n\nSinar matahari langsung membuat suhu air naik turun dan ikan jadi stres. Lumut juga tumbuh lebih cepat sampai air berubah hijau.\n\nTaruh akuarium di tempat teduh dan pakai lampu untuk pencahayaan. Fishtudio bisa bantu tentukan posisi saat pembuatan akuarium di Malang.",
+    "tagar_topik": "akuariumrumah"
+   },
+   "footage": {
+    "judul": "bersihkan lumut kaca akuarium",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Kaca yang mulai berlumut dibersihkan pelan pelan.",
+      "teks": "Kaca berlumut dibersihkan pelan"
+     },
+     {
+      "vo": "Dekorasi dibilas tanpa sabun supaya ikan tetap aman.",
+      "teks": "Dekorasi dibilas tanpa sabun"
+     },
+     {
+      "vo": "Hasilnya kaca kembali bening, ikan terlihat jelas.",
+      "teks": "Kaca kembali bening"
+     }
+    ],
+    "cta_vo": "Jadwalkan perawatan akuariummu bersama Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Kaca akuarium bening lagi. Chat WA 08569990738, kirim kata CARE untuk jadwal perawatan.\n\nTim Fishtudio membersihkan lumut di kaca akuarium klien dengan pelan, lalu membilas dekorasi tanpa sabun supaya ikan tetap aman.\n\nLayanan Build & Care menangani jasa perawatan akuarium di Malang, jadi ikanmu selalu terlihat jelas dan sehat.",
+    "tagar_topik": "jasaperawatanakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "mas koki bukan untuk fishbowl",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Mas koki nggak cocok dipelihara di fishbowl kecil.",
+      "headline": "Bukan untuk [fishbowl kecil].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Airnya sedikit, kotoran cepat menumpuk dan oksigen kurang.",
+      "headline": "Air sedikit, [cepat kotor].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Air sedikit",
+        "Oksigen kurang",
+        "Tanpa filter"
+       ]
+      }
+     },
+     {
+      "vo": "Mas koki terus tumbuh, ruangnya jadi terlalu sempit.",
+      "headline": "Ikan tumbuh, [ruang sempit].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pakai akuarium kaca kotak dengan filter yang memadai.",
+      "headline": "Pakai [akuarium kaca kotak].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Mulai pelihara mas koki bersama Goldfish and Richman.",
+    "cta_teks": "Mulai dari [Goldfish and Richman]",
+    "caption": "Mas koki butuh lebih dari fishbowl kecil. Chat WA 08569990738, kirim kata AKUARIUM untuk tanya setup yang pas.\n\nFishbowl kecil berisi sedikit air, tanpa filter, dan oksigennya cepat habis. Kotoran mas koki menumpuk dan ikan yang terus tumbuh jadi kesempitan.\n\nPakai akuarium kaca kotak dengan filter yang memadai. Goldfish and Richman siap bantu kamu mulai memelihara mas koki di Malang.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "ranchu wen tebal ready",
+    "kategori": "ranchu",
+    "adegan": [
+     {
+      "vo": "Ranchu dengan wen tebal yang menutupi kepala.",
+      "teks": "Ranchu wen tebal ready"
+     },
+     {
+      "vo": "Punggungnya mulus tanpa sirip, gerakannya menggemaskan.",
+      "teks": "Punggung mulus tanpa sirip"
+     },
+     {
+      "vo": "Dilihat dari atas pun tetap cantik.",
+      "teks": "Cantik dilihat dari atas"
+     }
+    ],
+    "cta_vo": "Pesan ranchu di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ranchu wen tebal ready di Malang. Chat WA 08569990738, kirim kata RANCHU untuk lihat video ikannya.\n\nRanchu ini punya wen tebal yang menutupi kepala dan punggung mulus tanpa sirip. Dilihat dari atas pun tetap cantik.\n\nGoldfish and Richman adalah toko mas koki ranchu di Malang. Pilih lewat video sebelum memesan.",
+    "tagar_topik": "ranchu"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "aerator dan oksigen akuarium",
+    "klip": "fish studio 2",
+    "adegan": [
+     {
+      "vo": "Ikan sering mangap di permukaan? Bisa jadi kurang oksigen.",
+      "headline": "Ikan mangap, [kurang oksigen].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Aerator membantu menambah oksigen terlarut di dalam air.",
+      "headline": "Aerator [tambah oksigen].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Apalagi saat akuarium padat atau cuaca sedang panas.",
+      "headline": "Penting saat [padat dan panas].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Akuarium padat",
+        "Cuaca panas",
+        "Malam hari"
+       ]
+      }
+     },
+     {
+      "vo": "Biarkan menyala terus, jangan dimatikan saat malam.",
+      "headline": "Biarkan aerator [tetap menyala].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk cek sirkulasi akuariummu.",
+    "cta_teks": "Cek oksigen bareng [Fishtudio]",
+    "caption": "Ikan mangap di permukaan bisa jadi tanda kurang oksigen. Chat WA 08569990738, kirim kata OKSIGEN untuk konsultasi.\n\nAerator membantu menambah oksigen terlarut di air, terutama saat akuarium padat, cuaca panas, atau malam hari.\n\nBiarkan aerator tetap menyala sepanjang hari. Tim Fishtudio bisa cek sirkulasi lewat layanan perawatan akuarium di Malang.",
+    "tagar_topik": "aeratorakuarium"
+   },
+   "footage": {
+    "judul": "gold feeds untuk ranchu",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Ranchu juga ikut kebagian jatah Gold Feeds.",
+      "teks": "Ranchu ikut kebagian pakan"
+     },
+     {
+      "vo": "Diberi sedikit saja, dua kali sehari.",
+      "teks": "Sedikit saja, dua kali sehari"
+     },
+     {
+      "vo": "Gold Feeds, pakan special untuk grooming mas koki.",
+      "teks": "Pakan special untuk grooming"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WhatsApp Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Jatah makan ranchu pakai Gold Feeds. Chat WA 08569990738, kirim kata BELI untuk pesan.\n\nRanchu cukup diberi sedikit Gold Feeds dua kali sehari. Pakan special untuk grooming ini cocok untuk perawatan harian mas koki.\n\nGold Feeds Rp43 ribu per 300 g dan bisa kamu pesan untuk kebutuhan pakan mas koki di Malang.",
+    "tagar_topik": "pakanmaskoki"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "mas koki bisa berumur panjang",
+    "klip": "kolam koki",
+    "adegan": [
+     {
+      "vo": "Mas koki bisa hidup lebih dari sepuluh tahun kalau dirawat.",
+      "headline": "Bisa hidup [belasan tahun].",
+      "visual": {
+       "jenis": "angka",
+       "angka": "10",
+       "satuan": "+",
+       "label": "tahun kalau dirawat",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kuncinya air bersih, filter jalan, dan pakan secukupnya.",
+      "headline": "Kuncinya [air bersih].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Air bersih",
+        "Filter jalan",
+        "Pakan cukup"
+       ]
+      }
+     },
+     {
+      "vo": "Ruang yang lega juga bikin ikan tumbuh maksimal.",
+      "headline": "Ruang lega, [tumbuh maksimal].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Mulai rawat mas koki dari Goldfish and Richman.",
+    "cta_teks": "Koki sehat di [Goldfish and Richman]",
+    "caption": "Mas koki bisa jadi teman lama. Chat WA 08569990738, kirim kata PANDUAN untuk tips merawat mas koki.\n\nMas koki yang dirawat dengan baik bisa hidup lebih dari sepuluh tahun. Kuncinya air bersih, filter yang terus jalan, pakan secukupnya, dan ruang yang lega.\n\nGoldfish and Richman siap bantu kamu memilih mas koki di Malang dan berbagi cara merawatnya.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "tanco kepala merah ready",
+    "kategori": "panda tanco",
+    "adegan": [
+     {
+      "vo": "Tanco dengan bulatan merah rapi di kepala.",
+      "teks": "Tanco kepala merah ready"
+     },
+     {
+      "vo": "Badannya putih bersih, kontras dan elegan.",
+      "teks": "Putih bersih, kontras elegan"
+     },
+     {
+      "vo": "Panda hitam putih juga ada, tinggal pilih.",
+      "teks": "Panda juga ready"
+     }
+    ],
+    "cta_vo": "Pesan tanco di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Tanco kepala merah ready di Malang. Chat WA 08569990738, kirim kata TANCO untuk lihat video ikannya.\n\nTanco ini punya bulatan merah rapi di kepala dengan badan putih bersih. Panda hitam putih juga ada kalau kamu suka warna kontras.\n\nGoldfish and Richman adalah toko mas koki di Malang. Pilih lewat video sebelum memesan.",
+    "tagar_topik": "tanco"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "tanda filter akuarium mampet",
+    "klip": "servis ruang filter",
+    "adegan": [
+     {
+      "vo": "Aliran filter melemah? Bisa jadi filternya mampet.",
+      "headline": "Aliran [melemah], filter mampet.",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Tandanya air cepat keruh dan suara pompa berubah.",
+      "headline": "Kenali [tanda filter mampet].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Aliran lemah",
+        "Air keruh",
+        "Pompa berisik"
+       ]
+      }
+     },
+     {
+      "vo": "Jangan dibiarkan, amonia di air bisa naik.",
+      "headline": "Jangan [dibiarkan] lama.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Bilas media filter rutin pakai air sumur atau air akuarium.",
+      "headline": "Bilas media [secara rutin].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk servis filter akuariummu.",
+    "cta_teks": "Servis filter di [Fishtudio]",
+    "caption": "Kenali tanda filter mampet. Chat WA 08569990738, kirim kata SERVIS untuk jadwal servis filter.\n\nAliran air melemah, air cepat keruh, dan suara pompa berubah adalah tanda filter mulai mampet. Kalau dibiarkan, amonia bisa naik dan ikan jadi sakit.\n\nBilas media filter secara rutin pakai air sumur atau air akuarium lama. Fishtudio melayani servis filter dan perawatan akuarium di Malang.",
+    "tagar_topik": "servisfilter"
+   },
+   "footage": {
+    "judul": "servis pompa filter klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Pompa filter akuarium klien dicek dan dibersihkan.",
+      "teks": "Pompa filter dicek dan dibersihkan"
+     },
+     {
+      "vo": "Kotoran di baling baling pompa diangkat sampai bersih.",
+      "teks": "Kotoran pompa diangkat"
+     },
+     {
+      "vo": "Aliran kuat lagi, akuarium siap jalan seminggu ke depan.",
+      "teks": "Aliran kuat lagi"
+     }
+    ],
+    "cta_vo": "Jadwalkan servis akuariummu bersama Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Pompa filter bersih, aliran kuat lagi. Chat WA 08569990738, kirim kata JADWAL untuk atur kunjungan.\n\nTim Fishtudio mengecek dan membersihkan pompa filter akuarium klien. Kotoran yang menyumbat diangkat supaya aliran air kembali kuat.\n\nPerawatan rutin dari layanan Build & Care bikin akuarium tetap sehat. Fishtudio melayani jasa perawatan akuarium di Malang.",
+    "tagar_topik": "jasaperawatanakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "porsi makan mas koki",
+    "klip": "kolam koki ramai",
+    "adegan": [
+     {
+      "vo": "Mas koki cukup makan sedikit, dua kali sehari.",
+      "headline": "Makan [2x] sehari.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "2",
+       "satuan": "x",
+       "label": "makan sehari",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Takarannya yang habis dalam dua sampai tiga menit.",
+      "headline": "Habis dalam [beberapa menit].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kebanyakan makan bikin perut kembung dan air kotor.",
+      "headline": "Kebanyakan bikin [kembung].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya cara merawat mas koki ke Goldfish and Richman.",
+    "cta_teks": "Tanya [Goldfish and Richman] dulu",
+    "caption": "Porsi makan mas koki cukup sedikit. Chat WA 08569990738, kirim kata MAKAN untuk tips perawatan mas koki.\n\nMas koki cukup diberi makan dua kali sehari, dengan takaran yang habis dalam dua sampai tiga menit. Kebanyakan makan bikin perut kembung dan air cepat kotor.\n\nGoldfish and Richman siap berbagi cara merawat mas koki di Malang supaya ikanmu tetap sehat.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "aneka mas koki ready hari ini",
+    "kategori": "mas koki campur",
+    "adegan": [
+     {
+      "vo": "Hari ini toko penuh mas koki pilihan.",
+      "teks": "Mas koki pilihan hari ini"
+     },
+     {
+      "vo": "Ada oranda, ryukin, ranchu, panda, sampai tanco.",
+      "teks": "Oranda, ryukin, ranchu, panda, tanco"
+     },
+     {
+      "vo": "Pilih satu atau beberapa untuk akuariummu.",
+      "teks": "Pilih untuk akuariummu"
+     }
+    ],
+    "cta_vo": "Pesan mas koki di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Mas koki pilihan ready di Malang. Chat WA 08569990738, kirim kata STOK untuk lihat semua ikan yang ready.\n\nHari ini toko penuh oranda, ryukin, ranchu, panda, sampai tanco dengan warna yang beragam.\n\nGoldfish and Richman adalah toko mas koki di Malang. Kamu bisa pilih lewat video sebelum memesan.",
+    "tagar_topik": "maskoki"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "lumut di kaca akuarium",
+    "klip": "fish studio 1",
+    "adegan": [
+     {
+      "vo": "Kaca akuarium cepat hijau berlumut? Biasanya karena lampu kelamaan.",
+      "headline": "Kaca hijau karena [lampu kelamaan].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Nyalakan lampu cukup delapan jam sehari, jangan seharian penuh.",
+      "headline": "Lampu cukup [8 jam] sehari.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "8",
+       "satuan": "jam",
+       "label": "lampu per hari",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kerok kaca seminggu sekali dan kurangi sisa pakan.",
+      "headline": "Kerok kaca, [kurangi sisa pakan].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Kerok mingguan",
+        "Pakan secukupnya",
+        "Ganti air rutin"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Kaca akuarium cepat berlumut? Chat WA 08569990738, kirim RAWAT untuk jadwal perawatan akuarium.\n\nLumut di kaca tumbuh dari cahaya yang terlalu lama dan sisa pakan yang membusuk di air. Atur lampu sekitar delapan jam sehari dan beri pakan secukupnya.\n\nKalau kaca sudah terlanjur tebal lumutnya, tim Fishtudio siap bantu. Kami melayani jasa perawatan akuarium di Malang, dari kerok kaca, ganti air, sampai cek filter.",
+    "tagar_topik": "lumutakuarium"
+   },
+   "footage": {
+    "judul": "kaca bening setelah perawatan",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Tim Fishtudio datang, kaca akuarium klien mulai dikerok pelan.",
+      "teks": "Kerok kaca tanpa gores"
+     },
+     {
+      "vo": "Kotoran di dasar disedot, air diganti sebagian.",
+      "teks": "Sedot kotoran, ganti air sebagian"
+     },
+     {
+      "vo": "Hasilnya kaca bening, ikan berenang lebih tenang.",
+      "teks": "Kaca bening, ikan tenang"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Mau akuarium bening tanpa repot? Chat WA 08569990738, kirim RAWAT untuk jadwal kunjungan tim Fishtudio.\n\nBegini salah satu kunjungan perawatan kami. Kaca dikerok tanpa gores, kotoran dasar disedot, dan air diganti sebagian supaya ikan nggak kaget.\n\nFishtudio melayani jasa perawatan akuarium di Malang lewat layanan Build & Care, untuk rumah, kantor, maupun kafe.",
+    "tagar_topik": "jasaperawatanakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "bintik putih di badan mas koki",
+    "klip": "kolam koki",
+    "adegan": [
+     {
+      "vo": "Ada bintik putih kecil seperti garam di badan mas koki?",
+      "headline": "Bintik putih [seperti garam].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Itu white spot, parasit yang gampang menular ke ikan lain.",
+      "headline": "Itu [white spot], cepat menular.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pisahkan ikan sakit, naikkan suhu perlahan, pakai obat sesuai dosis.",
+      "headline": "Pisahkan dan [obati sesuai dosis].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Pisahkan ikan",
+        "Suhu naik perlahan",
+        "Obat sesuai dosis"
+       ]
+      }
+     },
+     {
+      "vo": "Ganti air rutin supaya parasitnya nggak balik lagi.",
+      "headline": "Ganti air [rutin] setelahnya.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Mas koki muncul bintik putih? Chat WA 08569990738, kirim CEK beserta foto ikannya.\n\nBintik putih seperti taburan garam di badan dan sirip biasanya white spot. Parasit ini cepat menular, jadi ikan yang sakit sebaiknya dipisah dulu.\n\nNaikkan suhu air perlahan, pakai obat white spot sesuai dosis di kemasan, dan jaga air tetap bersih sampai bintiknya hilang.",
+    "tagar_topik": "whitespot"
+   },
+   "footage": {
+    "judul": "stok ryukin pekan ini",
+    "kategori": "ryukin",
+    "adegan": [
+     {
+      "vo": "Ryukin punggung tinggi, badan bulat, siap pindah ke akuariummu.",
+      "teks": "Ryukin punggung tinggi"
+     },
+     {
+      "vo": "Siripnya panjang, gerakannya lincah di akuarium kaca.",
+      "teks": "Sirip panjang, gerak lincah"
+     },
+     {
+      "vo": "Dipilih yang sehat dan aktif sebelum dikirim.",
+      "teks": "Sehat dan aktif"
+     }
+    ],
+    "cta_vo": "Pesan ryukin di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ryukin ready di Malang. Chat WA 08569990738, kirim RYUKIN untuk lihat stok terbaru.\n\nRyukin punggung tinggi dengan badan bulat dan sirip panjang. Gerakannya lincah, enak dilihat dari depan kaca akuarium.\n\nGoldfish and Richman menyediakan mas koki ryukin di Malang dan bisa dikirim ke luar kota dengan kemasan aman.",
+    "tagar_topik": "ryukin"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "air akuarium jadi hijau",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Air akuarium hijau pekat itu tanda alga tumbuh di air.",
+      "headline": "Air hijau tanda [alga tumbuh].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pemicunya sinar matahari langsung dan pakan yang berlebihan.",
+      "headline": "Pemicunya [matahari dan pakan].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Matahari langsung",
+        "Pakan berlebih",
+        "Jarang ganti air"
+       ]
+      }
+     },
+     {
+      "vo": "Jauhkan dari jendela, kurangi pakan, ganti air sebagian rutin.",
+      "headline": "Jauhkan dari [sinar matahari].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Air akuarium berubah hijau? Chat WA 08569990738, kirim JERNIH untuk konsultasi perawatan akuarium.\n\nAir hijau pekat berarti alga melayang di air. Pemicunya biasanya sinar matahari langsung, pakan berlebihan, dan air yang jarang diganti.\n\nPindahkan akuarium dari jendela, beri pakan secukupnya, dan ganti air sebagian secara rutin. Butuh bantuan? Tim jasa perawatan akuarium Fishtudio di Malang siap datang.",
+    "tagar_topik": "airakuariumhijau"
+   },
+   "footage": {
+    "judul": "oranda lahap gold feeds",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Begini oranda menyambut Gold Feeds, langsung naik ke permukaan.",
+      "teks": "Oranda menyambut Gold Feeds"
+     },
+     {
+      "vo": "Gold Feeds, pakan special untuk grooming mas koki.",
+      "teks": "Pakan special untuk grooming"
+     },
+     {
+      "vo": "Satu kemasan tiga ratus gram, harganya empat puluh tiga ribu.",
+      "teks": "Rp43 ribu per 300 g"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds di Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Gold Feeds siap kirim. Chat WA 08569990738, kirim PAKAN untuk pesan Rp43 ribu per 300 g.\n\nLihat sendiri reaksi oranda saat Gold Feeds ditabur. Langsung naik ke permukaan dan habis dalam beberapa menit.\n\nGold Feeds adalah pakan special untuk grooming mas koki. Cocok untuk kamu yang mencari pakan mas koki di Malang maupun luar kota.",
+    "tagar_topik": "pakanmaskoki"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "sirip mas koki robek",
+    "klip": "fish studio 2",
+    "adegan": [
+     {
+      "vo": "Sirip mas koki robek atau ujungnya rusak? Cek dulu penyebabnya.",
+      "headline": "Sirip robek? [Cek penyebabnya].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Biasanya karena hiasan tajam, digigit ikan lain, atau air kotor.",
+      "headline": "Hiasan tajam dan [air kotor].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Hiasan tajam",
+        "Digigit teman",
+        "Air kotor"
+       ]
+      }
+     },
+     {
+      "vo": "Buang hiasan tajam, jaga air bersih, sirip bisa tumbuh lagi.",
+      "headline": "Air bersih, [sirip tumbuh lagi].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Sirip mas koki robek atau rusak? Chat WA 08569990738, kirim KOKI dan ceritakan kondisinya.\n\nSirip mas koki tipis dan mudah sobek. Penyebab yang paling sering adalah hiasan tajam, digigit ikan lain, atau air yang kotor.\n\nSingkirkan hiasan bersudut tajam dan jaga air tetap bersih. Selama airnya bagus, sirip mas koki biasanya bisa tumbuh kembali.",
+    "tagar_topik": "siripmaskoki"
+   },
+   "footage": {
+    "judul": "ranchu punggung mulus ready",
+    "kategori": "ranchu",
+    "adegan": [
+     {
+      "vo": "Ranchu punggung mulus tanpa sirip punggung, siap jadi koleksimu.",
+      "teks": "Ranchu punggung mulus"
+     },
+     {
+      "vo": "Kepalanya mulai berwen, badannya pendek dan gemuk.",
+      "teks": "Kepala berwen, badan gemuk"
+     },
+     {
+      "vo": "Renangnya santai, enak dinikmati dari depan kaca.",
+      "teks": "Renang santai di kaca"
+     }
+    ],
+    "cta_vo": "Pesan ranchu di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ranchu ready di Malang. Chat WA 08569990738, kirim RANCHU untuk lihat pilihan minggu ini.\n\nRanchu dengan punggung mulus tanpa sirip punggung, badan pendek, dan wen yang mulai tumbuh. Renangnya santai dan menggemaskan.\n\nCari mas koki ranchu Malang? Goldfish and Richman siap bantu pilihkan yang sehat dan kirim dengan aman.",
+    "tagar_topik": "ranchu"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "air keruh putih akuarium baru",
+    "klip": "fish studio 4",
+    "adegan": [
+     {
+      "vo": "Akuarium baru diisi, besoknya air keruh putih seperti susu?",
+      "headline": "Akuarium baru [keruh putih].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Itu ledakan bakteri, wajar karena siklus air belum matang.",
+      "headline": "Wajar, [siklus belum matang].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Jangan kuras total, nanti bakterinya mulai dari nol lagi.",
+      "headline": "Jangan [kuras total].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Biarkan filter menyala, pakan sedikit, biasanya jernih beberapa hari kemudian.",
+      "headline": "Filter nyala, [pakan sedikit].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Filter menyala",
+        "Pakan sedikit",
+        "Sabar menunggu"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Akuarium baru malah keruh putih? Chat WA 08569990738, kirim SETUP untuk konsultasi akuarium baru.\n\nAir keruh putih di akuarium baru biasanya ledakan bakteri. Ini wajar karena siklus air belum matang, jadi jangan buru-buru dikuras total.\n\nBiarkan filter terus menyala dan beri pakan sedikit saja. Mau akuarium yang langsung siap? Layanan Build & Care Fishtudio di Malang bisa bantu dari awal.",
+    "tagar_topik": "akuariumbaru"
+   },
+   "footage": {
+    "judul": "servis filter rumah klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Hari ini tim Fishtudio bongkar filter akuarium di rumah klien.",
+      "teks": "Bongkar filter di rumah klien"
+     },
+     {
+      "vo": "Media filter dibilas air akuarium, bukan air keran.",
+      "teks": "Bilas media pakai air akuarium"
+     },
+     {
+      "vo": "Filter dipasang lagi, aliran air kembali deras.",
+      "teks": "Aliran kembali deras"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Filter akuarium mulai lemah? Chat WA 08569990738, kirim FILTER untuk jadwal servis.\n\nMedia filter kami bilas dengan air akuarium supaya bakteri baiknya tetap hidup. Air keran bisa membunuh bakteri yang menjaga air tetap sehat.\n\nServis filter jadi bagian dari jasa perawatan akuarium Fishtudio di Malang. Tim datang ke rumah, kamu tinggal menikmati hasilnya.",
+    "tagar_topik": "filterakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "mas koki mengapung miring",
+    "klip": "kolam koki ramai",
+    "adegan": [
+     {
+      "vo": "Mas koki mengapung miring atau terbalik? Bisa gangguan gelembung renang.",
+      "headline": "Mengapung miring, [gelembung renang].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sering dipicu makan terlalu banyak atau pakan kering mengapung.",
+      "headline": "Dipicu [makan berlebihan].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Puasakan dua sampai tiga hari supaya pencernaannya lega.",
+      "headline": "Puasakan [dua sampai tiga] hari.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "3",
+       "satuan": "",
+       "label": "hari puasa",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Setelahnya beri pakan yang direndam dulu, porsinya sedikit saja.",
+      "headline": "Pakan [direndam dulu], porsi kecil.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Mas koki mengapung miring? Chat WA 08569990738, kirim SEHAT dan kirim video ikannya.\n\nMas koki yang mengapung miring atau sulit menyelam biasanya mengalami gangguan gelembung renang. Pemicu yang sering adalah makan berlebihan.\n\nPuasakan dua sampai tiga hari, lalu beri pakan yang sudah direndam dengan porsi kecil. Jaga juga air tetap bersih selama pemulihan.",
+    "tagar_topik": "gelembungrenang"
+   },
+   "footage": {
+    "judul": "panda tanco ready di malang",
+    "kategori": "panda tanco",
+    "adegan": [
+     {
+      "vo": "Panda tanco, corak hitam putih dengan topi merah di kepala.",
+      "teks": "Corak hitam putih, topi merah"
+     },
+     {
+      "vo": "Tiap ekor punya pola unik, nggak ada yang kembar.",
+      "teks": "Pola unik tiap ekor"
+     },
+     {
+      "vo": "Pilih yang paling kamu suka, kami kirim dengan aman.",
+      "teks": "Pilih favoritmu, kirim aman"
+     }
+    ],
+    "cta_vo": "Pesan panda tanco di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Panda tanco ready di Malang. Chat WA 08569990738, kirim PANDA untuk lihat stok.\n\nCorak hitam putih dengan topi merah di kepala bikin panda tanco gampang jadi pusat perhatian di akuarium.\n\nTiap ekor punya pola sendiri. Goldfish and Richman siap kirimkan mas koki pilihanmu dengan kemasan aman.",
+    "tagar_topik": "pandatanco"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "karantina ikan baru dulu",
+    "klip": "bak biru ranchu",
+    "adegan": [
+     {
+      "vo": "Ikan baru datang, jangan langsung dicampur ke akuarium utama.",
+      "headline": "Jangan [langsung dicampur].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Karantina dulu di wadah terpisah sekitar dua minggu.",
+      "headline": "Karantina [dua minggu] dulu.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "14",
+       "satuan": "",
+       "label": "hari karantina",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Amati nafsu makan, sirip, dan bintik aneh di badannya.",
+      "headline": "Amati [makan, sirip, badan].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Nafsu makan",
+        "Kondisi sirip",
+        "Bintik aneh"
+       ]
+      }
+     },
+     {
+      "vo": "Kalau sehat, baru digabung dengan ikan lain.",
+      "headline": "Sehat? [Baru digabung].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Baru beli ikan? Chat WA 08569990738, kirim KARANTINA untuk tips menyiapkan wadah karantina.\n\nIkan baru bisa membawa penyakit tanpa terlihat. Karantina di wadah terpisah sekitar dua minggu sebelum digabung ke akuarium utama.\n\nSelama karantina, amati nafsu makan, kondisi sirip, dan bintik aneh di badan. Kalau semua aman, baru ikan digabung.",
+    "tagar_topik": "karantinaikan"
+   },
+   "footage": {
+    "judul": "ranchu menunggu jam makan",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Pagi hari, ranchu sudah menunggu di depan kaca.",
+      "teks": "Ranchu menunggu jam makan"
+     },
+     {
+      "vo": "Sejumput Gold Feeds cukup untuk sekali makan.",
+      "teks": "Sejumput cukup sekali makan"
+     },
+     {
+      "vo": "Habis dalam beberapa menit, air tetap bersih.",
+      "teks": "Habis cepat, air bersih"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds di Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Mau ranchu selahap ini? Chat WA 08569990738, kirim GROOMING untuk pesan Gold Feeds.\n\nKunci memberi pakan mas koki adalah secukupnya. Sejumput Gold Feeds habis dalam beberapa menit, jadi sisa pakan nggak mengotori air.\n\nGold Feeds adalah pakan special untuk grooming mas koki, Rp43 ribu per 300 g, dikirim dari Malang.",
+    "tagar_topik": "goldfeeds"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "mas koki diam di dasar",
+    "klip": "akuarium ranchu",
+    "adegan": [
+     {
+      "vo": "Mas koki diam terus di dasar dan siripnya menguncup?",
+      "headline": "Diam di dasar, [sirip menguncup].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Itu tanda stres, sering karena kualitas air menurun.",
+      "headline": "Tanda [stres], cek air.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ganti air sebagian, cek filter, dan tunda pemberian pakan.",
+      "headline": "Ganti air, [cek filter].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Ganti air",
+        "Cek filter",
+        "Tunda pakan"
+       ]
+      }
+     },
+     {
+      "vo": "Kalau belum aktif juga, konsultasikan ke kami.",
+      "headline": "Belum aktif? [Tanya kami].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Mas koki diam terus di dasar? Chat WA 08569990738, kirim TANYA dan ceritakan kondisinya.\n\nMas koki yang diam di dasar dengan sirip menguncup biasanya sedang stres. Penyebab paling sering adalah kualitas air yang menurun.\n\nGanti air sebagian, pastikan filter berjalan baik, dan tunda pakan dulu. Kalau ikan belum aktif juga, tim Goldfish and Richman siap bantu cek.",
+    "tagar_topik": "maskokistres"
+   },
+   "footage": {
+    "judul": "mas koki campur aneka warna",
+    "kategori": "mas koki campur",
+    "adegan": [
+     {
+      "vo": "Mas koki campur, aneka warna dalam satu akuarium.",
+      "teks": "Aneka warna satu akuarium"
+     },
+     {
+      "vo": "Ada oranda, ryukin, dan ranchu, cocok untuk pemula.",
+      "teks": "Cocok untuk pemula"
+     },
+     {
+      "vo": "Pilih beberapa sekaligus, akuarium langsung ramai.",
+      "teks": "Akuarium langsung ramai"
+     }
+    ],
+    "cta_vo": "Pesan mas koki di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Mau akuarium langsung ramai? Chat WA 08569990738, kirim KOKI untuk lihat stok campur.\n\nOranda, ryukin, dan ranchu dalam satu akuarium bikin warna dan gaya renangnya saling melengkapi.\n\nGoldfish and Richman menyediakan mas koki di Malang untuk pemula maupun penghobi, siap kirim dengan kemasan aman.",
+    "tagar_topik": "maskoki"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "aklimatisasi apungkan kantong ikan",
+    "klip": "kolam koki",
+    "adegan": [
+     {
+      "vo": "Ikan baru datang, jangan langsung dituang ke akuarium.",
+      "headline": "Jangan [langsung dituang].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Apungkan kantongnya sekitar lima belas menit supaya suhunya sama.",
+      "headline": "Apungkan [15 menit] dulu.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "15",
+       "satuan": "",
+       "label": "menit diapungkan",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Tambahkan air akuarium sedikit demi sedikit ke dalam kantong.",
+      "headline": "Campur air [sedikit demi sedikit].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pindahkan ikan pakai jaring, air kantongnya dibuang saja.",
+      "headline": "Pakai jaring, [buang air kantong].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Ikan baru mau masuk akuarium? Chat WA 08569990738, kirim IKAN untuk panduan aklimatisasi.\n\nPerbedaan suhu dan kondisi air bisa bikin ikan kaget. Apungkan kantong sekitar lima belas menit, lalu tambahkan air akuarium sedikit demi sedikit.\n\nSetelah itu pindahkan ikan pakai jaring dan buang air kantongnya, supaya kotoran dari perjalanan nggak ikut masuk ke akuarium.",
+    "tagar_topik": "aklimatisasiikan"
+   },
+   "footage": {
+    "judul": "ganti air rutin akuarium klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Jadwal rutin, tim Fishtudio ganti air akuarium klien.",
+      "teks": "Jadwal ganti air rutin"
+     },
+     {
+      "vo": "Air baru disesuaikan dulu suhunya sebelum dimasukkan.",
+      "teks": "Suhu air baru disesuaikan"
+     },
+     {
+      "vo": "Ikan tetap tenang, pemilik tinggal menikmati.",
+      "teks": "Pemilik tinggal menikmati"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Nggak sempat ganti air sendiri? Chat WA 08569990738, kirim RUTIN untuk jadwal perawatan berkala.\n\nDi setiap kunjungan, air baru kami sesuaikan dulu suhunya sebelum masuk akuarium. Ikan tetap tenang dan nggak kaget.\n\nLayanan Build & Care Fishtudio cocok untuk kamu yang ingin akuarium terawat tanpa repot. Tersedia jasa perawatan akuarium di Malang.",
+    "tagar_topik": "gantiairakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "cara memasukkan mas koki baru",
+    "klip": "keranjang koki",
+    "adegan": [
+     {
+      "vo": "Mas koki baru sampai? Matikan dulu lampu akuariummu.",
+      "headline": "Matikan [lampu akuarium] dulu.",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Apungkan kantong, campur air perlahan, lalu pindahkan pakai jaring.",
+      "headline": "Samakan [suhu dan air].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Apungkan kantong",
+        "Campur perlahan",
+        "Pakai jaring"
+       ]
+      }
+     },
+     {
+      "vo": "Hari pertama jangan diberi makan, biarkan ia beradaptasi.",
+      "headline": "Hari pertama [tanpa pakan].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Besoknya beri pakan sedikit sambil amati gerakannya.",
+      "headline": "Besok [pakan sedikit] saja.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Mas koki baru tiba? Chat WA 08569990738, kirim BARU kalau butuh panduan langsung.\n\nMatikan lampu akuarium supaya mas koki nggak stres. Apungkan kantong, campur air perlahan, lalu pindahkan ikan pakai jaring.\n\nDi hari pertama, biarkan ikan beradaptasi tanpa pakan. Besoknya beri pakan sedikit sambil mengamati gerakannya.",
+    "tagar_topik": "maskokibaru"
+   },
+   "footage": {
+    "judul": "oranda wen tebal pilihan",
+    "kategori": "oranda",
+    "adegan": [
+     {
+      "vo": "Oranda dengan wen tebal, siap pindah ke akuariummu.",
+      "teks": "Oranda wen tebal"
+     },
+     {
+      "vo": "Badannya bulat, siripnya mengembang saat berenang.",
+      "teks": "Sirip mengembang anggun"
+     },
+     {
+      "vo": "Cocok jadi bintang utama di akuarium rumah.",
+      "teks": "Bintang utama akuariummu"
+     }
+    ],
+    "cta_vo": "Pesan oranda di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Oranda wen tebal ready. Chat WA 08569990738, kirim ORANDA untuk lihat pilihan minggu ini.\n\nWen tebal, badan bulat, dan sirip yang mengembang saat berenang. Oranda selalu jadi bintang di akuarium kaca.\n\nCari mas koki oranda Malang? Goldfish and Richman siap bantu pilihkan dan kirim dengan aman.",
+    "tagar_topik": "oranda"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "suhu air harus stabil",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Suhu air yang naik turun bikin ikan mudah stres.",
+      "headline": "Suhu naik turun, [ikan stres].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Jauhkan akuarium dari jendela panas dan hembusan AC langsung.",
+      "headline": "Jauhkan dari [jendela dan AC].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Jendela panas",
+        "Hembusan AC"
+       ]
+      }
+     },
+     {
+      "vo": "Saat ganti air, samakan suhu air baru dengan akuarium.",
+      "headline": "Air baru [suhunya disamakan].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pasang termometer kecil supaya perubahan suhu cepat ketahuan.",
+      "headline": "Pasang [termometer] di kaca.",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Ikan sering stres tanpa sebab? Chat WA 08569990738, kirim SUHU untuk konsultasi akuarium.\n\nSuhu air yang naik turun termasuk pemicu stres ikan yang sering terlewat. Jauhkan akuarium dari jendela panas dan hembusan AC langsung.\n\nSaat ganti air, samakan suhunya dengan air akuarium. Termometer kecil di kaca membantu kamu memantau setiap hari.",
+    "tagar_topik": "suhuairakuarium"
+   },
+   "footage": {
+    "judul": "ryukin berkumpul saat ditabur",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Ryukin langsung berkumpul begitu Gold Feeds ditabur.",
+      "teks": "Ryukin berkumpul saat ditabur"
+     },
+     {
+      "vo": "Pakan special untuk grooming, teman harian mas kokimu.",
+      "teks": "Teman grooming mas koki"
+     },
+     {
+      "vo": "Beri secukupnya, habis dalam beberapa menit.",
+      "teks": "Secukupnya, habis beberapa menit"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds di Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Stok Gold Feeds tersedia. Chat WA 08569990738, kirim GOLDFEEDS untuk pesan sekarang.\n\nBegitu Gold Feeds ditabur, ryukin langsung berkumpul. Beri secukupnya supaya habis dalam beberapa menit dan air tetap bersih.\n\nGold Feeds adalah pakan special untuk grooming mas koki, Rp43 ribu per 300 g. Cocok untuk penghobi mas koki di Malang dan sekitarnya.",
+    "tagar_topik": "pakanikanhias"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "tips menerima paket ikan hidup",
+    "klip": "teras rumah klien",
+    "adegan": [
+     {
+      "vo": "Paket ikan hidup datang? Buka segera, jangan ditunda.",
+      "headline": "Buka paket [segera].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Rekam video saat membuka, supaya mudah kalau ada kendala.",
+      "headline": "Rekam [video unboxing].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Jangan buka kantong di bawah lampu terang atau terik matahari.",
+      "headline": "Hindari [cahaya terang] dulu.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Cek kondisi ikan, lalu lanjut aklimatisasi pelan.",
+      "headline": "Cek ikan, [aklimatisasi pelan].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Cek kondisi",
+        "Apungkan kantong",
+        "Campur perlahan"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Mau pesan mas koki dari luar kota? Chat WA 08569990738, kirim KIRIM untuk info pengiriman.\n\nPaket ikan hidup sebaiknya langsung dibuka begitu sampai. Rekam video saat membuka supaya mudah kalau ada kendala.\n\nBuka kantong di tempat teduh, cek kondisi ikan, lalu aklimatisasi pelan sebelum masuk akuarium.",
+    "tagar_topik": "kirimikanhidup"
+   },
+   "footage": {
+    "judul": "ryukin merah putih siap kirim",
+    "kategori": "ryukin",
+    "adegan": [
+     {
+      "vo": "Ryukin merah putih, warnanya kontras di akuarium kaca.",
+      "teks": "Ryukin merah putih kontras"
+     },
+     {
+      "vo": "Ekornya lebar, renangnya aktif ke sana kemari.",
+      "teks": "Ekor lebar, renang aktif"
+     },
+     {
+      "vo": "Dikemas rapi, siap dikirim ke rumahmu.",
+      "teks": "Dikemas rapi, siap kirim"
+     }
+    ],
+    "cta_vo": "Pesan ryukin di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ryukin merah putih ready. Chat WA 08569990738, kirim RYUKIN untuk lihat stok.\n\nWarna merah putih yang kontras dan ekor lebar bikin ryukin ini mencolok di akuarium kaca. Renangnya aktif dan sehat.\n\nGoldfish and Richman menyediakan mas koki ryukin Malang dan siap kirim ke luar kota dengan kemasan rapi.",
+    "tagar_topik": "ryukinmalang"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "ph dasar untuk pemula",
+    "klip": "fish studio 2",
+    "adegan": [
+     {
+      "vo": "pH itu ukuran asam atau basa air akuariummu.",
+      "headline": "pH itu [asam atau basa].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kebanyakan ikan hias nyaman di air yang netral.",
+      "headline": "Ikan nyaman di [air netral].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Yang penting stabil, jangan dikejar pakai obat penurun pH.",
+      "headline": "Penting [stabil], bukan dikejar.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ganti air rutin dan cek pakai test kit sebulan sekali.",
+      "headline": "Cek [test kit] tiap bulan.",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Ganti air",
+        "Test kit",
+        "Catat hasil"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Bingung soal pH air akuarium? Chat WA 08569990738, kirim CEKAIR untuk konsultasi.\n\npH sederhananya adalah ukuran asam atau basa air. Kebanyakan ikan hias nyaman di air yang netral, dan yang terpenting pH tetap stabil.\n\nHindari mengejar angka pakai obat penurun pH. Cukup ganti air rutin dan cek dengan test kit sebulan sekali.",
+    "tagar_topik": "phairakuarium"
+   },
+   "footage": {
+    "judul": "ornamen disikat sampai bersih",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Ornamen akuarium klien diangkat dan disikat sampai bersih.",
+      "teks": "Ornamen disikat sampai bersih"
+     },
+     {
+      "vo": "Lumut di sudut kaca dibersihkan dengan pengerok.",
+      "teks": "Sudut kaca ikut dikerok"
+     },
+     {
+      "vo": "Semua ditata ulang, akuarium kembali rapi.",
+      "teks": "Ditata ulang, kembali rapi"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ornamen akuarium mulai berlumut? Chat WA 08569990738, kirim BERSIH untuk jadwal perawatan.\n\nOrnamen diangkat dan disikat, sudut kaca dikerok, lalu semuanya ditata ulang. Akuarium kembali rapi seperti baru dipasang.\n\nTim Fishtudio melayani jasa perawatan akuarium di Malang, untuk akuarium rumah, kantor, maupun kafe.",
+    "tagar_topik": "akuariumbersih"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "beda mas koki jantan dan betina",
+    "klip": "kolam koki ramai",
+    "adegan": [
+     {
+      "vo": "Beda mas koki jantan dan betina paling jelas saat musim kawin.",
+      "headline": "Lihat saat [musim kawin].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Jantan punya bintik putih kecil di tutup insang dan sirip dada.",
+      "headline": "Jantan: [bintik di insang].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Tutup insang",
+        "Sirip dada"
+       ]
+      }
+     },
+     {
+      "vo": "Betina badannya lebih bulat kalau dilihat dari atas.",
+      "headline": "Betina [lebih bulat].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Bintik jantan itu bukan penyakit, jadi jangan diobati.",
+      "headline": "Bukan [white spot], jangan diobati.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Mau cari pasangan mas koki? Chat WA 08569990738, kirim JANTAN untuk tanya stok.\n\nSaat musim kawin, mas koki jantan punya bintik putih kecil di tutup insang dan sirip dada. Betina terlihat lebih bulat dari atas.\n\nBintik di jantan itu tanda alami, bukan white spot. Jadi nggak perlu diobati.",
+    "tagar_topik": "maskokijantan"
+   },
+   "footage": {
+    "judul": "ranchu muda badan padat",
+    "kategori": "ranchu",
+    "adegan": [
+     {
+      "vo": "Ranchu muda, badan padat dan renangnya aktif.",
+      "teks": "Ranchu muda, badan padat"
+     },
+     {
+      "vo": "Punggungnya melengkung halus, tanpa sirip punggung.",
+      "teks": "Punggung melengkung halus"
+     },
+     {
+      "vo": "Cocok dirawat dari kecil sampai wennya tumbuh.",
+      "teks": "Rawat dari kecil"
+     }
+    ],
+    "cta_vo": "Pesan ranchu di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Ranchu muda ready. Chat WA 08569990738, kirim RANCHU untuk lihat pilihan.\n\nBadan padat, punggung melengkung halus, dan renang yang aktif. Ranchu muda seru dirawat sampai wennya tumbuh.\n\nCari mas koki ranchu Malang? Goldfish and Richman siap bantu pilihkan yang sehat.",
+    "tagar_topik": "ranchumalang"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "sedot kotoran kerikil pakai sifon",
+    "klip": "fish studio 1",
+    "adegan": [
+     {
+      "vo": "Kotoran ikan dan sisa pakan mengendap di sela kerikil.",
+      "headline": "Kotoran [mengendap di kerikil].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sedot pakai sifon sekalian saat ganti air sebagian.",
+      "headline": "Sedot pakai [sifon].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Tancapkan selang ke kerikil, aduk pelan, kotoran ikut tersedot.",
+      "headline": "Tancap, [aduk pelan], sedot.",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Tancap selang",
+        "Aduk pelan",
+        "Kotoran tersedot"
+       ]
+      }
+     },
+     {
+      "vo": "Jangan cuci semua kerikil sekaligus, bakteri baiknya ikut hilang.",
+      "headline": "Jangan [cuci semua kerikil].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Dasar akuarium kotor terus? Chat WA 08569990738, kirim SIFON untuk jadwal perawatan.\n\nKotoran ikan dan sisa pakan mengendap di sela kerikil. Sedot pakai sifon sekalian saat ganti air sebagian.\n\nJangan cuci semua kerikil sekaligus, karena bakteri baik yang menjaga air ikut hilang. Tim jasa perawatan akuarium Fishtudio di Malang siap bantu.",
+    "tagar_topik": "sifonakuarium"
+   },
+   "footage": {
+    "judul": "jam makan sore oranda",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Jam makan sore, oranda sudah berenang ke permukaan.",
+      "teks": "Jam makan sore oranda"
+     },
+     {
+      "vo": "Beri Gold Feeds sedikit dulu, habis baru tambah.",
+      "teks": "Sedikit dulu, habis baru tambah"
+     },
+     {
+      "vo": "Pakan special untuk grooming, empat puluh tiga ribu per tiga ratus gram.",
+      "teks": "Rp43 ribu per 300 g"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds di Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Pesan Gold Feeds untuk oranda kamu. Chat WA 08569990738, kirim ORDER sekarang.\n\nCara memberi pakan yang aman: sedikit dulu, kalau habis baru tambah. Air tetap bersih dan ikan nggak kekenyangan.\n\nGold Feeds adalah pakan special untuk grooming mas koki, Rp43 ribu per 300 g. Dikirim langsung dari Malang.",
+    "tagar_topik": "pakanoranda"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "merawat wen oranda",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Wen adalah jaringan lembut di kepala oranda.",
+      "headline": "Wen, [mahkota oranda].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Wen mudah kotor, jadi air harus selalu bersih.",
+      "headline": "Wen butuh [air bersih].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Hindari hiasan tajam yang bisa melukai wen.",
+      "headline": "Hindari [hiasan tajam].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Beri pakan bergizi dan ganti air rutin tiap minggu.",
+      "headline": "Pakan bergizi, [ganti air rutin].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Pakan bergizi",
+        "Air bersih",
+        "Ganti mingguan"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Mau wen oranda tetap cantik? Chat WA 08569990738, kirim WEN untuk tanya perawatannya.\n\nWen adalah jaringan lembut di kepala oranda. Karena lembut, wen mudah kotor dan terluka kalau air jarang diganti atau ada hiasan tajam.\n\nJaga air tetap bersih, ganti air rutin tiap minggu, dan beri pakan bergizi supaya wen oranda tumbuh sehat.",
+    "tagar_topik": "wenoranda"
+   },
+   "footage": {
+    "judul": "panda tanco corak tegas",
+    "kategori": "panda tanco",
+    "adegan": [
+     {
+      "vo": "Panda tanco dengan corak hitam putih yang tegas.",
+      "teks": "Corak hitam putih tegas"
+     },
+     {
+      "vo": "Topi merah di kepalanya jadi pusat perhatian.",
+      "teks": "Topi merah jadi sorotan"
+     },
+     {
+      "vo": "Siap menemani akuarium kaca di rumahmu.",
+      "teks": "Siap ke akuariummu"
+     }
+    ],
+    "cta_vo": "Pesan panda tanco di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Panda tanco corak tegas ready. Chat WA 08569990738, kirim PANDA untuk lihat stok.\n\nCorak hitam putih yang tegas dan topi merah di kepala bikin panda tanco ini menonjol di akuarium mana pun.\n\nGoldfish and Richman menyediakan mas koki panda tanco di Malang, siap kirim dengan kemasan aman.",
+    "tagar_topik": "pandatancomalang"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "tanaman hidup bantu kualitas air",
+    "klip": "fish studio 4",
+    "adegan": [
+     {
+      "vo": "Tanaman hidup bukan cuma hiasan di akuarium.",
+      "headline": "Bukan [cuma hiasan].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Tanaman menyerap sisa nutrisi yang biasanya jadi makanan lumut.",
+      "headline": "Serap nutrisi, [lumut berkurang].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Siang hari, tanaman juga menambah oksigen di air.",
+      "headline": "Tambah [oksigen] siang hari.",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Serap nutrisi",
+        "Tambah oksigen",
+        "Kurangi lumut"
+       ]
+      }
+     },
+     {
+      "vo": "Untuk pemula, pilih yang kuat seperti anubias.",
+      "headline": "Mulai dari [anubias].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Mau akuarium dengan tanaman hidup? Chat WA 08569990738, kirim TANAMAN untuk konsultasi desain.\n\nTanaman hidup menyerap sisa nutrisi di air, jadi lumut punya lebih sedikit makanan. Di siang hari, tanaman juga menambah oksigen.\n\nUntuk pemula, mulai dari tanaman yang kuat seperti anubias. Layanan Build & Care Fishtudio di Malang bisa bantu menata akuarium tanaman.",
+    "tagar_topik": "tanamanakuarium"
+   },
+   "footage": {
+    "judul": "kunjungan bulanan cek akuarium",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Kunjungan bulanan, tim Fishtudio cek kondisi akuarium klien.",
+      "teks": "Kunjungan bulanan ke klien"
+     },
+     {
+      "vo": "Air, filter, dan ikan diperiksa satu per satu.",
+      "teks": "Cek air, filter, ikan"
+     },
+     {
+      "vo": "Kalau ada masalah, langsung ditangani di tempat.",
+      "teks": "Masalah ditangani di tempat"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Mau akuarium dicek rutin tiap bulan? Chat WA 08569990738, kirim CARE untuk daftar layanan.\n\nDi kunjungan bulanan, tim Fishtudio memeriksa air, filter, dan kondisi ikan satu per satu. Kalau ada masalah, langsung ditangani di tempat.\n\nBuild & Care adalah layanan jasa perawatan akuarium Fishtudio di Malang untuk kamu yang ingin akuarium selalu sehat.",
+    "tagar_topik": "buildandcare"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "jangan terlalu banyak mas koki",
+    "klip": "keranjang koki",
+    "adegan": [
+     {
+      "vo": "Akuarium penuh mas koki memang ramai, tapi berisiko.",
+      "headline": "Ramai, tapi [berisiko].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Mas koki tumbuh besar dan kotorannya banyak sekali.",
+      "headline": "Koki [besar dan kotor].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Terlalu padat bikin air cepat kotor dan ikan stres.",
+      "headline": "Terlalu padat, [air cepat kotor].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Air cepat kotor",
+        "Ikan stres",
+        "Mudah sakit"
+       ]
+      }
+     },
+     {
+      "vo": "Sesuaikan jumlah ikan dengan ukuran akuarium dan kekuatan filter.",
+      "headline": "Sesuaikan dengan [ukuran akuarium].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Bingung berapa mas koki yang pas? Chat WA 08569990738, kirim UKURAN dan sebutkan ukuran akuariummu.\n\nMas koki tumbuh besar dan kotorannya banyak. Akuarium yang terlalu padat bikin air cepat kotor, ikan stres, dan lebih mudah sakit.\n\nSesuaikan jumlah ikan dengan ukuran akuarium dan kekuatan filter. Tim Goldfish and Richman siap bantu hitung.",
+    "tagar_topik": "maskokipemula"
+   },
+   "footage": {
+    "judul": "mas koki campur untuk pemula",
+    "kategori": "mas koki campur",
+    "adegan": [
+     {
+      "vo": "Mas koki campur, pilihan pas untuk akuarium pertama.",
+      "teks": "Pas untuk akuarium pertama"
+     },
+     {
+      "vo": "Warnanya beragam, dari oranye, putih, sampai hitam.",
+      "teks": "Oranye, putih, sampai hitam"
+     },
+     {
+      "vo": "Kami bantu pilih jumlah yang pas untuk akuariummu.",
+      "teks": "Jumlah pas untuk akuariummu"
+     }
+    ],
+    "cta_vo": "Pesan mas koki di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Mau mulai pelihara mas koki? Chat WA 08569990738, kirim CAMPUR untuk lihat pilihan.\n\nWarna oranye, putih, sampai hitam dalam satu akuarium. Mas koki campur jadi pilihan pas untuk akuarium pertama.\n\nGoldfish and Richman bantu pilihkan jumlah mas koki yang pas dengan ukuran akuariummu, langsung dari Malang.",
+    "tagar_topik": "maskokimalang"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "saat listrik padam",
+    "klip": "servis ruang filter",
+    "adegan": [
+     {
+      "vo": "Listrik padam, filter dan aerator ikut mati.",
+      "headline": "Listrik padam, [filter mati].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Jangan beri pakan dulu supaya air nggak cepat kotor.",
+      "headline": "Jangan [beri pakan] dulu.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pakai aerator baterai kalau ada, supaya oksigen tetap masuk.",
+      "headline": "Pakai [aerator baterai].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kalau padam lama, bilas media filter sebelum dinyalakan lagi.",
+      "headline": "Padam lama? [Bilas media filter].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Tunda pakan",
+        "Aerator baterai",
+        "Bilas filter"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Listrik sering padam di rumah? Chat WA 08569990738, kirim LISTRIK untuk tips menyiapkan akuarium.\n\nSaat listrik padam, filter dan aerator berhenti. Tunda pemberian pakan dan pakai aerator baterai kalau ada supaya oksigen tetap masuk.\n\nKalau padamnya lama, bilas media filter dengan air akuarium sebelum dinyalakan lagi. Tim jasa perawatan akuarium Fishtudio di Malang siap bantu cek setelahnya.",
+    "tagar_topik": "listrikpadam"
+   },
+   "footage": {
+    "judul": "ikan sehat lahap gold feeds",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Ikan yang sehat selalu semangat saat jam makan.",
+      "teks": "Semangat di jam makan"
+     },
+     {
+      "vo": "Gold Feeds, pakan special untuk grooming mas koki kesayanganmu.",
+      "teks": "Pakan grooming mas koki"
+     },
+     {
+      "vo": "Pesan sekarang, dikirim langsung dari Malang.",
+      "teks": "Dikirim dari Malang"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds di Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Gold Feeds ready stok. Chat WA 08569990738, kirim STOK untuk pesan hari ini.\n\nIkan yang sehat selalu semangat di jam makan. Gold Feeds adalah pakan special untuk grooming mas koki kesayanganmu.\n\nRp43 ribu per 300 g, dikirim langsung dari Malang. Cocok untuk penghobi yang mencari pakan mas koki berkualitas.",
+    "tagar_topik": "goldfeedsmalang"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "mas koki butuh filter kuat",
+    "klip": "bongkar media filter",
+    "adegan": [
+     {
+      "vo": "Mas koki makan banyak, kotorannya pun banyak.",
+      "headline": "Makan banyak, [kotoran banyak].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Filter kecil cepat kewalahan, air jadi keruh dan bau.",
+      "headline": "Filter kecil [cepat kewalahan].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pilih filter dengan media banyak dan aliran yang kuat.",
+      "headline": "Pilih [filter kuat].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Bilas media pakai air akuarium, jangan pakai air keran.",
+      "headline": "Bilas pakai [air akuarium].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Air akuarium",
+        "Bukan air keran"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Tanya Goldfish and Richman soal mas kokimu.",
+    "cta_teks": "Tanya [Goldfish and Richman] sekarang",
+    "caption": "Air akuarium mas koki cepat keruh? Chat WA 08569990738, kirim FILTER untuk saran filter yang pas.\n\nMas koki makan banyak dan kotorannya juga banyak. Filter kecil cepat kewalahan, akibatnya air keruh dan berbau.\n\nPilih filter dengan media banyak dan aliran kuat. Saat membersihkan, bilas media pakai air akuarium supaya bakteri baiknya tetap hidup.",
+    "tagar_topik": "filtermaskoki"
+   },
+   "footage": {
+    "judul": "oranda merah putih siap pindah",
+    "kategori": "oranda",
+    "adegan": [
+     {
+      "vo": "Oranda merah putih dengan wen yang mulai menutup kepala.",
+      "teks": "Oranda merah putih"
+     },
+     {
+      "vo": "Sirip ekornya lebar dan melambai saat berenang.",
+      "teks": "Ekor lebar melambai"
+     },
+     {
+      "vo": "Siap pindah ke akuarium kaca di rumahmu.",
+      "teks": "Siap pindah ke rumahmu"
+     }
+    ],
+    "cta_vo": "Pesan oranda di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Oranda merah putih ready. Chat WA 08569990738, kirim ORANDA untuk lihat stok terbaru.\n\nWen yang mulai menutup kepala dan ekor lebar yang melambai saat berenang. Oranda merah putih ini siap jadi pusat perhatian.\n\nCari mas koki oranda Malang? Goldfish and Richman siap kirim dengan kemasan aman.",
+    "tagar_topik": "orandamalang"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "akuarium aman ditinggal liburan",
+    "klip": "fish studio 1",
+    "adegan": [
+     {
+      "vo": "Mau liburan beberapa hari? Akuarium tetap aman kok.",
+      "headline": "Liburan, akuarium [tetap aman].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ikan dewasa yang sehat kuat nggak makan dua sampai tiga hari.",
+      "headline": "Kuat puasa [2 sampai 3 hari].",
+      "visual": {
+       "jenis": "angka",
+       "angka": "3",
+       "satuan": "hari",
+       "label": "aman tanpa makan",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Jangan tuang pakan banyak sebelum pergi, airnya malah kotor.",
+      "headline": "Jangan [tuang pakan] berlebihan.",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sehari sebelum berangkat, ganti air sebagian dan cek filter.",
+      "headline": "Siapkan [sebelum berangkat].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Ganti air",
+        "Cek filter",
+        "Lampu timer"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Pergi lebih lama? Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Mau liburan? Chat WA 08569990738, kirim kata RAWAT untuk jadwal cek akuarium sebelum berangkat.\n\nIkan dewasa yang sehat umumnya kuat nggak makan dua sampai tiga hari. Yang justru berbahaya adalah pakan yang dituang banyak sebelum pergi, karena sisanya membusuk dan bikin air kotor.\n\nSehari sebelum berangkat, ganti air sebagian, pastikan filter jalan lancar, dan pasang timer lampu. Kalau perginya lebih lama, tim jasa perawatan akuarium di Malang dari Fishtudio bisa datang merawat akuariummu selama kamu pergi.",
+    "tagar_topik": "perawatanakuarium"
+   },
+   "footage": {
+    "judul": "gold feeds disambut mas koki",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Lihat mas koki ini langsung menyambut Gold Feeds.",
+      "teks": "Langsung disambut begitu ditabur"
+     },
+     {
+      "vo": "Pakan special untuk grooming, butirannya mudah disantap mas koki.",
+      "teks": "Pakan special untuk grooming"
+     },
+     {
+      "vo": "Kasih sedikit saja tiap kali, habis dalam dua menit.",
+      "teks": "Habis dalam dua menit"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WA Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata GOLDFEEDS untuk pesan pakan special untuk grooming mas koki.\n\nBegini suasana jam makan dengan Gold Feeds. Mas koki langsung mendekat dan pakannya habis dalam hitungan menit, jadi nggak ada sisa yang mengotori air.\n\nGold Feeds dibuat khusus untuk menemani perawatan harian mas kokimu. Cocok untuk oranda, ryukin, ranchu, dan mas koki lain di akuarium rumah.",
+    "tagar_topik": "goldfeeds"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "mas koki suka air sejuk",
+    "klip": "kolam koki",
+    "adegan": [
+     {
+      "vo": "Mas koki itu ikan air sejuk, bukan ikan tropis.",
+      "headline": "Mas koki ikan [air sejuk].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Suhu nyaman sekitar delapan belas sampai dua puluh empat derajat.",
+      "headline": "Nyaman di [18 sampai 24°C].",
+      "visual": {
+       "jenis": "angka",
+       "angka": "24",
+       "satuan": "°C",
+       "label": "batas atas nyaman",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Yang bikin stres justru suhu yang naik turun mendadak.",
+      "headline": "Hindari suhu [naik turun].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Taruh akuarium jauh dari jendela panas dan hembusan AC.",
+      "headline": "Jauhkan dari [panas langsung].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Jauhi jendela",
+        "Jauhi AC",
+        "Suhu stabil"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Konsultasi mas koki di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata KOKI untuk tanya mas koki yang cocok dengan ruanganmu.\n\nMas koki termasuk ikan air sejuk. Mereka nyaman di suhu sekitar 18 sampai 24 derajat, dan yang paling penting suhunya stabil sepanjang hari.\n\nTaruh akuarium jauh dari jendela yang kena matahari langsung dan jangan tepat di bawah AC. Udara Malang yang sejuk sebenarnya sudah sangat mendukung untuk pelihara mas koki di rumah.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "ranchu ready minggu ini",
+    "kategori": "ranchu",
+    "adegan": [
+     {
+      "vo": "Ranchu punggung mulus, siap pindah ke akuariummu.",
+      "teks": "Ranchu punggung mulus"
+     },
+     {
+      "vo": "Badannya bulat padat, berenangnya pelan dan lucu.",
+      "teks": "Badan bulat, renang santai"
+     },
+     {
+      "vo": "Wen mulai tumbuh, tinggal kamu rawat sampai makin tebal.",
+      "teks": "Wen mulai tumbuh"
+     }
+    ],
+    "cta_vo": "Pesan ranchu di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata RANCHU untuk lihat video ranchu yang ready minggu ini.\n\nRanchu dengan punggung mulus dan badan bulat padat. Berenangnya santai, cocok untuk kamu yang suka mas koki yang kalem.\n\nWennya mulai tumbuh, jadi seru dirawat sampai makin tebal. Ranchu Malang ini siap dikirim ke akuariummu.",
+    "tagar_topik": "ranchu"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "cara menyimpan pakan awet",
+    "klip": "fish studio 2",
+    "adegan": [
+     {
+      "vo": "Pakan cepat rusak kalau kena udara, panas, dan lembap.",
+      "headline": "Pakan rusak kena [udara lembap].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Simpan di wadah tertutup rapat, di tempat sejuk dan kering.",
+      "headline": "Simpan [tertutup rapat] dan kering.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Usahakan habis sekitar tiga bulan setelah kemasan dibuka.",
+      "headline": "Habiskan dalam [3 bulan].",
+      "visual": {
+       "jenis": "angka",
+       "angka": "3",
+       "satuan": "bulan",
+       "label": "setelah kemasan dibuka",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ambil pakan pakai sendok kering, jangan dengan tangan basah.",
+      "headline": "Pakai [sendok kering].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Sendok kering",
+        "Tutup lagi",
+        "Jauhi matahari"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds, pakan special untuk grooming, di Fishtudio.",
+    "cta_teks": "Pesan [Gold Feeds] sekarang",
+    "caption": "Chat WA 08569990738, kirim kata PAKAN untuk pesan Gold Feeds dan tanya cara simpannya.\n\nPakan ikan cepat turun kualitasnya kalau sering kena udara, panas, dan lembap. Simpan di wadah tertutup rapat, di tempat sejuk dan kering, jauh dari sinar matahari.\n\nSetelah kemasan dibuka, usahakan habis dalam sekitar tiga bulan. Ambil pakai sendok kering supaya pakan nggak menggumpal dan berjamur.",
+    "tagar_topik": "pakanikanhias"
+   },
+   "footage": {
+    "judul": "bersihkan kaca akuarium klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Hari ini tim Fishtudio merawat akuarium di rumah klien.",
+      "teks": "Perawatan rutin di rumah klien"
+     },
+     {
+      "vo": "Kaca dibersihkan dari lumut tanpa bikin ikan panik.",
+      "teks": "Kaca bersih dari lumut"
+     },
+     {
+      "vo": "Air diganti sebagian, ikan tetap tenang di tempatnya.",
+      "teks": "Ganti air sebagian, ikan tenang"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata RAWAT untuk jadwal perawatan akuarium di rumahmu.\n\nSatu kunjungan rutin dari tim Fishtudio. Kaca dibersihkan dari lumut pelan pelan supaya ikan nggak panik, lalu air diganti sebagian.\n\nKamu cukup duduk santai, akuarium kembali jernih. Jasa perawatan akuarium di Malang ini bisa dijadwalkan mingguan atau bulanan.",
+    "tagar_topik": "jasaperawatanakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "kenapa koki mengaduk kerikil",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Mas koki suka mengaduk kerikil, itu wajar kok.",
+      "headline": "Mengaduk kerikil [itu wajar].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Itu naluri mencari makan di dasar, sambil menyaring sisa pakan.",
+      "headline": "Naluri [mencari makan] di dasar.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kerikil seukuran mulut bisa nyangkut dan bikin ikan tersedak.",
+      "headline": "Hindari kerikil [seukuran mulut].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pilihan aman: kerikil besar, pasir halus, atau dasar kosong.",
+      "headline": "Pilih dasar yang [aman].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Kerikil besar",
+        "Pasir halus",
+        "Dasar kosong"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Tanya soal mas koki di Goldfish and Richman.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata KERIKIL untuk tanya dasar akuarium yang aman untuk mas koki.\n\nMas koki yang sibuk mengaduk kerikil itu normal. Itu naluri mereka mencari sisa makanan di dasar.\n\nYang perlu diwaspadai adalah kerikil seukuran mulut ikan, karena bisa nyangkut. Pilih kerikil yang jauh lebih besar, pasir halus, atau biarkan dasar kosong supaya mas koki tetap aman.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "panda tanco siap pindah rumah",
+    "kategori": "panda tanco",
+    "adegan": [
+     {
+      "vo": "Panda tanco ready, corak hitam putih dengan aksen merah di kepala.",
+      "teks": "Hitam putih, aksen merah"
+     },
+     {
+      "vo": "Polanya kontras, cantik banget dilihat dari depan kaca.",
+      "teks": "Pola kontras dari depan kaca"
+     },
+     {
+      "vo": "Gerakannya aktif dan responsif saat didekati.",
+      "teks": "Aktif dan responsif"
+     }
+    ],
+    "cta_vo": "Pesan panda tanco di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata PANDA untuk lihat video panda tanco yang ready.\n\nCorak hitam putihnya kontras, ditambah aksen merah di kepala. Kelihatan beda sendiri di antara mas koki lain.\n\nIkannya aktif dan responsif saat didekati. Mas koki panda tanco Malang ini siap pindah ke akuarium rumahmu.",
+    "tagar_topik": "pandatanco"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "berapa kali ikan makan",
+    "klip": "akuarium ranchu",
+    "adegan": [
+     {
+      "vo": "Ikan dewasa cukup diberi makan dua kali sehari.",
+      "headline": "Cukup [2 kali] sehari.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "2",
+       "satuan": "x",
+       "label": "makan per hari",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Porsinya yang habis dalam dua sampai tiga menit.",
+      "headline": "Habis dalam [2 sampai 3 menit].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sisa pakan yang tenggelam bikin air cepat keruh.",
+      "headline": "Sisa pakan [bikin keruh].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Lebih baik sedikit tapi rutin daripada sekali banyak.",
+      "headline": "Sedikit tapi [rutin].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds untuk makan harian mas kokimu.",
+    "cta_teks": "Coba [Gold Feeds] hari ini",
+    "caption": "Chat WA 08569990738, kirim kata MAKAN untuk tanya jadwal makan yang pas buat ikanmu.\n\nIkan dewasa cukup diberi makan dua kali sehari. Patokannya sederhana, porsi yang habis dalam dua sampai tiga menit.\n\nSisa pakan yang tenggelam akan membusuk dan bikin air cepat keruh. Jadi lebih baik sedikit tapi rutin, daripada sekali kasih banyak.",
+    "tagar_topik": "caramemberimakanikan"
+   },
+   "footage": {
+    "judul": "jam makan pagi mas koki",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Jam makan pagi, mas koki sudah menunggu di depan kaca.",
+      "teks": "Jam makan pagi"
+     },
+     {
+      "vo": "Gold Feeds ditabur sedikit, langsung jadi rebutan.",
+      "teks": "Langsung jadi rebutan"
+     },
+     {
+      "vo": "Pakan special untuk grooming, dipakai rutin tiap hari.",
+      "teks": "Gold Feeds, rutin tiap hari"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WA Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata GROOMING untuk pesan Gold Feeds hari ini.\n\nBegitu pagi, mas koki sudah berkumpul di depan kaca. Gold Feeds ditabur sedikit dan langsung jadi rebutan.\n\nGold Feeds adalah pakan special untuk grooming mas koki. Dipakai rutin dua kali sehari dengan porsi kecil supaya air tetap bersih.",
+    "tagar_topik": "goldfeeds"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "pakan tenggelam untuk koki bulat",
+    "klip": "bak biru ranchu",
+    "adegan": [
+     {
+      "vo": "Mas koki badan bulat gampang menelan udara saat makan.",
+      "headline": "Gampang [menelan udara].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pakan apung bikin mereka menyambar makanan di permukaan.",
+      "headline": "Pakan apung [di permukaan].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Akibatnya bisa kembung dan berenang miring.",
+      "headline": "Risiko [kembung] dan miring.",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Perut kembung",
+        "Renang miring",
+        "Mengapung terus"
+       ]
+      }
+     },
+     {
+      "vo": "Pakan tenggelam lebih aman, ikan makan santai di dasar.",
+      "headline": "Pilih [pakan tenggelam].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya pakan yang cocok di Goldfish and Richman.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata PAKAN untuk tanya pakan yang cocok buat mas koki bulat.\n\nMas koki berbadan bulat seperti ranchu dan oranda gampang ikut menelan udara saat menyambar pakan di permukaan. Lama lama bisa bikin perut kembung dan renangnya miring.\n\nPakan tenggelam lebih aman karena ikan makan santai di dasar. Cara ini banyak dipakai penghobi mas koki untuk menjaga keseimbangan renang ikan.",
+    "tagar_topik": "pakanmaskoki"
+   },
+   "footage": {
+    "judul": "mas koki campur warna warni",
+    "kategori": "mas koki campur",
+    "adegan": [
+     {
+      "vo": "Mas koki campur, warna dan bentuknya beragam.",
+      "teks": "Mas koki campur, beragam warna"
+     },
+     {
+      "vo": "Cocok untuk mengisi akuarium biar ramai dan hidup.",
+      "teks": "Akuarium jadi ramai"
+     },
+     {
+      "vo": "Semua ikan aktif, sirip terbuka, dan makannya lahap.",
+      "teks": "Aktif, sirip terbuka"
+     }
+    ],
+    "cta_vo": "Pesan mas koki campur di Goldfish and Richman.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata CAMPUR untuk lihat video mas koki campur yang ready.\n\nWarna dan bentuknya beragam, pas untuk kamu yang mau akuarium terlihat ramai dan hidup.\n\nSemua ikan aktif, siripnya terbuka, dan makannya lahap. Mas koki Malang ini siap dikirim ke rumahmu.",
+    "tagar_topik": "maskokicampur"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "ikan tiba tiba mogok makan",
+    "klip": "fish studio 4",
+    "adegan": [
+     {
+      "vo": "Ikan tiba tiba nggak mau makan? Jangan langsung panik.",
+      "headline": "Ikan [mogok makan]?",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Cek dulu suhu dan kualitas air, ini penyebab paling sering.",
+      "headline": "Cek [kualitas air] dulu.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Perhatikan juga sirip menguncup, ikan diam di dasar, atau bercak.",
+      "headline": "Lihat [tanda lainnya].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Sirip menguncup",
+        "Diam di dasar",
+        "Ada bercak"
+       ]
+      }
+     },
+     {
+      "vo": "Ganti air sebagian, puasakan sehari, lalu amati kondisinya.",
+      "headline": "Puasakan [sehari], lalu amati.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "1",
+       "satuan": "hari",
+       "label": "puasa sambil diamati",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio kalau ikanmu belum juga mau makan.",
+    "cta_teks": "Tanya [Fishtudio] sekarang",
+    "caption": "Chat WA 08569990738, kirim kata CEK kalau ikanmu belum juga mau makan.\n\nIkan yang tiba tiba mogok makan paling sering dipicu kualitas air atau suhu yang berubah. Cek itu dulu sebelum menebak penyakit.\n\nPerhatikan juga tanda lain seperti sirip menguncup, ikan diam di dasar, atau muncul bercak. Ganti air sebagian, puasakan sehari, lalu amati. Kalau masih sama, tim Fishtudio bisa bantu cek akuariummu di Malang.",
+    "tagar_topik": "ikanmogokmakan"
+   },
+   "footage": {
+    "judul": "bongkar filter akuarium klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Filter klien kami bongkar dan bersihkan pakai air akuarium.",
+      "teks": "Cuci filter pakai air akuarium"
+     },
+     {
+      "vo": "Dengan begitu bakteri baik tetap hidup dan air nggak kaget.",
+      "teks": "Bakteri baik tetap hidup"
+     },
+     {
+      "vo": "Selesai dipasang lagi, aliran filter kembali lancar.",
+      "teks": "Aliran kembali lancar"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk servis filter akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata FILTER untuk jadwal bersihkan filter akuariummu.\n\nMedia filter dibilas pakai air akuarium, bukan air keran. Cara ini menjaga bakteri baik tetap hidup, jadi kualitas air nggak berubah mendadak.\n\nSetelah dipasang lagi, aliran filter kembali lancar dan air lebih jernih. Layanan Build & Care Fishtudio melayani perawatan akuarium di Malang.",
+    "tagar_topik": "filterakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "warna mas koki memudar",
+    "klip": "kolam koki ramai",
+    "adegan": [
+     {
+      "vo": "Warna mas koki memudar? Biasanya ada beberapa penyebab.",
+      "headline": "Warna mas koki [memudar]?",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kurang cahaya, pakan monoton, atau air yang kurang bersih.",
+      "headline": "Tiga [penyebab umum].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Kurang cahaya",
+        "Pakan monoton",
+        "Air kotor"
+       ]
+      }
+     },
+     {
+      "vo": "Nyalakan lampu sekitar delapan jam sehari, jangan terlalu lama.",
+      "headline": "Lampu [8 jam] sehari.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "8",
+       "satuan": "jam",
+       "label": "lampu per hari",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Beberapa mas koki memang berubah warna alami seiring umur.",
+      "headline": "Bisa [berubah alami].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya perawatan warna mas koki di Goldfish and Richman.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata WARNA untuk tanya kenapa warna mas kokimu memudar.\n\nPenyebab yang paling umum adalah kurang cahaya, pakan yang itu itu saja, dan air yang kurang bersih. Nyalakan lampu sekitar delapan jam sehari dan jaga jadwal ganti air.\n\nPerlu diingat, beberapa mas koki memang berubah warna secara alami seiring umur. Jadi selama ikan aktif dan makan lahap, perubahan warna belum tentu tanda sakit.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "oranda wen tebal ready",
+    "kategori": "oranda",
+    "adegan": [
+     {
+      "vo": "Oranda wen tebal, siap pindah ke akuariummu.",
+      "teks": "Oranda wen tebal"
+     },
+     {
+      "vo": "Siripnya lebar, gerakannya anggun saat berenang.",
+      "teks": "Sirip lebar, renang anggun"
+     },
+     {
+      "vo": "Badan proporsional, sehat, dan makannya lahap.",
+      "teks": "Sehat dan lahap"
+     }
+    ],
+    "cta_vo": "Pesan oranda di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata ORANDA untuk lihat video oranda yang ready.\n\nOranda dengan wen tebal dan sirip lebar. Gerakannya anggun, enak dipandang dari depan kaca.\n\nBadannya proporsional dan makannya lahap. Mas koki oranda Malang ini siap pindah ke akuarium rumahmu.",
+    "tagar_topik": "oranda"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "gold feeds dan cara pakainya",
+    "klip": "akuarium oranda penuh",
+    "adegan": [
+     {
+      "vo": "Gold Feeds adalah pakan special untuk grooming mas koki.",
+      "headline": "Pakan special untuk [grooming].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Diracik untuk menemani perawatan tampilan mas kokimu tiap hari.",
+      "headline": "Tampilan koki [tetap terawat].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Cara pakainya, beri sedikit dua kali sehari sampai habis.",
+      "headline": "Cara pakai [yang benar].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Dua kali",
+        "Porsi kecil",
+        "Habis cepat"
+       ]
+      }
+     },
+     {
+      "vo": "Kalau ada sisa, angkat supaya air tetap jernih.",
+      "headline": "Angkat [sisa pakan].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds, pakan special untuk grooming, sekarang.",
+    "cta_teks": "Pesan [Gold Feeds] sekarang",
+    "caption": "Chat WA 08569990738, kirim kata GOLDFEEDS untuk pesan pakan special untuk grooming mas koki.\n\nGold Feeds diracik untuk menemani perawatan tampilan mas koki sehari hari. Cocok untuk oranda, ryukin, ranchu, dan jenis mas koki lainnya.\n\nCara pakainya mudah. Beri sedikit dua kali sehari, porsi yang habis dalam dua sampai tiga menit. Kalau masih ada sisa, angkat supaya air akuarium tetap jernih.",
+    "tagar_topik": "pakanmaskoki"
+   },
+   "footage": {
+    "judul": "cek kualitas air klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Sebelum ganti air, tim Fishtudio cek kualitas airnya dulu.",
+      "teks": "Cek kualitas air dulu"
+     },
+     {
+      "vo": "Air baru diberi penghilang kaporit supaya ikan nggak kaget.",
+      "teks": "Air baru bebas kaporit"
+     },
+     {
+      "vo": "Hasilnya akuarium bersih, ikan tetap aktif seperti biasa.",
+      "teks": "Bersih, ikan tetap aktif"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata AIR untuk jadwal perawatan akuarium bersama Fishtudio.\n\nSetiap kunjungan dimulai dengan cek kualitas air. Dari situ tim tahu berapa banyak air yang perlu diganti.\n\nAir baru selalu diberi penghilang kaporit dulu supaya ikan nggak kaget. Hasilnya akuarium bersih dan ikan tetap aktif. Jasa perawatan akuarium di Malang dari layanan Build & Care Fishtudio.",
+    "tagar_topik": "perawatanakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "ekor panjang hindari dekorasi tajam",
+    "klip": "fish studio 4",
+    "adegan": [
+     {
+      "vo": "Mas koki ekor panjang punya sirip yang tipis dan rapuh.",
+      "headline": "Sirip panjang itu [rapuh].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Dekorasi tajam bisa merobek sirip dan memicu infeksi.",
+      "headline": "Dekorasi tajam [merobek sirip].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pilih dekorasi halus seperti batu licin dan tanaman lembut.",
+      "headline": "Pilih dekorasi [halus].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Batu licin",
+        "Tanaman lembut",
+        "Kayu halus"
+       ]
+      }
+     },
+     {
+      "vo": "Tes gampang, gosok pakai stoking, kalau nyangkut berarti tajam.",
+      "headline": "Tes pakai [stoking].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya setup akuarium mas koki di Goldfish and Richman.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata SIRIP untuk tanya dekorasi aman buat mas koki ekor panjang.\n\nSirip oranda, ryukin, dan mas koki ekor panjang lain tipis dan gampang sobek. Dekorasi bersudut tajam bisa merobeknya, lalu luka itu rawan infeksi.\n\nPilih batu licin, tanaman lembut, atau kayu yang permukaannya halus. Tes gampangnya, gosok dekorasi pakai stoking. Kalau stokingnya nyangkut, dekorasi itu terlalu tajam untuk mas kokimu.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "ryukin sehat siap pindah",
+    "kategori": "ryukin",
+    "adegan": [
+     {
+      "vo": "Ryukin ready, punggungnya tinggi dan bentuknya gagah.",
+      "teks": "Ryukin punggung tinggi"
+     },
+     {
+      "vo": "Ekornya lebar, kelihatan megah waktu berenang.",
+      "teks": "Ekor lebar dan megah"
+     },
+     {
+      "vo": "Warnanya cerah, cocok jadi bintang akuarium rumah.",
+      "teks": "Warna cerah, siap dipajang"
+     }
+    ],
+    "cta_vo": "Pesan ryukin di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata RYUKIN untuk lihat video ryukin yang ready.\n\nPunggung tinggi khas ryukin dan ekor yang lebar bikin tampilannya gagah saat berenang.\n\nWarnanya cerah, cocok jadi bintang di akuarium rumah. Mas koki ryukin Malang ini siap dikirim ke tempatmu.",
+    "tagar_topik": "ryukin"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "porsi gold feeds yang pas",
+    "klip": "fish studio 1",
+    "adegan": [
+     {
+      "vo": "Porsi Gold Feeds yang pas itu sedikit tapi rutin.",
+      "headline": "Porsi pas, [sedikit tapi rutin].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Patokannya, pakan habis dimakan dalam tiga menit.",
+      "headline": "Patokan [habis 3 menit].",
+      "visual": {
+       "jenis": "angka",
+       "angka": "3",
+       "satuan": "menit",
+       "label": "pakan harus habis",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kalau masih ada sisa, kurangi porsi di jadwal berikutnya.",
+      "headline": "Ada sisa? [Kurangi porsi].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Satu kemasan tiga ratus gram, empat puluh tiga ribu rupiah.",
+      "headline": "[Rp43 ribu] per 300 g.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "43",
+       "satuan": "rb",
+       "label": "per 300 gram",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WA Fishtudio sekarang.",
+    "cta_teks": "Pesan [Gold Feeds] di WA",
+    "caption": "Chat WA 08569990738, kirim kata PORSI untuk tanya takaran Gold Feeds yang pas buat ikanmu.\n\nPorsi pakan yang pas itu sedikit tapi rutin. Patokannya, pakan habis dimakan dalam sekitar tiga menit.\n\nKalau masih ada sisa yang tenggelam, kurangi porsi di jadwal makan berikutnya. Dengan takaran yang pas, Gold Feeds lebih awet dipakai dan air akuarium tetap bersih.",
+    "tagar_topik": "goldfeeds"
+   },
+   "footage": {
+    "judul": "takaran pas untuk ranchu",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Sejumput Gold Feeds untuk ranchu di akuarium ini.",
+      "teks": "Sejumput untuk satu akuarium"
+     },
+     {
+      "vo": "Ranchu makan santai, nggak ada sisa yang mengendap.",
+      "teks": "Habis, nggak ada sisa"
+     },
+     {
+      "vo": "Air tetap jernih karena porsinya pas.",
+      "teks": "Air tetap jernih"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WA Fishtudio.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata GOLD untuk pesan Gold Feeds, pakan special untuk grooming.\n\nCukup sejumput Gold Feeds untuk ranchu di akuarium ini. Ikannya makan santai sampai habis, tanpa sisa yang mengendap di dasar.\n\nPorsi yang pas bikin air tetap jernih lebih lama. Kebiasaan kecil ini yang bikin perawatan mas koki di rumah jadi lebih ringan.",
+    "tagar_topik": "pakanmaskoki"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "mas koki untuk pemula",
+    "klip": "kolam koki",
+    "adegan": [
+     {
+      "vo": "Baru mulai pelihara mas koki? Pilih jenis yang tangguh dulu.",
+      "headline": "Pemula pilih [yang tangguh].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ryukin, oranda, dan mas koki campur cukup kuat untuk pemula.",
+      "headline": "Pilihan [ramah pemula].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Ryukin",
+        "Oranda",
+        "Mas koki campur"
+       ]
+      }
+     },
+     {
+      "vo": "Ranchu dan mas koki mata gelembung butuh perawatan lebih teliti.",
+      "headline": "Ranchu butuh [lebih teliti].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Yang penting, akuarium cukup luas dan filter berjalan baik.",
+      "headline": "Akuarium luas, [filter jalan].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Konsultasi mas koki pertamamu di Goldfish and Richman.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata PEMULA untuk tanya mas koki pertama yang cocok buatmu.\n\nUntuk pemula, ryukin, oranda, dan mas koki campur termasuk pilihan yang cukup tangguh dan mudah beradaptasi.\n\nRanchu dan mas koki mata gelembung tetap bisa dipelihara, tapi butuh perawatan yang lebih teliti. Apa pun jenisnya, siapkan akuarium kaca yang cukup luas dan filter yang berjalan baik.",
+    "tagar_topik": "maskokipemula"
+   },
+   "footage": {
+    "judul": "ranchu wen merah ready",
+    "kategori": "ranchu",
+    "adegan": [
+     {
+      "vo": "Ranchu dengan wen merah, gemuk dan sehat.",
+      "teks": "Ranchu wen merah"
+     },
+     {
+      "vo": "Punggungnya melengkung halus tanpa sirip punggung.",
+      "teks": "Punggung melengkung halus"
+     },
+     {
+      "vo": "Pas buat kamu yang suka mas koki bulat menggemaskan.",
+      "teks": "Bulat dan menggemaskan"
+     }
+    ],
+    "cta_vo": "Pesan ranchu di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata BULAT untuk lihat video ranchu wen merah yang ready.\n\nRanchu dengan wen merah, badan gemuk, dan punggung melengkung halus tanpa sirip punggung.\n\nPas buat kamu yang suka mas koki bulat yang menggemaskan. Ranchu Malang ini siap pindah ke akuariummu.",
+    "tagar_topik": "ranchu"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "kapan panggil jasa perawatan",
+    "klip": "servis ruang filter",
+    "adegan": [
+     {
+      "vo": "Kapan sebaiknya panggil jasa perawatan akuarium?",
+      "headline": "Kapan [panggil jasa] perawatan?",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Saat air keruh terus, padahal sudah rutin ganti air.",
+      "headline": "Air [keruh terus].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Lumut makin tebal, filter lemah, atau ikan sering sakit.",
+      "headline": "Tanda [butuh bantuan].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Lumut tebal",
+        "Filter lemah",
+        "Ikan sakit"
+       ]
+      }
+     },
+     {
+      "vo": "Atau saat kamu sibuk dan nggak sempat merawat rutin.",
+      "headline": "Sibuk? [Serahkan ke ahlinya].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Hubungi [Fishtudio] sekarang",
+    "caption": "Chat WA 08569990738, kirim kata JASA untuk jadwal kunjungan perawatan akuarium.\n\nAda beberapa tanda akuarium butuh bantuan. Air tetap keruh walau sudah rutin diganti, lumut makin tebal, aliran filter melemah, atau ikan sering sakit.\n\nAtau sederhananya, kamu sedang sibuk dan nggak sempat merawat. Layanan Build & Care Fishtudio menyediakan jasa perawatan akuarium di Malang, datang langsung ke rumah atau tempat usahamu.",
+    "tagar_topik": "jasaperawatanakuarium"
+   },
+   "footage": {
+    "judul": "servis ruang filter klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Ruang filter klien kami cek satu per satu.",
+      "teks": "Cek ruang filter satu per satu"
+     },
+     {
+      "vo": "Media kotor dibilas, pompa dibersihkan dari lendir.",
+      "teks": "Media dibilas, pompa bersih"
+     },
+     {
+      "vo": "Air mengalir lancar lagi, akuarium kembali jernih.",
+      "teks": "Kembali jernih"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk servis filter akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata SERVIS untuk jadwal cek ruang filter akuariummu.\n\nRuang filter dicek satu per satu. Media yang kotor dibilas, pompa dibersihkan dari lendir yang menghambat aliran.\n\nSetelah selesai, air mengalir lancar lagi dan akuarium kembali jernih. Filter yang terawat bikin ikan lebih sehat dan perawatan harian jadi ringan.",
+    "tagar_topik": "servisakuarium"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "kelas hobi dan kelas kontes",
+    "klip": "akuarium ranchu",
+    "adegan": [
+     {
+      "vo": "Mas koki dikenal punya kelas hobi dan kelas kontes.",
+      "headline": "Kelas [hobi dan kontes].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kelas hobi untuk dinikmati di rumah, sehat dan cantik.",
+      "headline": "Hobi, [cantik di rumah].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kelas kontes dinilai lebih ketat, dari bentuk badan sampai sirip.",
+      "headline": "Kontes, [dinilai ketat].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Bentuk badan",
+        "Simetri sirip",
+        "Cara berenang"
+       ]
+      }
+     },
+     {
+      "vo": "Pilih sesuai tujuanmu, keduanya sama sama layak dirawat baik.",
+      "headline": "Pilih [sesuai tujuanmu].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya kelas mas koki di Goldfish and Richman.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata KELAS untuk tanya mas koki kelas hobi atau kelas kontes.\n\nKelas hobi dipilih untuk dinikmati di akuarium rumah. Ikannya sehat, cantik, dan enak dipandang setiap hari.\n\nKelas kontes dinilai lebih ketat, mulai dari bentuk badan, simetri sirip, sampai cara berenang. Pilih sesuai tujuanmu, karena keduanya sama sama layak dirawat dengan baik.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "panda tanco corak kontras",
+    "kategori": "panda tanco",
+    "adegan": [
+     {
+      "vo": "Panda tanco ready dengan corak hitam putih yang kontras.",
+      "teks": "Corak hitam putih kontras"
+     },
+     {
+      "vo": "Aksen merah di kepala bikin tampilannya beda sendiri.",
+      "teks": "Aksen merah di kepala"
+     },
+     {
+      "vo": "Sehat, aktif, dan siap menemani akuarium rumahmu.",
+      "teks": "Siap menemani akuariummu"
+     }
+    ],
+    "cta_vo": "Pesan panda tanco di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata TANCO untuk lihat video panda tanco yang ready.\n\nCorak hitam putihnya tegas, dengan aksen merah di kepala yang jadi daya tarik utama.\n\nIkannya sehat dan aktif berenang. Mas koki panda tanco Malang ini siap menemani akuarium rumahmu.",
+    "tagar_topik": "pandatanco"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "jadwal perawatan rutin bulanan",
+    "klip": "bongkar media filter",
+    "adegan": [
+     {
+      "vo": "Akuarium sehat butuh jadwal perawatan yang rutin.",
+      "headline": "Butuh jadwal [yang rutin].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Tiap minggu, ganti air sekitar dua puluh sampai tiga puluh persen.",
+      "headline": "Ganti air [tiap minggu].",
+      "visual": {
+       "jenis": "angka",
+       "angka": "30",
+       "satuan": "%",
+       "label": "air per minggu",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Dua minggu sekali, bersihkan kaca dan sedot kotoran di dasar.",
+      "headline": "Bersihkan [kaca dan dasar].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sebulan sekali, bilas media filter pakai air akuarium.",
+      "headline": "Bulanan, [bilas filter].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Bilas filter",
+        "Cek pompa",
+        "Cek lampu"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk jadwal perawatan akuariummu.",
+    "cta_teks": "Atur jadwal bareng [Fishtudio]",
+    "caption": "Chat WA 08569990738, kirim kata JADWAL untuk atur perawatan rutin akuariummu.\n\nTiap minggu, ganti air sekitar 20 sampai 30 persen. Dua minggu sekali, bersihkan kaca dan sedot kotoran di dasar.\n\nSebulan sekali, bilas media filter pakai air akuarium, lalu cek pompa dan lampu. Kalau jadwal ini terasa berat, tim jasa perawatan akuarium di Malang dari Fishtudio bisa mengambil alih.",
+    "tagar_topik": "perawatanakuariumrutin"
+   },
+   "footage": {
+    "judul": "oranda menyambut jam makan",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Oranda ini sudah hafal jam makannya.",
+      "teks": "Hafal jam makan"
+     },
+     {
+      "vo": "Gold Feeds ditabur, satu per satu langsung menyambar.",
+      "teks": "Langsung menyambar"
+     },
+     {
+      "vo": "Pakan special untuk grooming, bagian dari rutinitas harian.",
+      "teks": "Bagian dari rutinitas harian"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WA Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata PESAN untuk order Gold Feeds, pakan special untuk grooming.\n\nOranda ini sudah hafal jam makannya. Begitu Gold Feeds ditabur, satu per satu langsung menyambar.\n\nJadwal makan yang teratur bikin ikan lebih tenang dan gampang dipantau. Gold Feeds jadi bagian dari rutinitas harian mas koki di akuarium kami.",
+    "tagar_topik": "goldfeeds"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "cara aman menjaring mas koki",
+    "klip": "keranjang koki",
+    "adegan": [
+     {
+      "vo": "Menangkap mas koki pakai jaring ada caranya.",
+      "headline": "Menangkap koki [ada caranya].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pakai jaring halus, jaring kasar bisa melukai sisik dan sirip.",
+      "headline": "Pakai [jaring halus].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Jangan kejar ikan keliling akuarium, giring pelan ke sudut.",
+      "headline": "Jangan [kejar keliling].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Lebih aman, sambut dengan wadah supaya ikan tetap di air.",
+      "headline": "Angkat [pakai wadah].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Jaring halus",
+        "Giring pelan",
+        "Pakai wadah"
+       ]
+      }
+     }
+    ],
+    "cta_vo": "Tanya cara merawat mas koki di Goldfish and Richman.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata JARING untuk tanya cara memindahkan mas koki dengan aman.\n\nPakai jaring yang halus, karena jaring kasar bisa melukai sisik dan sirip mas koki. Jangan kejar ikan keliling akuarium, giring pelan ke sudut.\n\nLebih aman lagi, sambut ikan dengan wadah supaya badannya tetap di dalam air saat diangkat. Cara ini membantu mas koki nggak stres saat dipindahkan.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "mas koki campur siap pindah",
+    "kategori": "mas koki campur",
+    "adegan": [
+     {
+      "vo": "Bingung pilih satu? Mas koki campur bisa jadi jawabannya.",
+      "teks": "Bingung pilih satu?"
+     },
+     {
+      "vo": "Tiap ekor punya warna dan bentuk sendiri.",
+      "teks": "Tiap ekor beda karakter"
+     },
+     {
+      "vo": "Semuanya aktif dan siap pindah ke akuariummu.",
+      "teks": "Aktif dan siap pindah"
+     }
+    ],
+    "cta_vo": "Pesan mas koki campur di Goldfish and Richman.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata KOKI untuk lihat video mas koki campur yang ready.\n\nBingung pilih satu jenis? Mas koki campur bisa jadi jawabannya, karena tiap ekor punya warna dan bentuk sendiri.\n\nSemuanya aktif dan siap pindah ke akuarium rumahmu. Tinggal pilih yang paling kamu suka dari videonya.",
+    "tagar_topik": "maskokicampur"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "tanda ikan sedang stres",
+    "klip": "fish studio 2",
+    "adegan": [
+     {
+      "vo": "Ikan juga bisa stres, dan tandanya kelihatan kok.",
+      "headline": "Ikan juga [bisa stres].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Sirip menguncup, warna pucat, dan sering bersembunyi.",
+      "headline": "Kenali [tandanya].",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Sirip menguncup",
+        "Warna pucat",
+        "Sering sembunyi"
+       ]
+      }
+     },
+     {
+      "vo": "Ada juga yang berenang gelisah atau menggosok badan ke dekorasi.",
+      "headline": "Gelisah dan [menggosok badan].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Penyebab tersering kualitas air, jadi cek air lebih dulu.",
+      "headline": "Mulai dari [cek air].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk cek kondisi akuariummu.",
+    "cta_teks": "Cek bareng [Fishtudio]",
+    "caption": "Chat WA 08569990738, kirim kata STRES untuk tanya kondisi ikan dan akuariummu.\n\nIkan yang stres biasanya menunjukkan sirip menguncup, warna memucat, dan lebih sering bersembunyi. Ada juga yang berenang gelisah atau menggosokkan badan ke dekorasi.\n\nPenyebab yang paling sering adalah kualitas air, jadi cek air lebih dulu. Tim Fishtudio bisa bantu periksa akuarium dan filter di Malang kalau tandanya belum hilang.",
+    "tagar_topik": "ikanstres"
+   },
+   "footage": {
+    "judul": "rawat akuarium teras klien",
+    "kategori": "perawatan akuarium",
+    "adegan": [
+     {
+      "vo": "Hari ini tim Fishtudio datang ke teras rumah klien.",
+      "teks": "Kunjungan ke teras klien"
+     },
+     {
+      "vo": "Lumut di kaca dan dekorasi dibersihkan dengan teliti.",
+      "teks": "Kaca dan dekorasi dibersihkan"
+     },
+     {
+      "vo": "Pemilik tinggal duduk santai, akuarium kembali segar.",
+      "teks": "Pemilik tinggal santai"
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk perawatan akuariummu.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata CARE untuk jadwal kunjungan Build & Care ke rumahmu.\n\nKunjungan kali ini ke akuarium di teras rumah klien. Lumut di kaca dan dekorasi dibersihkan dengan teliti tanpa mengganggu ikan.\n\nPemilik cukup duduk santai, akuarium kembali segar. Layanan perawatan akuarium Fishtudio menjangkau rumah dan tempat usaha di Malang.",
+    "tagar_topik": "buildandcare"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "ganti air akuarium mas koki",
+    "klip": "kolam koki ramai",
+    "adegan": [
+     {
+      "vo": "Mas koki makan banyak, kotorannya juga banyak.",
+      "headline": "Koki [kotorannya banyak].",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ganti air sekitar tiga puluh persen tiap minggu.",
+      "headline": "Ganti [30%] tiap minggu.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "30",
+       "satuan": "%",
+       "label": "air per minggu",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pakai air yang sudah bebas kaporit dan suhunya mirip.",
+      "headline": "Air [bebas kaporit], suhu mirip.",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Jangan kuras habis, bakteri baik bisa ikut hilang.",
+      "headline": "Jangan [kuras habis].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Tanya perawatan mas koki di Goldfish and Richman.",
+    "cta_teks": "Chat [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata AIR untuk tanya cara ganti air akuarium mas koki.\n\nMas koki termasuk ikan yang makan banyak dan kotorannya juga banyak. Karena itu ganti air sekitar 30 persen tiap minggu.\n\nPakai air yang sudah bebas kaporit dengan suhu yang mirip air akuarium. Jangan dikuras habis, supaya bakteri baik di filter tetap bekerja dan mas koki nggak kaget.",
+    "tagar_topik": "maskoki"
+   },
+   "footage": {
+    "judul": "oranda warna cerah pilihan",
+    "kategori": "oranda",
+    "adegan": [
+     {
+      "vo": "Oranda pilihan minggu ini, warnanya cerah menyala.",
+      "teks": "Oranda warna cerah"
+     },
+     {
+      "vo": "Wen di kepala mulai penuh dan rapi.",
+      "teks": "Wen mulai penuh"
+     },
+     {
+      "vo": "Siap jadi pusat perhatian di akuarium rumahmu.",
+      "teks": "Siap jadi pusat perhatian"
+     }
+    ],
+    "cta_vo": "Pesan oranda di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata WEN untuk lihat video oranda pilihan minggu ini.\n\nWarnanya cerah menyala dan wen di kepalanya mulai penuh dan rapi.\n\nOranda seperti ini gampang jadi pusat perhatian di akuarium rumah. Mas koki oranda Malang ini siap pindah ke tempatmu.",
+    "tagar_topik": "oranda"
+   }
+  }
+ },
+ {
+  "fishtudio": {
+   "edukasi": {
+    "judul": "tiga kesalahan pemula akuarium",
+    "klip": "fish studio 4",
+    "adegan": [
+     {
+      "vo": "Ini tiga kesalahan yang sering dilakukan pemula akuarium.",
+      "headline": "[3 kesalahan] pemula.",
+      "visual": {
+       "jenis": "angka",
+       "angka": "3",
+       "satuan": "",
+       "label": "kesalahan paling sering",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Pertama, ikan langsung dimasukkan sebelum air dan filter siap.",
+      "headline": "Ikan masuk [terlalu cepat].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Kedua, kasih makan terlalu banyak karena kasihan.",
+      "headline": "Pakan [terlalu banyak].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Ketiga, isi ikan terlalu padat untuk ukuran akuarium.",
+      "headline": "Akuarium [terlalu padat].",
+      "visual": {
+       "jenis": "salah",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Hubungi Fishtudio untuk setup akuarium yang benar.",
+    "cta_teks": "Setup bareng [Fishtudio]",
+    "caption": "Chat WA 08569990738, kirim kata SETUP untuk konsultasi akuarium pertamamu.\n\nKesalahan pertama, ikan langsung dimasukkan padahal air dan filter belum siap. Kedua, memberi makan terlalu banyak karena kasihan. Ketiga, mengisi ikan terlalu padat untuk ukuran akuarium.\n\nKetiganya sama sama bikin kualitas air cepat turun. Lewat layanan Build & Care, Fishtudio membantu pembuatan dan perawatan akuarium di Malang dari awal.",
+    "tagar_topik": "akuariumpemula"
+   },
+   "footage": {
+    "judul": "ryukin makan gold feeds",
+    "kategori": "kasih makan",
+    "adegan": [
+     {
+      "vo": "Ryukin ini lahap begitu Gold Feeds masuk akuarium.",
+      "teks": "Lahap begitu ditabur"
+     },
+     {
+      "vo": "Gerakannya lincah, siripnya terbuka lebar.",
+      "teks": "Lincah, sirip terbuka"
+     },
+     {
+      "vo": "Pakan special untuk grooming, cocok untuk mas koki kesayanganmu.",
+      "teks": "Pakan special untuk grooming"
+     }
+    ],
+    "cta_vo": "Pesan Gold Feeds lewat WA Fishtudio sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata FEEDS untuk pesan Gold Feeds untuk mas kokimu.\n\nRyukin ini langsung lahap begitu Gold Feeds masuk ke akuarium. Gerakannya lincah dan siripnya terbuka lebar.\n\nGold Feeds adalah pakan special untuk grooming mas koki, cocok jadi pakan harian ikan kesayanganmu.",
+    "tagar_topik": "pakanikanhias"
+   }
+  },
+  "goldfish": {
+   "edukasi": {
+    "judul": "minta video sebelum beli ikan",
+    "klip": "fish studio 1",
+    "adegan": [
+     {
+      "vo": "Beli mas koki online? Minta video ikannya dulu.",
+      "headline": "Minta [video ikannya] dulu.",
+      "visual": {
+       "jenis": "akuarium",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Foto bisa menipu, video memperlihatkan cara ikan berenang.",
+      "headline": "Video [lebih jujur].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     },
+     {
+      "vo": "Perhatikan renangnya seimbang, sirip terbuka, dan badan mulus.",
+      "headline": "Cek [tiga hal] ini.",
+      "visual": {
+       "jenis": "daftar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": [
+        "Renang seimbang",
+        "Sirip terbuka",
+        "Badan mulus"
+       ]
+      }
+     },
+     {
+      "vo": "Ikan yang kamu terima jadi sesuai dengan yang dipilih.",
+      "headline": "Sesuai dengan [yang dipilih].",
+      "visual": {
+       "jenis": "benar",
+       "angka": "",
+       "satuan": "",
+       "label": "",
+       "poin": []
+      }
+     }
+    ],
+    "cta_vo": "Minta video ikan ready di Goldfish and Richman.",
+    "cta_teks": "Minta video ke [Goldfish and Richman]",
+    "caption": "Chat WA 08569990738, kirim kata VIDEO untuk minta video mas koki yang ready.\n\nFoto bisa terlihat bagus, tapi video memperlihatkan cara ikan berenang. Dari situ kamu bisa menilai kondisinya lebih jujur.\n\nPerhatikan tiga hal, renang seimbang, sirip terbuka, dan badan mulus tanpa luka. Dengan begitu mas koki yang kamu terima sesuai dengan yang kamu pilih.",
+    "tagar_topik": "belimaskoki"
+   },
+   "footage": {
+    "judul": "ryukin ekor lebar pilihan",
+    "kategori": "ryukin",
+    "adegan": [
+     {
+      "vo": "Ryukin pilihan hari ini, ekornya lebar dan rapi.",
+      "teks": "Ryukin ekor lebar"
+     },
+     {
+      "vo": "Punggung tinggi khas ryukin, kelihatan gagah dari samping.",
+      "teks": "Gagah dari samping"
+     },
+     {
+      "vo": "Mau lihat videonya lebih dekat? Tinggal chat kami.",
+      "teks": "Minta videonya lewat WA"
+     }
+    ],
+    "cta_vo": "Pesan ryukin di Goldfish and Richman sekarang.",
+    "cta_teks": "Chat WA 0856 9990 738",
+    "caption": "Chat WA 08569990738, kirim kata EKOR untuk lihat video ryukin pilihan hari ini.\n\nEkornya lebar dan rapi, dengan punggung tinggi khas ryukin yang kelihatan gagah dari samping.\n\nMau lihat lebih dekat sebelum memilih? Kami kirim videonya, jadi ryukin yang datang sesuai dengan yang kamu lihat.",
+    "tagar_topik": "ryukin"
+   }
+  }
+ }
+]

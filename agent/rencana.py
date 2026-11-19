@@ -1,8 +1,6 @@
 """Claude menulis naskah + caption harian untuk Fishtudio dan Goldfish and Richman."""
 import json
 
-import anthropic
-
 MODEL = "claude-opus-5-5"
 
 KLIP_LATAR = ["akuarium oranda penuh", "akuarium ranchu", "kolam koki", "kolam koki ramai", "fish studio 1",
@@ -93,6 +91,8 @@ def _skema():
 
 
 def buat_rencana(tanggal_teks, riwayat, catatan=""):
+    import anthropic  # hanya dipakai kalau bank naskah habis dan ANTHROPIC_API_KEY ada
+
     client = anthropic.Anthropic()
     pakai = "\n".join(f"- {r['brand']} {r['slot']}: {r['judul']}" for r in riwayat[-120:]) or "(belum ada)"
     pesan = (f"Tanggal tayang: {tanggal_teks}.\n\nRiwayat judul yang sudah dipakai:\n{pakai}\n\n"

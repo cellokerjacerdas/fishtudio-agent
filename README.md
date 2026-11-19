@@ -4,7 +4,7 @@ Jalan di GitHub Actions (repo privat `fishtudio-agent`), tidak butuh laptop meny
 
 | Jam WIB | Tugas |
 |---|---|
-| 04.00 | Claude menulis 4 naskah, video dirender, diunggah ke Drive. Lalu folder buatan agent yang lebih dari 7 hari dipindah ke Sampah Drive. |
+| 04.00 | Ambil naskah hari berikutnya dari bank naskah, render 4 video, diunggah ke Drive. Lalu folder buatan agent yang lebih dari 7 hari dipindah ke Sampah Drive. |
 | 11.45 | Posting slot 12.00 (menunggu sampai tepat 12.00) |
 | 18.45 | Posting slot 19.00 |
 
@@ -17,9 +17,13 @@ Folder Drive: `Fish Studio/[02] CONTENT/<Bulan YY>/<Fishtudio|Goldfish and Richm
 - Yang dihapus otomatis hanya folder yang berisi `dibuat agent.txt`.
 - Judul yang sudah dipakai tersimpan di `data/riwayat.json` supaya tidak berulang.
 
+## Gratis: bank naskah
+
+Naskah ditulis di muka (`data/bank.json`, satu entri = 4 konten satu hari) lewat chat dengan Mbut, dicek `setup/cek_bank.py`. Posisi pemakaian di `data/bank_pos.json`. Kalau sisa 5 hari atau kurang, ringkasan run GitHub memberi peringatan: minta Mbut "isi bank naskah". Claude API (`agent/rencana.py`) hanya cadangan kalau bank habis dan secret `ANTHROPIC_API_KEY` diisi (berbayar, saat ini tidak dipakai).
+
 ## Rahasia (GitHub > Settings > Secrets > Actions)
 
-`ANTHROPIC_API_KEY`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`, `IG_TOKEN`, `IG_ID_FISHTUDIO`, `IG_ID_GOLDFISH`. Diisi lewat `setup/pasang rahasia.bat` dan `setup/google login.bat` (dijalankan di laptop, sekali saja).
+`GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`, `IG_TOKEN`, `IG_ID_FISHTUDIO`, `IG_ID_GOLDFISH`. Diisi lewat `setup/google login.bat` (dijalankan di laptop, sekali saja).
 
 ## Jalankan manual
 

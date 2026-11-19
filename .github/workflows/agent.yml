@@ -63,5 +63,5 @@ jobs:
         run: |
           git config user.name "agent konten"
           git config user.email "agent@users.noreply.github.com"
-          git add data/riwayat.json
+          git add data/riwayat.json data/bank_pos.json
           git diff --cached --quiet || (git commit -m "riwayat konten $(date -u +%F)" && git push)
