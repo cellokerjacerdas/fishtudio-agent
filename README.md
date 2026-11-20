@@ -6,7 +6,7 @@ Jalan di GitHub Actions (repo privat `fishtudio-agent`), tidak butuh laptop meny
 |---|---|
 | 04.00 | Ambil naskah hari berikutnya dari bank naskah, render 4 video, diunggah ke Drive. Lalu folder buatan agent yang lebih dari 7 hari dipindah ke Sampah Drive. |
 | 09.45 | Story opening di Goldfish and Richman (video tetap `aset/story/story opening.mp4`, tayang tepat 10.00) |
-| 11.45 | Posting slot 12.00 (menunggu sampai tepat 12.00) |
+| 11.45 | Posting slot 12.00 (IG + FB Page, FB lewat agent/fb.py, tanda `sudah tayang fb.txt`) (menunggu sampai tepat 12.00) |
 | 18.45 | Posting slot 19.00 |
 
 Per akun per hari: **12.00 edukasi** motion graphic (`render/edukasi.cjs`, mesin edu.js) dan **19.00 footage** dari Stock Footage Drive (`render/footage.py`).
@@ -30,4 +30,5 @@ Naskah ditulis di muka (`data/bank.json`, satu entri = 4 konten satu hari) lewat
 
 GitHub > Actions > agent konten harian > Run workflow, isi `buat`, `posting 12.00`, `posting 19.00`, atau `bersih`.
 Atau: `gh workflow run agent.yml -f tugas=buat`.
+
 

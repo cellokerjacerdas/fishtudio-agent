@@ -22,6 +22,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).parent))
+import fb  # noqa: E402
 import gdrive  # noqa: E402
 from rencana import buat_rencana  # noqa: E402  (cadangan berbayar, hanya kalau bank habis)
 
@@ -47,7 +48,7 @@ SUMBER_FOOTAGE = {
     "perawatan akuarium": ["Footage Abe 9 Nov"],
 }
 SLOT = {"edukasi": "12.00", "footage": "19.00"}
-TANDA_AGENT, TANDA_TAYANG = "dibuat agent.txt", "sudah tayang.txt"
+TANDA_AGENT, TANDA_TAYANG, TANDA_FB = "dibuat agent.txt", "sudah tayang.txt", "sudah tayang fb.txt"
 POLA = re.compile(r"^\[(\d{1,2}) (\d{1,2})(?: (\d{1,2}\.\d{2}))?\]\s*(.*)$")
 RIWAYAT = REPO / "data/riwayat.json"
 laporan = []
@@ -259,7 +260,8 @@ def cmd_posting(argumen):
         token = os.environ.get(f"IG_TOKEN_{brand.upper()}") or os.environ["IG_TOKEN"]
         for f in folder_slot(d, brand, slot):
             isi = {x["name"]: x for x in gdrive.daftar(f["id"])}
-            if TANDA_TAYANG in isi:
+            perlu_ig, perlu_fb = TANDA_TAYANG not in isi, TANDA_FB not in isi
+            if not (perlu_ig or perlu_fb):
                 lapor(f"SUDAH {brand}: {f['name']}")
                 continue
             mp4 = [x for n, x in isi.items() if n.lower().endswith(".mp4")]
@@ -269,13 +271,21 @@ def cmd_posting(argumen):
                 continue
             caption = gdrive.baca_teks(isi["caption.txt"]["id"]).strip()
             video = gdrive.unduh(mp4[0]["id"], TMP / "posting.mp4")
-            try:
-                link = unggah_reel(ig_id, token, video, caption)
-                gdrive.tulis_teks(f["id"], TANDA_TAYANG, f"{sekarang():%d/%m/%Y %H:%M} WIB\n{link}\n")
-                lapor(f"TAYANG {brand}: {f['name']}\n{link}")
-            except Exception as e:
-                lapor(f"GAGAL {brand}: {f['name']}: {e}")
-                gagal += 1
+            if perlu_ig:
+                try:
+                    link = unggah_reel(ig_id, token, video, caption)
+                    gdrive.tulis_teks(f["id"], TANDA_TAYANG, f"{sekarang():%d/%m/%Y %H:%M} WIB\n{link}\n")
+                    lapor(f"TAYANG IG {brand}: {f['name']}\n{link}")
+                except Exception as e:
+                    lapor(f"GAGAL IG {brand}: {f['name']}: {e}")
+                    gagal += 1
+            if perlu_fb:
+                try:
+                    link = fb.reel(brand, os.environ["IG_TOKEN"], video, caption)
+                    gdrive.tulis_teks(f["id"], TANDA_FB, f"{sekarang():%d/%m/%Y %H:%M} WIB\n{link}\n")
+                    lapor(f"TAYANG FB {brand}: {f['name']}\n{link}")
+                except Exception as e:  # FB gagal tidak membatalkan IG
+                    lapor(f"GAGAL FB {brand}: {f['name']}: {e}")
     if gagal:
         raise SystemExit(f"{gagal} posting gagal")
 
@@ -291,6 +301,10 @@ def cmd_story(_):
     token = os.environ.get("IG_TOKEN_GOLDFISH") or os.environ["IG_TOKEN"]
     link = unggah_reel(os.environ["IG_ID_GOLDFISH"], token, REPO / "aset/story/story opening.mp4", None, jenis="STORIES")
     lapor(f"STORY opening Goldfish and Richman tayang: {link}")
+    try:
+        lapor(f"STORY opening FB Goldfish and Richman: {fb.story('goldfish', os.environ['IG_TOKEN'], REPO / 'aset/story/story opening.mp4')}")
+    except Exception as e:
+        lapor(f"GAGAL story FB: {e}")
 
 
 # ---------------- bersih ----------------
