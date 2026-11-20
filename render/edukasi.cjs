@@ -38,8 +38,8 @@ const RATE = "+2%", VOICE = "id-ID-ArdiNeural", LEAD = 0.3, GAP = 0.4, GAP_CTA =
 const S = [], D = []; let t = LEAD;
 lines.forEach((l, i) => {
   const f = path.join(work, `audio/vo/${i}.mp3`), w = path.join(work, `audio/vo/${i}.wav`);
-  for (let k = 0; k < 15 && (!fs.existsSync(f) || fs.statSync(f).size < 2000); k++) {
-    try { sh("edge-tts", ["--voice", VOICE, "--rate=" + RATE, "--text", l, "--write-media", f], { timeout: 40000 }); }
+  for (let k = 0; k < 40 && (!fs.existsSync(f) || fs.statSync(f).size < 2000); k++) {
+    try { sh("edge-tts", ["--voice", VOICE, "--rate=" + RATE, "--text", l, "--write-media", f], { timeout: 40000, stdio: "ignore" }); }
     catch (e) { Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 3000); }
   }
   if (!fs.existsSync(f) || fs.statSync(f).size < 2000) throw new Error("edge-tts gagal: " + l);
@@ -195,5 +195,8 @@ fs.writeFileSync(path.join(work, "cues.json"), JSON.stringify({ end: T.end, cues
 sh("node", [path.join(HERE, "mix.cjs"), work, path.join(REPO, "aset/musik", spec.musik)]);
 
 // ---------- render ----------
-sh("npx", ["--yes", "hyperframes@0.9.8", "render", work, "-o", path.resolve(output), "--quality", "standard", "--quiet"], { stdio: "inherit", shell: process.platform === "win32" });
+{
+  const win = process.platform === "win32", q = (x) => (win ? `"${x}"` : x); // Windows butuh shell untuk npx, path berspasi dikutip
+  sh("npx", ["--yes", "hyperframes@0.9.8", "render", q(path.resolve(work)), "-o", q(path.resolve(output)), "--quality", "standard", "--quiet"], { stdio: "inherit", shell: win });
+}
 console.log(JSON.stringify({ ok: true, durasi: T.end, output }));

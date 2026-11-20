@@ -170,7 +170,8 @@ def cmd_buat(argumen):
         musik = random.choice(MUSIK[brand])
         judul = re.sub(r"[^a-z0-9 ]", "", item["judul"].lower()).strip() or f"{jenis} {brand}"
         caption = susun_caption(brand, item, musik)
-        cap_file = TMP / "caption.txt"
+        cap_file = TMP / FOLDER[brand] / "caption.txt"  # cek.js menebak brand dari path
+        cap_file.parent.mkdir(parents=True, exist_ok=True)
         cap_file.write_text(caption, encoding="utf-8")
         semua_teks = TMP / "teks layar.txt"
         layar = [a.get("headline") or a.get("teks", "") for a in item["adegan"]]
@@ -218,9 +219,13 @@ def ig(metode, jalur, token, **kw):
 def unggah_reel(ig_id, token, video, caption):
     w = ig("POST", f"{ig_id}/media", token, data={"media_type": "REELS", "upload_type": "resumable",
                                                   "caption": caption, "share_to_feed": "true"})
-    with open(video, "rb") as f:
-        r = requests.post(w["uri"], data=f, timeout=900, headers={
-            "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(os.path.getsize(video))})
+    for coba in range(5):  # server Meta kadang 503 sesaat
+        with open(video, "rb") as f:
+            r = requests.post(w["uri"], data=f, timeout=900, headers={
+                "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(os.path.getsize(video))})
+        if r.status_code < 500:
+            break
+        time.sleep(15 * (coba + 1))
     if r.status_code != 200:
         raise RuntimeError(f"upload video gagal {r.status_code}: {r.text[:300]}")
     for _ in range(90):

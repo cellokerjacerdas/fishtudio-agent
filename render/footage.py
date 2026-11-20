@@ -34,7 +34,7 @@ def durasi(f):
 
 
 def tts(teks, mp3, wav):
-    for _ in range(15):
+    for _ in range(40):
         try:
             subprocess.run(["edge-tts", "--voice", VOICE, f"--rate={RATE}", "--text", teks, "--write-media", str(mp3)],
                            check=True, capture_output=True, timeout=40)
@@ -64,7 +64,7 @@ def main(spec_path, brand, klip_dir, work, output):
     work, output = Path(work).resolve(), Path(output).resolve()
     klip_dir = Path(klip_dir).resolve()
     shutil.rmtree(work, ignore_errors=True)
-    work.mkdir(parents=True)
+    work.mkdir(parents=True, exist_ok=True)  # Windows kadang belum melepas folder lama
     shutil.copy(FONT, work / "f.ttf")
     shutil.copy(REPO / "aset/logo" / B["logo"], work / "logo.png")
     os.chdir(work)  # drawtext memakai path relatif (f.ttf, t*.txt)
