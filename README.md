@@ -5,6 +5,7 @@ Jalan di GitHub Actions (repo privat `fishtudio-agent`), tidak butuh laptop meny
 | Jam WIB | Tugas |
 |---|---|
 | 04.00 | Ambil naskah hari berikutnya dari bank naskah, render 4 video, diunggah ke Drive. Lalu folder buatan agent yang lebih dari 7 hari dipindah ke Sampah Drive. |
+| 09.45 | Story STORE OPEN di Goldfish and Richman (render baru tiap hari, tayang tepat 10.00) |
 | 11.45 | Posting slot 12.00 (menunggu sampai tepat 12.00) |
 | 18.45 | Posting slot 19.00 |
 

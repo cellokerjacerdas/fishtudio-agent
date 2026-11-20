@@ -3,6 +3,7 @@
 python agent/main.py buat [d m]        04.00 WIB: tulis, render, unggah 4 video ke Drive
 python agent/main.py posting 12.00     posting slot 12.00 (atau 19.00) ke Instagram
 python agent/main.py bersih            buang folder buatan agent yang lebih dari 7 hari
+python agent/main.py story             10.00 WIB: story STORE OPEN di Goldfish and Richman
 
 Struktur Drive: Fish Studio/[02] CONTENT/<Bulan YY>/<Fishtudio|Goldfish and Richman>/[d m HH.MM] judul/
 Folder lama tanpa jam ([d m] judul) dianggap slot 19.00.
@@ -216,9 +217,11 @@ def ig(metode, jalur, token, **kw):
     return d
 
 
-def unggah_reel(ig_id, token, video, caption):
-    w = ig("POST", f"{ig_id}/media", token, data={"media_type": "REELS", "upload_type": "resumable",
-                                                  "caption": caption, "share_to_feed": "true"})
+def unggah_reel(ig_id, token, video, caption, jenis="REELS"):
+    data = {"media_type": jenis, "upload_type": "resumable"}
+    if jenis == "REELS":
+        data.update(caption=caption, share_to_feed="true")
+    w = ig("POST", f"{ig_id}/media", token, data=data)
     for coba in range(5):  # server Meta kadang 503 sesaat
         with open(video, "rb") as f:
             r = requests.post(w["uri"], data=f, timeout=900, headers={
@@ -277,6 +280,25 @@ def cmd_posting(argumen):
         raise SystemExit(f"{gagal} posting gagal")
 
 
+# ---------------- story opening ----------------
+
+def cmd_story(_):
+    """10.00 WIB: story STORE OPEN di Goldfish and Richman, footage ikan berganti tiap hari."""
+    target = sekarang().replace(hour=10, minute=0, second=0, microsecond=0)
+    TMP.mkdir(parents=True, exist_ok=True)
+    kategori = random.Random(sekarang().date().toordinal()).choice(["oranda", "ryukin", "ranchu"])
+    klip = unduh_footage(kategori, TMP / "klip-story", jumlah=3)
+    video = TMP / "story.mp4"
+    subprocess.run([sys.executable, str(REPO / "render/story.py"), str(klip), str(video), sekarang().date().isoformat()],
+                   check=True)
+    tunggu = (target - sekarang()).total_seconds()
+    if 0 < tunggu < 30 * 60:
+        time.sleep(tunggu)
+    token = os.environ.get("IG_TOKEN_GOLDFISH") or os.environ["IG_TOKEN"]
+    link = unggah_reel(os.environ["IG_ID_GOLDFISH"], token, video, None, jenis="STORIES")
+    lapor(f"STORY opening Goldfish and Richman tayang: {link}")
+
+
 # ---------------- bersih ----------------
 
 def cmd_bersih(_):
@@ -302,7 +324,7 @@ def cmd_bersih(_):
 
 
 if __name__ == "__main__":
-    perintah = {"buat": cmd_buat, "posting": cmd_posting, "bersih": cmd_bersih}
+    perintah = {"buat": cmd_buat, "posting": cmd_posting, "bersih": cmd_bersih, "story": cmd_story}
     if len(sys.argv) < 2 or sys.argv[1] not in perintah:
         print(__doc__)
         sys.exit(1)
