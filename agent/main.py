@@ -283,19 +283,13 @@ def cmd_posting(argumen):
 # ---------------- story opening ----------------
 
 def cmd_story(_):
-    """10.00 WIB: story STORE OPEN di Goldfish and Richman, footage ikan berganti tiap hari."""
+    """10.00 WIB: story opening umum (video sama tiap hari) di Goldfish and Richman."""
     target = sekarang().replace(hour=10, minute=0, second=0, microsecond=0)
-    TMP.mkdir(parents=True, exist_ok=True)
-    kategori = random.Random(sekarang().date().toordinal()).choice(["oranda", "ryukin", "ranchu"])
-    klip = unduh_footage(kategori, TMP / "klip-story", jumlah=3)
-    video = TMP / "story.mp4"
-    subprocess.run([sys.executable, str(REPO / "render/story.py"), str(klip), str(video), sekarang().date().isoformat()],
-                   check=True)
     tunggu = (target - sekarang()).total_seconds()
     if 0 < tunggu < 30 * 60:
         time.sleep(tunggu)
     token = os.environ.get("IG_TOKEN_GOLDFISH") or os.environ["IG_TOKEN"]
-    link = unggah_reel(os.environ["IG_ID_GOLDFISH"], token, video, None, jenis="STORIES")
+    link = unggah_reel(os.environ["IG_ID_GOLDFISH"], token, REPO / "aset/story/story opening.mp4", None, jenis="STORIES")
     lapor(f"STORY opening Goldfish and Richman tayang: {link}")
 
 
