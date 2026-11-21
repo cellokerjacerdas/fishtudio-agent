@@ -24,6 +24,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).parent))
 import cover  # noqa: E402
 import fb  # noqa: E402
+import threads as TH  # noqa: E402  (mirror ke Threads, sama dengan laptop)
 import gdrive  # noqa: E402
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "render"))
 import thumbnail as THUMB  # noqa: E402
@@ -53,6 +54,20 @@ SUMBER_FOOTAGE = {
 SLOT = {"edukasi": "12.00", "footage": "19.00"}
 NAMA_THUMB = "Thumbnail.png"  # thumbnail otomatis tiap konten (permintaan Cello 21 Nov 2026)
 TANDA_AGENT, TANDA_TAYANG, TANDA_FB = "dibuat agent.txt", "sudah tayang.txt", "sudah tayang fb.txt"
+TANDA_THREADS = "sudah tayang threads.txt"
+THREADS_AKUN = {"fishtudio": "fishtudio.richman", "goldfish": "goldfishandrichman"}  # username Threads yang sah
+
+
+def url_publik(video):
+    """Threads hanya menerima video dari URL publik dan menolak link CDN Instagram (dites 21 Nov 2026),
+    jadi video diunggah ke catbox.moe dulu."""
+    with open(video, "rb") as f:
+        r = requests.post("https://catbox.moe/user/api.php", data={"reqtype": "fileupload"},
+                          files={"fileToUpload": (Path(video).name.replace(" ", "_"), f, "video/mp4")}, timeout=600)
+    url = r.text.strip()
+    if r.status_code != 200 or not url.startswith("https://"):
+        raise RuntimeError(f"catbox {r.status_code}: {url[:120]}")
+    return url
 POLA = re.compile(r"^\[(\d{1,2}) (\d{1,2})(?: (\d{1,2}\.\d{2}))?\]\s*(.*)$")
 RIWAYAT = REPO / "data/riwayat.json"
 laporan = []
@@ -301,7 +316,9 @@ def cmd_posting(argumen):
         for f in folder_slot(d, brand, slot):
             isi = {x["name"]: x for x in gdrive.daftar(f["id"])}
             perlu_ig, perlu_fb = TANDA_TAYANG not in isi, TANDA_FB not in isi
-            if not (perlu_ig or perlu_fb):
+            th_token = os.environ.get(f"THREADS_TOKEN_{brand.upper()}")
+            perlu_th = bool(th_token) and TANDA_THREADS not in isi
+            if not (perlu_ig or perlu_fb or perlu_th):
                 lapor(f"SUDAH {brand}: {f['name']}")
                 continue
             mp4 = [x for n, x in isi.items() if n.lower().endswith(".mp4")]
@@ -347,6 +364,18 @@ def cmd_posting(argumen):
                     lapor(f"TAYANG FB {brand}: {f['name']}\n{link}")
                 except Exception as e:  # FB gagal tidak membatalkan IG
                     lapor(f"GAGAL FB {brand}: {f['name']}: {e}")
+            if perlu_th and (not perlu_ig or TANDA_TAYANG in {x["name"] for x in gdrive.daftar(f["id"])}):
+                try:  # Threads menyusul setelah Reels IG tayang, gagal di Threads tidak membatalkan IG
+                    akun = TH.profil(th_token).get("username", "")
+                    if akun != THREADS_AKUN[brand]:
+                        raise RuntimeError(f"token THREADS_TOKEN_{brand.upper()} milik @{akun}, bukan @{THREADS_AKUN[brand]}")
+                    teks = (gdrive.baca_teks(isi["threads.txt"]["id"]).strip() if "threads.txt" in isi
+                            else TH.narasi_dari_caption(caption))
+                    link = TH.posting(th_token, teks, url_publik(video))
+                    gdrive.tulis_teks(f["id"], TANDA_THREADS, f"{sekarang():%d/%m/%Y %H:%M} WIB\n{link}\n")
+                    lapor(f"TAYANG THREADS {brand}: {f['name']}\n{link}")
+                except Exception as e:  # noqa: BLE001
+                    lapor(f"GAGAL THREADS {brand}: {f['name']}: {str(e)[:200]}")
     if gagal:
         raise SystemExit(f"{gagal} posting gagal")
 

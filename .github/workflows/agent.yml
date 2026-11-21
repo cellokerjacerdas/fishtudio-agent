@@ -32,6 +32,10 @@ jobs:
       IG_TOKEN: ${{ secrets.IG_TOKEN }}
       IG_ID_FISHTUDIO: ${{ secrets.IG_ID_FISHTUDIO }}
       IG_ID_GOLDFISH: ${{ secrets.IG_ID_GOLDFISH }}
+      IG_TOKEN_FISHTUDIO: ${{ secrets.IG_TOKEN_FISHTUDIO }}
+      IG_TOKEN_GOLDFISH: ${{ secrets.IG_TOKEN_GOLDFISH }}
+      THREADS_TOKEN_FISHTUDIO: ${{ secrets.THREADS_TOKEN_FISHTUDIO }}
+      THREADS_TOKEN_GOLDFISH: ${{ secrets.THREADS_TOKEN_GOLDFISH }}
       PYTHONUTF8: "1"
     steps:
       - name: Tentukan tugas
