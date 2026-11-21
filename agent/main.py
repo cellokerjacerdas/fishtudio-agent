@@ -2,7 +2,7 @@
 
 python agent/main.py buat [d m]        04.00 WIB: tulis, render, unggah 4 video ke Drive
 python agent/main.py posting 12.00     posting slot 12.00 (atau 19.00) ke Instagram
-python agent/main.py bersih            buang folder buatan agent yang lebih dari 7 hari
+python agent/main.py bersih            hapus permanen video konten jadi yang sudah 7 hari di Drive
 python agent/main.py story             10.00 WIB: story STORE OPEN di Goldfish and Richman
 
 Struktur Drive: Fish Studio/[02] CONTENT/<Bulan YY>/<Fishtudio|Goldfish and Richman>/[d m HH.MM] judul/
@@ -22,6 +22,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).parent))
+import cover  # noqa: E402
 import fb  # noqa: E402
 import gdrive  # noqa: E402
 from rencana import buat_rencana  # noqa: E402  (cadangan berbayar, hanya kalau bank habis)
@@ -229,10 +230,12 @@ def unggah_coba(*a, **kw):
             time.sleep(30)
 
 
-def unggah_reel(ig_id, token, video, caption, jenis="REELS"):
+def unggah_reel(ig_id, token, video, caption, jenis="REELS", sampul=False):
     data = {"media_type": jenis, "upload_type": "resumable"}
     if jenis == "REELS":
         data.update(caption=caption, share_to_feed="true")
+        if sampul:  # frame pertama = thumbnail yang disisipkan cover.sisipkan
+            data["thumb_offset"] = "0"
     w = ig("POST", f"{ig_id}/media", token, data=data)
     for coba in range(5):  # server Meta kadang 503 sesaat
         with open(video, "rb") as f:
@@ -282,9 +285,17 @@ def cmd_posting(argumen):
                 continue
             caption = gdrive.baca_teks(isi["caption.txt"]["id"]).strip()
             video = gdrive.unduh(mp4[0]["id"], TMP / "posting.mp4")
+            thumb = cover.cari(isi)
+            if thumb:  # thumbnail di folder jadi cover Reels (permintaan Cello 21 Nov 2026)
+                try:
+                    gambar = gdrive.unduh(isi[thumb]["id"], TMP / ("thumb" + Path(thumb).suffix.lower()))
+                    video = cover.sisipkan(video, gambar, TMP / "dengan cover.mp4")
+                except Exception as e:
+                    lapor(f"PERINGATAN {brand}: {f['name']}: thumbnail gagal disisipkan: {e}")
+                    thumb = None
             if perlu_ig:
                 try:
-                    link = unggah_coba(ig_id, token, video, caption)
+                    link = unggah_coba(ig_id, token, video, caption, sampul=bool(thumb))
                     gdrive.tulis_teks(f["id"], TANDA_TAYANG, f"{sekarang():%d/%m/%Y %H:%M} WIB\n{link}\n")
                     lapor(f"TAYANG IG {brand}: {f['name']}\n{link}")
                 except Exception as e:
@@ -319,27 +330,55 @@ def cmd_story(_):
 
 
 # ---------------- bersih ----------------
+# Cakupan (keputusan Cello 21 Nov 2026): semua video di [02] CONTENT/<Bulan YY>/, buatan agent maupun manual,
+# yang sudah 7 hari atau lebih di Drive. Stock Footage dan folder di luar [02] CONTENT tidak disentuh.
+# Hanya file video yang dihapus permanen; folder, caption, dan tanda tayang tetap ada sebagai catatan.
+
+UMUR_HAPUS = dt.timedelta(days=7)
+EKSTENSI_VIDEO = (".mp4", ".mov", ".m4v", ".mkv", ".webm", ".avi")
+POLA_BULAN = re.compile(r"^(" + "|".join(BULAN) + r") (\d{2})$")
+
+
+def tanggal_folder(nama, tahun, sebelumnya=None):
+    """Tanggal tayang dari nama folder [d m ...]; kalau bukan folder slot, pakai tanggal folder induknya."""
+    m = POLA.match(nama)
+    if not m:
+        return sebelumnya
+    try:
+        return dt.date(tahun, int(m[2]), int(m[1]))
+    except ValueError:
+        return sebelumnya
+
+
+def boleh_hapus(nama, mime, dibuat, tgl_tayang, kini):
+    """Video, sudah 7 hari di Drive, dan jadwal tayangnya (kalau ada) sudah lewat."""
+    video = (mime or "").startswith("video/") or nama.lower().endswith(EKSTENSI_VIDEO)
+    belum_tayang = tgl_tayang is not None and tgl_tayang >= kini.date()
+    return video and not belum_tayang and kini - dibuat >= UMUR_HAPUS
+
+
+def _bersih_isi(parent, jalur, tahun, tgl, kini, hasil):
+    for f in gdrive.daftar(parent):
+        if f["mimeType"] == gdrive.FOLDER:
+            _bersih_isi(f["id"], f"{jalur}/{f['name']}", tahun, tanggal_folder(f["name"], tahun, tgl), kini, hasil)
+            continue
+        dibuat = dt.datetime.fromisoformat(f["createdTime"].replace("Z", "+00:00"))
+        if boleh_hapus(f["name"], f.get("mimeType"), dibuat, tgl, kini):
+            gdrive.hapus(f["id"])
+            hasil.append(int(f.get("size") or 0))
+            lapor(f"DIHAPUS permanen: {jalur}/{f['name']}")
+
 
 def cmd_bersih(_):
-    hari_ini = sekarang().date()
-    batas = hari_ini - dt.timedelta(days=7)
-    bulan_ini = hari_ini.replace(day=1)
-    for d in {bulan_ini, (bulan_ini - dt.timedelta(days=1)).replace(day=1)}:
-        for brand in FOLDER:
-            par = folder_brand(d, brand)
-            if not par:
-                continue
-            for f in gdrive.daftar(par, True):
-                m = POLA.match(f["name"])
-                if not m:
-                    continue
-                try:
-                    tgl = dt.date(d.year, int(m[2]), int(m[1]))
-                except ValueError:
-                    continue
-                if tgl < batas and gdrive.cari(f["id"], TANDA_AGENT, folder=False):
-                    gdrive.buang(f["id"])
-                    lapor(f"DIBUANG ke Sampah: {FOLDER[brand]}/{f['name']}")
+    akar = gdrive.jalur("Fish Studio", "[02] CONTENT")
+    if not akar:
+        return lapor("Folder Fish Studio/[02] CONTENT tidak ketemu, bersih dilewati")
+    kini, hasil = sekarang(), []
+    for bulan in gdrive.daftar(akar, True):
+        m = POLA_BULAN.match(bulan["name"])
+        if m:
+            _bersih_isi(bulan["id"], bulan["name"], 2000 + int(m[2]), None, kini, hasil)
+    lapor(f"Bersih: {len(hasil)} video dihapus, {sum(hasil) / 1e6:.0f} MB lega")
 
 
 if __name__ == "__main__":

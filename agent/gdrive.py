@@ -124,3 +124,10 @@ def buang(file_id):
     r = requests.patch(f"{API}/files/{file_id}", headers=_h(), timeout=60, params={"supportsAllDrives": True},
                        json={"trashed": True})
     r.raise_for_status()
+
+
+def hapus(file_id):
+    """Hapus permanen (tidak lewat Sampah, kuota langsung lega)."""
+    r = requests.delete(f"{API}/files/{file_id}", headers=_h(), timeout=60, params={"supportsAllDrives": True})
+    if r.status_code != 404:
+        r.raise_for_status()

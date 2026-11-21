@@ -1,8 +1,8 @@
 """Buat konten dari bank naskah di laptop, langsung ke Drive lewat G: (cadangan sebelum/tanpa GitHub).
 
-python -X utf8 setup/buat_lokal.py <d> <m> <jumlah hari> [--slot 12.00|19.00]
+python -X utf8 setup/buat_lokal.py <d> <m> <jumlah hari> [--slot 12.00|19.00|12.00,19.00]
 Contoh: buat_lokal.py 20 11 5   -> 20 sampai 24 Nov, slot yang masih kosong saja.
-Naskah diambil dari data/bank.json mulai posisi data/bank_pos.json, posisi dimajukan satu per hari.
+Naskah diambil dari data/bank.json mulai posisi data/bank_pos.json, posisi maju satu per hari yang benar-benar dibuat.
 """
 import datetime as dt
 import json
@@ -48,8 +48,11 @@ def klip_lokal(kategori, dest, jumlah=4):
 
 def main():
     args = sys.argv[1:]
-    hanya = args[args.index("--slot") + 1] if "--slot" in args else None
-    d0 = dt.date(dt.date.today().year, int(args[1]), int(args[0]))
+    hanya = set(args[args.index("--slot") + 1].split(",")) if "--slot" in args else None
+    hari_ini = dt.date.today()
+    d0 = dt.date(hari_ini.year, int(args[1]), int(args[0]))
+    if d0 < hari_ini - dt.timedelta(days=60):  # 1 Januari diminta saat masih Desember
+        d0 = d0.replace(year=d0.year + 1)
     hari = int(args[2])
     bank = json.loads(M.BANK.read_text(encoding="utf-8"))
     pos = json.loads(M.POS.read_text(encoding="utf-8")).get("berikutnya", 0) if M.POS.exists() else 0
@@ -57,12 +60,15 @@ def main():
     TMP.mkdir(exist_ok=True)
     for k in range(hari):
         d = d0 + dt.timedelta(days=k)
+        if pos >= len(bank):
+            print("BANK NASKAH HABIS: minta Mbut isi bank naskah")
+            break
         naskah = bank[pos]
-        pos += 1
+        dibuat = 0
         for brand in M.FOLDER:
             fb = AKAR / M.nama_bulan(d) / M.FOLDER[brand]
             for jenis, slot in M.SLOT.items():
-                if (hanya and slot != hanya) or slot_terisi(fb, d, slot):
+                if (hanya and slot not in hanya) or slot_terisi(fb, d, slot):
                     continue
                 item = naskah[brand][jenis]
                 musik = random.choice(M.MUSIK[brand])
@@ -93,7 +99,9 @@ def main():
                 (tujuan / M.TANDA_AGENT).write_text(
                     f"dibuat {dt.datetime.now():%d/%m/%Y %H:%M} WIB, dihapus otomatis setelah 7 hari\n", encoding="utf-8")
                 riwayat.append({"tanggal": d.isoformat(), "brand": brand, "slot": slot, "judul": judul})
+                dibuat += 1
                 print(f"SIAP {tujuan}", flush=True)
+        pos += 1 if dibuat else 0
         M.POS.write_text(json.dumps({"berikutnya": pos}), encoding="utf-8")
         M.RIWAYAT.write_text(json.dumps(riwayat, ensure_ascii=False, indent=1), encoding="utf-8")
     shutil.rmtree(TMP / "kerja", ignore_errors=True)
