@@ -25,6 +25,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 import cover  # noqa: E402
 import fb  # noqa: E402
 import gdrive  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "render"))
+import thumbnail as THUMB  # noqa: E402
 from rencana import buat_rencana  # noqa: E402  (cadangan berbayar, hanya kalau bank habis)
 
 REPO = Path(__file__).resolve().parent.parent
@@ -49,6 +51,7 @@ SUMBER_FOOTAGE = {
     "perawatan akuarium": ["Footage Abe 9 Nov"],
 }
 SLOT = {"edukasi": "12.00", "footage": "19.00"}
+NAMA_THUMB = "Thumbnail.png"  # thumbnail otomatis tiap konten (permintaan Cello 21 Nov 2026)
 TANDA_AGENT, TANDA_TAYANG, TANDA_FB = "dibuat agent.txt", "sudah tayang.txt", "sudah tayang fb.txt"
 POLA = re.compile(r"^\[(\d{1,2}) (\d{1,2})(?: (\d{1,2}\.\d{2}))?\]\s*(.*)$")
 RIWAYAT = REPO / "data/riwayat.json"
@@ -121,19 +124,33 @@ def unduh_footage(kategori, dest, jumlah=4):
     return dest
 
 
+def buat_thumbnail(item, brand, jenis, sumber, out):
+    """Thumbnail.png untuk folder konten; gagal cukup diberi peringatan, konten tetap jalan."""
+    try:
+        return THUMB.buat(item, brand, jenis, sumber, out) if sumber else None
+    except Exception as e:  # noqa: BLE001
+        lapor(f"PERINGATAN thumbnail {brand} {jenis}: {e}")
+        return None
+
+
 def render(brand, jenis, item, musik, out):
+    """Render video ke out, plus Thumbnail.png di sebelahnya. Mengembalikan path thumbnail atau None."""
     spec = dict(item, musik=musik)
     work = TMP / f"{brand}-{jenis}"
     sp = TMP / f"{brand}-{jenis}.json"
     sp.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")
+    thumb = Path(out).with_name(f"{Path(out).stem} {NAMA_THUMB}")
     if jenis == "edukasi":
         subprocess.run(["node", str(REPO / "render/edukasi.cjs"), str(sp), brand, str(work), str(out)], check=True)
+        thumb = buat_thumbnail(item, brand, jenis, THUMB.sumber_edukasi(item, REPO), thumb)
     else:
         klip = unduh_footage(item["kategori"], TMP / f"klip-{brand}")
         subprocess.run([sys.executable, str(REPO / "render/footage.py"), str(sp), brand, str(klip), str(work), str(out)],
                        check=True)
+        thumb = buat_thumbnail(item, brand, jenis, next(iter(sorted(klip.iterdir())), None), thumb)
         shutil.rmtree(klip, ignore_errors=True)
     shutil.rmtree(work, ignore_errors=True)
+    return thumb
 
 
 BANK, POS = REPO / "data/bank.json", REPO / "data/bank_pos.json"
@@ -188,7 +205,7 @@ def cmd_buat(argumen):
             continue
         video = TMP / f"{judul}.mp4"
         try:
-            render(brand, jenis, item, musik, video)
+            thumb = render(brand, jenis, item, musik, video)
         except Exception as e:  # satu konten gagal jangan hentikan yang lain
             lapor(f"GAGAL render {brand} {slot} '{judul}': {e}")
             gagal += 1
@@ -196,6 +213,9 @@ def cmd_buat(argumen):
         par = folder_brand(d, brand, buat=True)
         fid = gdrive.buat_folder(par, f"[{d.day} {d.month} {slot}] {judul}")
         gdrive.unggah(video, fid, f"{judul}.mp4", "video/mp4")
+        if thumb:
+            gdrive.unggah(thumb, fid, NAMA_THUMB, "image/png")
+            thumb.unlink(missing_ok=True)
         gdrive.tulis_teks(fid, "caption.txt", caption)
         gdrive.tulis_teks(fid, "kredit musik.txt", kredit(musik) + "\n")
         gdrive.tulis_teks(fid, TANDA_AGENT, f"dibuat {sekarang():%d/%m/%Y %H:%M} WIB, dihapus otomatis setelah 7 hari\n")

@@ -11,7 +11,9 @@ Jalan di GitHub Actions (repo privat `fishtudio-agent`), tidak butuh laptop meny
 
 Per akun per hari: **12.00 edukasi** motion graphic (`render/edukasi.cjs`, mesin edu.js) dan **19.00 footage** dari Stock Footage Drive (`render/footage.py`).
 
-Folder Drive: `Fish Studio/[02] CONTENT/<Bulan YY>/<Fishtudio|Goldfish and Richman>/[d m HH.MM] judul/` berisi video, `caption.txt`, `kredit musik.txt`, `dibuat agent.txt`. Setelah tayang muncul `sudah tayang.txt` berisi link.
+Folder Drive: `Fish Studio/[02] CONTENT/<Bulan YY>/<Fishtudio|Goldfish and Richman>/[d m HH.MM] judul/` berisi video, `Thumbnail.png`, `caption.txt`, `kredit musik.txt`, `dibuat agent.txt`.
+
+**Thumbnail otomatis** (sejak 21 Nov 2026): tiap konten dapat `Thumbnail.png` dari `render/thumbnail.py` + `render/thumbnail/thumbnail.html`. Edukasi = gaya vlog stiker (plat hitam berisi headline adegan pertama, foto klip latar berbingkai, ikan stiker untuk G&R); footage = foto penuh dari klip footage (frame paling terang) dengan panel maroon dan judul dari teks adegan pertama. Tanpa font script dan tanpa sub-judul kecil. Saat posting, thumbnail jadi cover Reels lewat `agent/cover.py`. Thumbnail gagal tidak membatalkan konten. Setelah tayang muncul `sudah tayang.txt` berisi link.
 
 - Konten di Drive dianggap sudah disetujui. Mau ganti: edit/ganti video atau `caption.txt` sebelum jam tayang. Mau batal: hapus foldernya atau taruh file `sudah tayang.txt`.
 - Konten manual tetap bisa: buat folder `[d m 12.00] judul` atau `[d m 19.00] judul` berisi 1 mp4 + caption.txt. Folder tanpa jam dianggap 19.00. Agent hanya membuat konten untuk slot yang masih kosong.

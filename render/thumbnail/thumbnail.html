@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>thumbnail agent</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=block" rel="stylesheet">
+<style>
+/* Thumbnail otomatis agent konten harian (21 Nov 2026), turunan template Project Konten/thumbnail/_sumber.
+   Data lewat hash URL: #{"f":"vlog|cine","b":"fs|gr","a":"baris 1","k":"baris 2","foto":"file:///...","ikan":"oranda","badge":["30%"],"handle":"@..."}
+   vlog = edukasi (latar maroon doodle, plat hitam, foto berbingkai stiker); cine = footage (foto penuh, panel maroon miring).
+   Aturan: palet maroon/hitam/putih, huruf tegak tanpa font script, tanpa sub-judul kecil, isi penting di potongan feed 3:4 (y 240-1680). */
+@font-face{font-family:"PoppinsLokal";src:url("../../aset/font/Poppins-Bold.ttf")}
+:root{--m:#8b1014;--m2:#5c080b;--ink:#0b0b0b;--f:"Poppins","PoppinsLokal",Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ink);overflow:hidden}
+#p{position:relative;width:1080px;height:1920px;overflow:hidden;color:#fff;font-family:var(--f)}
+.abs{position:absolute}
+.fish{filter:url(#stk) drop-shadow(0 22px 26px rgba(0,0,0,.5))}
+.handle{left:0;right:0;text-align:center;font:800 26px var(--f);letter-spacing:.06em;color:#fff}
+
+/* vlog */
+.vlog{background:radial-gradient(80% 55% at 50% 62%,#a5161b 0%,var(--m) 55%,var(--m2) 100%)}
+.doodle{position:absolute;inset:0;opacity:.32}
+#c{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:540px 212px;transform:translateY(78px) scale(.82)}
+.frame{position:absolute;left:24px;right:24px;top:256px;bottom:256px;border:4px solid rgba(255,255,255,.85);border-radius:30px}
+.logo{left:0;right:0;top:212px;display:flex;justify-content:center}
+.logo span{background:var(--ink);border-radius:999px;padding:18px 44px;box-shadow:0 0 0 5px #fff,0 12px 0 5px rgba(0,0,0,.35)}
+.logo span.w{background:#fff;box-shadow:0 0 0 5px var(--ink),0 12px 0 5px rgba(0,0,0,.35)}
+.logo img{height:92px;display:block;object-fit:contain}
+.plate{left:50%;top:350px;transform:translateX(-50%) rotate(-3deg);background:var(--ink);border-radius:34px;padding:26px 46px 44px;
+  text-align:center;box-shadow:0 0 0 7px #fff,0 18px 0 7px rgba(0,0,0,.4),0 34px 60px rgba(0,0,0,.35);white-space:nowrap}
+.plate div{font-weight:900;letter-spacing:-.02em;line-height:1.02}
+.plate .a{font-size:132px;color:transparent;-webkit-text-stroke:4px #fff}
+.plate .b{font-size:160px;color:#fff;margin-top:4px;text-shadow:0 8px 0 var(--m)}
+.card{background:#fff;padding:18px;border-radius:26px;box-shadow:0 26px 50px rgba(0,0,0,.5)}
+.card img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+.badge{width:250px;height:250px;border-radius:50%;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transform:rotate(9deg);box-shadow:0 0 0 10px #fff,0 0 0 16px var(--ink),0 18px 34px 16px rgba(0,0,0,.35);text-align:center}
+.badge i{font:normal 900 54px/1.05 var(--f);letter-spacing:-.01em}
+.spark{position:absolute}
+
+/* cine */
+.photo{inset:0;width:100%;height:100%;object-fit:cover}
+.shade{inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 55%,rgba(0,0,0,.45) 70%)}
+.logos{left:64px;top:282px;background:var(--ink);border-radius:999px;padding:14px 34px;box-shadow:0 0 0 4px #fff,0 10px 24px rgba(0,0,0,.45)}
+.logos.w{background:#fff;box-shadow:0 0 0 4px var(--ink),0 10px 24px rgba(0,0,0,.45)}
+.logos img{height:62px;display:block;object-fit:contain}
+.panel{inset:0;background:linear-gradient(180deg,#9a1218 0%,var(--m) 45%,#6a090c 100%);clip-path:polygon(0 1372px,1080px 1236px,1080px 1920px,0 1920px)}
+.edge{left:-20px;top:1290px;width:1120px;height:5px;background:#fff;transform-origin:0 0;transform:rotate(-7.2deg);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.title{left:0;right:0;top:1390px;text-align:center;font-weight:900;line-height:1;letter-spacing:-.02em;text-transform:uppercase}
+.title div{white-space:nowrap}
+.title .t1{font-size:96px;color:transparent;-webkit-text-stroke:3px #fff}
+.title .t2{font-size:130px;margin-top:6px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+ <filter id="stk" x="-20%" y="-20%" width="140%" height="140%">
+  <feMorphology in="SourceAlpha" operator="dilate" radius="11" result="d"/>
+  <feFlood flood-color="#fff"/><feComposite in2="d" operator="in" result="o"/>
+  <feMerge><feMergeNode in="o"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+</svg>
+<div id="p"></div>
+<script>
+const d=JSON.parse(decodeURIComponent(location.hash.slice(1)));
+const LOGO={fs:'img/logo fs.png',gr:'img/logo gr.png'};
+const p=document.getElementById('p');
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const SP=(H,x,y,s,r)=>H(`<svg class="spark" style="left:${x}px;top:${y}px;transform:rotate(${r}deg)" width="${s}" height="${s}" viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#fff"/></svg>`);
+
+if(d.f==='vlog'){
+  p.className='vlog';
+  const DOO=`<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><g fill='none' stroke='#000000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><path d='M30 60 q30 -28 62 0 q-32 28 -62 0 z M92 60 l18 -16 v32 z'/><circle cx='50' cy='56' r='3'/><circle cx='190' cy='40' r='12'/><circle cx='214' cy='70' r='7'/><circle cx='200' cy='96' r='4'/><path d='M250 150 l8 18 18 8 -18 8 -8 18 -8 -18 -18 -8 18 -8 z'/><path d='M20 170 q20 -16 40 0 t40 0 t40 0'/><path d='M20 194 q20 -16 40 0 t40 0 t40 0'/><path d='M190 290 q-14 -40 0 -70 q14 -30 0 -60 M210 290 q12 -34 -2 -64'/><path d='M60 250 m-26 0 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0 M60 250 m-14 0 a14 14 0 1 0 28 0'/><path d='M250 250 l20 -20 M260 262 l22 -22 M240 238 l22 -22'/></g></svg>`;
+  p.insertAdjacentHTML('beforeend',`<div class="doodle" style="background-image:url(&quot;data:image/svg+xml;utf8,${encodeURIComponent(DOO)}&quot;);background-size:300px 300px"></div><div id="c"></div>`);
+  const c=document.getElementById('c');const H=s=>c.insertAdjacentHTML('beforeend',s);
+  H(`<div class="abs card" style="left:140px;top:960px;width:800px;height:740px;transform:rotate(-3deg)"><img src="${d.foto}"></div>`);
+  if(d.ikan)H(`<img class="abs fish" src="img/${d.ikan}.png" style="width:470px;left:20px;top:1390px;transform:rotate(-8deg)">`);
+  SP(H,60,930,56,0);SP(H,965,1240,44,15);SP(H,990,1600,60,0);
+  H(`<div class="abs logo"><span class="${d.b==='gr'?'w':''}"><img src="${LOGO[d.b]}"></span></div>`);
+  H(`<div class="abs plate">${d.a?`<div class="a">${esc(d.a)}</div>`:''}<div class="b">${esc(d.k)}</div></div>`);
+  if(d.badge)H(`<div class="abs badge" style="left:770px;top:860px">${d.badge.map(s=>`<i>${esc(s)}</i>`).join('')}</div>`);
+  p.insertAdjacentHTML('beforeend',`<div class="frame"></div>`);
+  H(`<div class="abs handle" style="top:1826px">${esc(d.handle)}</div>`);
+}else{
+  const H=s=>p.insertAdjacentHTML('beforeend',s);
+  H(`<img class="abs photo" src="${d.foto}"><div class="abs shade"></div><div class="abs panel"></div><div class="abs edge"></div>`);
+  if(d.ikan)H(`<img class="abs fish" src="img/${d.ikan}.png" style="width:470px;left:760px;top:930px;transform:rotate(-12deg)">`);
+  H(`<div class="abs logos ${d.b==='gr'?'w':''}"><img src="${LOGO[d.b]}"></div>`);
+  H(`<div class="abs title">${d.a?`<div class="t1">${esc(d.a)}</div>`:''}<div class="t2">${esc(d.k)}</div></div>`);
+  H(`<div class="abs handle" style="top:1776px">${esc(d.handle)}</div>`);
+}
+
+// teks kepanjangan dikecilkan otomatis
+document.fonts.ready.then(()=>{
+  const fit=(e,max)=>{const w=e.offsetWidth;if(w>max){const fs=parseFloat(getComputedStyle(e).fontSize);e.style.fontSize=(fs*max/w)+'px'}};
+  document.querySelectorAll('.plate div').forEach(e=>fit(e,840));
+  document.querySelectorAll('.title div').forEach(e=>{e.style.display='inline-block';fit(e,960);e.style.display='block'});
+  document.body.dataset.ready=1;
+});
+</script>
+</body>
+</html>

@@ -15,7 +15,9 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "agent"))
+sys.path.insert(0, str(REPO / "render"))
 import main as M  # noqa: E402
+import thumbnail as THUMB  # noqa: E402
 
 AKAR = Path(r"G:\My Drive\Fish Studio\[02] CONTENT")
 TMP = REPO / "_tmp"
@@ -87,13 +89,19 @@ def main():
                 if jenis == "edukasi":
                     subprocess.run(["node", str(REPO / "render/edukasi.cjs"), str(spec), brand,
                                     str(TMP / "kerja"), str(video)], check=True, shell=False)
+                    sumber_thumb = THUMB.sumber_edukasi(item, REPO)
                 else:
                     klip = klip_lokal(item["kategori"], TMP / "klip")
+                    sumber_thumb = next(iter(sorted(klip.iterdir())), None)
                     subprocess.run([sys.executable, "-X", "utf8", str(REPO / "render/footage.py"), str(spec), brand,
                                     str(klip), str(TMP / "kerja"), str(video)], check=True)
                 tujuan = fb / f"[{d.day} {d.month} {slot}] {judul}"
                 tujuan.mkdir(parents=True, exist_ok=True)
                 shutil.move(str(video), tujuan / f"{judul}.mp4")
+                try:  # thumbnail otomatis, jadi cover Reels saat posting (permintaan Cello 21 Nov 2026)
+                    THUMB.buat(item, brand, jenis, sumber_thumb, tujuan / M.NAMA_THUMB)
+                except Exception as e:  # noqa: BLE001  thumbnail gagal jangan batalkan konten
+                    print(f"PERINGATAN thumbnail {tujuan.name}: {e}")
                 (tujuan / "caption.txt").write_text(caption, encoding="utf-8")
                 (tujuan / "kredit musik.txt").write_text(M.kredit(musik) + "\n", encoding="utf-8")
                 (tujuan / M.TANDA_AGENT).write_text(
