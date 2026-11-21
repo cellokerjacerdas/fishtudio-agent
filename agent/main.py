@@ -306,9 +306,22 @@ def cmd_posting(argumen):
             caption = gdrive.baca_teks(isi["caption.txt"]["id"]).strip()
             video = gdrive.unduh(mp4[0]["id"], TMP / "posting.mp4")
             thumb = cover.cari(isi)
+            gambar = None
+            if not thumb:  # belum ada thumbnail: buat dulu, simpan ke Drive, baru posting (Cello 21 Nov 2026)
+                try:
+                    lokal = TMP / "thumb folder" / f["name"]
+                    shutil.rmtree(lokal.parent, ignore_errors=True)
+                    lokal.mkdir(parents=True)
+                    shutil.copy(video, lokal / mp4[0]["name"])
+                    gambar = THUMB.buat_dari_folder(lokal, brand)
+                    gdrive.unggah(gambar, f["id"], NAMA_THUMB, "image/png")
+                    thumb = NAMA_THUMB
+                    lapor(f"THUMBNAIL dibuat {brand}: {f['name']}")
+                except Exception as e:  # noqa: BLE001
+                    lapor(f"PERINGATAN {brand}: {f['name']}: thumbnail gagal dibuat: {e}")
             if thumb:  # thumbnail di folder jadi cover Reels (permintaan Cello 21 Nov 2026)
                 try:
-                    gambar = gdrive.unduh(isi[thumb]["id"], TMP / ("thumb" + Path(thumb).suffix.lower()))
+                    gambar = gambar or gdrive.unduh(isi[thumb]["id"], TMP / ("thumb" + Path(thumb).suffix.lower()))
                     video = cover.sisipkan(video, gambar, TMP / "dengan cover.mp4")
                 except Exception as e:
                     lapor(f"PERINGATAN {brand}: {f['name']}: thumbnail gagal disisipkan: {e}")

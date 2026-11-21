@@ -127,6 +127,73 @@ def sumber_edukasi(item, repo):
     return None
 
 
+# ---------- thumbnail untuk folder yang belum punya (konten manual atau susulan) ----------
+
+REPO = DIR.parent.parent
+BRAND_FOLDER = {"Fishtudio": "fishtudio", "Goldfish and Richman": "goldfish"}
+KATA_EDUKASI = re.compile(r"\b(edukasi|cara|ciri|tips|tanda|beda|funfact|fakta|kenapa|jangan|porsi)\b")
+KATA_BUANG = re.compile(r"\b(edukasi|fishtudio|goldfish and richman|goldfish|richman)\b")
+
+
+def _naskah_bank(brand, judul):
+    try:
+        bank = json.loads((REPO / "data/bank.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None, None
+    for hari in bank:
+        for jenis, it in hari.get(brand, {}).items():
+            if re.sub(r"[^a-z0-9 ]", "", it["judul"].lower()).strip() == judul:
+                return jenis, it
+    return None, None
+
+
+def buat_dari_folder(folder, brand=None, out_nama="Thumbnail.png"):
+    """Thumbnail untuk folder konten [d m (HH.MM)] judul/ yang belum punya. Naskah bank dipakai kalau ada,
+    kalau tidak judul diambil dari nama video dan fotonya dari video itu sendiri."""
+    folder = Path(folder)
+    brand = brand or BRAND_FOLDER.get(folder.parent.name, "fishtudio")
+    video = next((f for f in sorted(folder.iterdir()) if f.suffix.lower() in (".mp4", ".mov")), None)
+    if not video:
+        raise RuntimeError("tidak ada video di folder")
+    m = re.match(r"^\[[^\]]*\]\s*(.*)$", folder.name)
+    judul = (m[1] if m else folder.name).strip().lower()
+    jenis, item = _naskah_bank(brand, judul)
+    if item:
+        sumber = sumber_edukasi(item, REPO) if jenis == "edukasi" else video
+        return buat(item, brand, jenis, sumber or video, folder / out_nama)
+    teks = re.sub(r"\s+", " ", KATA_BUANG.sub("", video.stem.lower())).strip() or video.stem
+    edukasi = bool(KATA_EDUKASI.search(video.stem.lower())) or " 12.00]" in folder.name
+    if edukasi:
+        item = {"adegan": [{"headline": teks, "visual": {}}]}
+        return buat(item, brand, "edukasi", video, folder / out_nama)
+    ikan = next((k for k in ("oranda", "ryukin", "ranchu") if k in teks), "oranda" if brand == "goldfish" else None)
+    item = {"adegan": [{"teks": teks}], "kategori": ikan}
+    return buat(item, brand, "footage", klip_stok(brand, ikan) or video, folder / out_nama)
+
+
+STOK = Path(r"G:\My Drive\Fish Studio\[02] CONTENT\Stock Footage")
+SUB_STOK = {"oranda": ["VIDEO IKAN/ORANDA"], "ryukin": ["VIDEO IKAN/RYUKIN"], "ranchu": ["VIDEO IKAN/RANCHU/Satuan"],
+            "fishtudio": ["Footage Abe 9 Nov", "Footage 25 Okt/ngasih makan"]}
+
+
+def klip_stok(brand, ikan):
+    """Klip mentah dari Stock Footage (tanpa teks layar) untuk foto thumbnail footage; None kalau tidak ada (cloud)."""
+    calon = []
+    for sub in SUB_STOK.get(ikan or "fishtudio", []):
+        if (STOK / sub).is_dir():
+            calon += [f for f in (STOK / sub).iterdir() if f.suffix.lower() in (".mp4", ".mov")]
+    if not calon:
+        return None
+    pilih = random.sample(calon, min(4, len(calon)))  # klip gelap sering ada, ambil yang paling terang
+
+    def terang(f):
+        try:
+            return _terang(f, 1.5)
+        except Exception:  # noqa: BLE001
+            return 0
+    return max(pilih, key=terang)
+
+
 if __name__ == "__main__":
     spec, brand, jenis, sumber, keluar = sys.argv[1:6]
     print(buat(json.loads(Path(spec).read_text(encoding="utf-8")), brand, jenis, sumber, keluar))
