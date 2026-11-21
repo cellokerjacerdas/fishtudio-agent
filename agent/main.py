@@ -427,7 +427,10 @@ def cmd_threads(argumen):
     jam, menit = map(int, slot.split("."))
     target = sekarang().replace(hour=jam, minute=menit, second=0, microsecond=0)
     tunggu = (target - sekarang()).total_seconds()
-    if 0 < tunggu < 30 * 60:
+    if tunggu >= 30 * 60:  # dijalankan manual jauh sebelum jamnya: jangan posting dini
+        lapor(f"Threads {slot}: masih terlalu awal ({sekarang():%H.%M} WIB), tidak posting")
+        return
+    if 0 < tunggu:
         time.sleep(tunggu)
     hari = sekarang().date().isoformat()
     tercatat = {x["name"] for x in gdrive.daftar(FOLDER_THREADS, False)}
