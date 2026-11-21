@@ -113,7 +113,8 @@ def susun_caption(brand, item, musik):
     topik = re.sub(r"[^a-z0-9]", "", (item.get("tagar_topik") or "").lower())
     if brand == "fishtudio" and topik and f"#{topik}" not in tag.lower():
         tag += f" #{topik}"
-    return f"{item['caption'].strip()}\n\n{TAGLINE[brand]}\n\n{kredit(musik)}\n\n{tag}"
+    # format Cello 22 Nov 2026: hook, body sesuai isi, CTA manusiawi (di bank naskah), lalu kredit musik CC BY dan hashtag
+    return f"{item['caption'].strip()}\n\n{kredit(musik)}\n\n{tag}"
 
 
 def cek_copy(path):

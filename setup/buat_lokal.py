@@ -146,8 +146,7 @@ def main():
                 if item is None:
                     print(f"BANK NASKAH HABIS untuk {brand} {jenis}: minta Mbut isi bank naskah")
                     continue
-                if ((ev.get("akun") or {}).get(brand) or {}).get("komentar_rendah"):
-                    item = dict(item, caption=item["caption"].rstrip() + "\n\n" + AJAKAN_KOMENTAR[brand])
+                # format caption baru (hook, body, CTA) sudah dibuka dengan pertanyaan, jadi tidak ditambah ajakan komentar
                 musik = random.choice(M.MUSIK[brand])
                 judul = re.sub(r"[^a-z0-9 ]", "", item["judul"].lower()).strip()
                 caption = M.susun_caption(brand, item, musik)

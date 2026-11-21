@@ -80,15 +80,18 @@ def cek_item(lok, brand, jenis, it):
         salah.append(f"{lok} cta_vo: tulis 'akuariummu'")
     cap = it["caption"]
     cek_teks(f"{lok} caption", cap)
-    baris1 = cap.strip().split("\n")[0]
-    if len(baris1) > 120:
-        salah.append(f"{lok} caption: baris pertama {len(baris1)} karakter (maks 120)")
-    if "08569990738" not in baris1:
-        salah.append(f"{lok} caption: baris pertama tanpa WA 08569990738")
-    if not re.search(r"\b[A-Z]{3,}\b", baris1):
-        salah.append(f"{lok} caption: baris pertama tanpa KATA KUNCI huruf besar")
-    if len(cap) > 1200:
-        salah.append(f"{lok} caption: terlalu panjang ({len(cap)})")
+    # format Cello 22 Nov 2026: tepat 3 paragraf, hook, body sesuai isi, CTA manusiawi dengan WA
+    para = [p.strip() for p in cap.strip().split("\n\n") if p.strip()]
+    if len(para) != 3:
+        salah.append(f"{lok} caption: harus 3 paragraf (hook, body, CTA), ada {len(para)}")
+    elif len(para[0]) > 120:
+        salah.append(f"{lok} caption: hook {len(para[0])} karakter (maks 120)")
+    if para and not re.search(r"0856.?9990.?738", para[-1]):
+        salah.append(f"{lok} caption: CTA tanpa WA 0856-9990-738")
+    if re.search(r"^\s*\d+\.", cap, re.M):
+        salah.append(f"{lok} caption: jangan pakai poin bernomor")
+    if len(cap) > 700:
+        salah.append(f"{lok} caption: terlalu panjang ({len(cap)}, maks 700)")
     th = it.get("threads")
     if th:  # opsional: narasi Threads (Cello 21 Nov 2026)
         cek_teks(f"{lok} threads", th)
