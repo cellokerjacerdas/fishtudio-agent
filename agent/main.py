@@ -5,7 +5,7 @@ python agent/main.py posting 12.00     posting slot 12.00 (atau 19.00) ke Instag
 python agent/main.py bersih            hapus permanen video konten jadi yang sudah 7 hari di Drive
 python agent/main.py story             10.00 WIB: story STORE OPEN di Goldfish and Richman
 
-Struktur Drive: Fish Studio/[02] CONTENT/<Bulan YY>/<Fishtudio|Goldfish and Richman>/[d m HH.MM] judul/
+Struktur Drive: Fish Studio/[02] CONTENT/[MM] <Bulan YYYY>/<Fishtudio|Goldfish and Richman>/[d m HH.MM] judul/
 Folder lama tanpa jam ([d m] judul) dianggap slot 19.00.
 """
 import datetime as dt
@@ -68,7 +68,7 @@ def sekarang():
 
 
 def nama_bulan(d):
-    return f"{BULAN[d.month - 1]} {d:%y}"
+    return f"[{d.month:02d}] {BULAN[d.month - 1]} {d.year}"
 
 
 def folder_brand(d, brand, buat=False):
@@ -110,7 +110,7 @@ def cek_copy(path):
 
 def unduh_footage(kategori, dest, jumlah=4):
     dest.mkdir(parents=True, exist_ok=True)
-    akar = gdrive.jalur("Fish Studio", "[02] CONTENT", "Stock Footage")
+    akar = gdrive.jalur("Fish Studio", "[02] CONTENT", "[00] Other", "Stock Footage")
     calon = []
     for sub in SUMBER_FOOTAGE[kategori]:
         fid = gdrive.jalur(*sub.split("/"), akar=akar)
@@ -161,7 +161,11 @@ def ambil_naskah(d, riwayat):
     bank = json.loads(BANK.read_text(encoding="utf-8")) if BANK.exists() else []
     pos = json.loads(POS.read_text(encoding="utf-8")).get("berikutnya", 0) if POS.exists() else 0
     if pos < len(bank):
-        POS.write_text(json.dumps({"berikutnya": pos + 1}), encoding="utf-8")
+        data = json.loads(POS.read_text(encoding="utf-8")) if POS.exists() else {}
+        data["berikutnya"] = pos + 1
+        for k in data.get("terpakai", {}):  # catatan pemilih naskah laptop (buat_lokal) tetap terjaga
+            data["terpakai"][k] = sorted(set(data["terpakai"][k]) | {pos})
+        POS.write_text(json.dumps(data), encoding="utf-8")
         sisa = len(bank) - pos - 1
         lapor(f"Naskah bank hari ke-{pos + 1} dari {len(bank)}, sisa {sisa} hari")
         if sisa <= 5:
@@ -217,6 +221,8 @@ def cmd_buat(argumen):
             gdrive.unggah(thumb, fid, NAMA_THUMB, "image/png")
             thumb.unlink(missing_ok=True)
         gdrive.tulis_teks(fid, "caption.txt", caption)
+        if item.get("threads"):  # narasi Threads, lebih panjang dari caption (Cello 21 Nov 2026)
+            gdrive.tulis_teks(fid, "threads.txt", item["threads"].strip() + "\n")
         gdrive.tulis_teks(fid, "kredit musik.txt", kredit(musik) + "\n")
         gdrive.tulis_teks(fid, TANDA_AGENT, f"dibuat {sekarang():%d/%m/%Y %H:%M} WIB, dihapus otomatis setelah 7 hari\n")
         video.unlink(missing_ok=True)
@@ -353,23 +359,49 @@ def cmd_story(_):
     tunggu = (target - sekarang()).total_seconds()
     if 0 < tunggu < 30 * 60:
         time.sleep(tunggu)
-    token = os.environ.get("IG_TOKEN_GOLDFISH") or os.environ["IG_TOKEN"]
-    link = unggah_reel(os.environ["IG_ID_GOLDFISH"], token, REPO / "aset/story/story opening.mp4", None, jenis="STORIES")
-    lapor(f"STORY opening Goldfish and Richman tayang: {link}")
-    try:
-        lapor(f"STORY opening FB Goldfish and Richman: {fb.story('goldfish', os.environ['IG_TOKEN'], REPO / 'aset/story/story opening.mp4')}")
-    except Exception as e:
-        lapor(f"GAGAL story FB: {e}")
+    # Goldfish and Richman + Fishtudio (video Fishtudio dibuat Cello, dilewati kalau belum ada)
+    for brand, nama, video in [("goldfish", "Goldfish and Richman", REPO / "aset/story/story opening.mp4"),
+                               ("fishtudio", "Fishtudio", REPO / "aset/story/story opening fishtudio.mp4")]:
+        if not video.exists():
+            lapor(f"LEWAT story {nama}: {video.name} belum ada")
+            continue
+        token = os.environ.get(f"IG_TOKEN_{brand.upper()}") or os.environ["IG_TOKEN"]
+        try:
+            link = unggah_reel(os.environ[f"IG_ID_{brand.upper()}"], token, video, None, jenis="STORIES")
+            lapor(f"STORY opening {nama} tayang: {link}")
+        except Exception as e:
+            lapor(f"GAGAL story IG {nama}: {e}")
+        try:
+            lapor(f"STORY opening FB {nama}: {fb.story(brand, os.environ['IG_TOKEN'], video)}")
+        except Exception as e:
+            lapor(f"GAGAL story FB {nama}: {e}")
+
+
+def cmd_cek(argumen):
+    """Tes aman tanpa posting: daftar folder konten hari ini (atau 'd m') di Drive dan kelengkapannya."""
+    d = sekarang().date()
+    if len(argumen) >= 2:
+        d = d.replace(month=int(argumen[1]), day=int(argumen[0]))
+    for brand in FOLDER:
+        for slot in SLOT.values():
+            folder = folder_slot(d, brand, slot)
+            if not folder:
+                lapor(f"KOSONG {brand} {d:%d/%m} {slot}")
+            for f in folder:
+                isi = [x["name"] for x in gdrive.daftar(f["id"])]
+                mp4 = [n for n in isi if n.lower().endswith(".mp4")]
+                status = "SUDAH TAYANG" if TANDA_TAYANG in isi else ("SIAP" if len(mp4) == 1 and "caption.txt" in isi else "BELUM LENGKAP")
+                lapor(f"{status} {brand} {slot}: {f['name']} ({len(mp4)} mp4, caption {'ada' if 'caption.txt' in isi else 'tidak ada'})")
 
 
 # ---------------- bersih ----------------
-# Cakupan (keputusan Cello 21 Nov 2026): semua video di [02] CONTENT/<Bulan YY>/, buatan agent maupun manual,
+# Cakupan (keputusan Cello 21 Nov 2026): semua video di [02] CONTENT/[MM] <Bulan YYYY>/, buatan agent maupun manual,
 # yang sudah 7 hari atau lebih di Drive. Stock Footage dan folder di luar [02] CONTENT tidak disentuh.
 # Hanya file video yang dihapus permanen; folder, caption, dan tanda tayang tetap ada sebagai catatan.
 
 UMUR_HAPUS = dt.timedelta(days=7)
 EKSTENSI_VIDEO = (".mp4", ".mov", ".m4v", ".mkv", ".webm", ".avi")
-POLA_BULAN = re.compile(r"^(" + "|".join(BULAN) + r") (\d{2})$")
+POLA_BULAN = re.compile(r"^\[\d{2}\] (" + "|".join(BULAN) + r") (\d{4})$")
 
 
 def tanggal_folder(nama, tahun, sebelumnya=None):
@@ -410,12 +442,12 @@ def cmd_bersih(_):
     for bulan in gdrive.daftar(akar, True):
         m = POLA_BULAN.match(bulan["name"])
         if m:
-            _bersih_isi(bulan["id"], bulan["name"], 2000 + int(m[2]), None, kini, hasil)
+            _bersih_isi(bulan["id"], bulan["name"], int(m[2]), None, kini, hasil)
     lapor(f"Bersih: {len(hasil)} video dihapus, {sum(hasil) / 1e6:.0f} MB lega")
 
 
 if __name__ == "__main__":
-    perintah = {"buat": cmd_buat, "posting": cmd_posting, "bersih": cmd_bersih, "story": cmd_story}
+    perintah = {"buat": cmd_buat, "posting": cmd_posting, "bersih": cmd_bersih, "story": cmd_story, "cek": cmd_cek}
     if len(sys.argv) < 2 or sys.argv[1] not in perintah:
         print(__doc__)
         sys.exit(1)

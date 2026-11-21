@@ -1,12 +1,13 @@
 """Agent harian versi laptop: bikin konten ke Drive, lalu bersihkan video lama. Dipanggil Task Scheduler
-"Fishtudio agent harian" (05.00, jalan begitu laptop menyala kalau jamnya terlewat).
+"Fishtudio agent harian" (08.00, jalan begitu laptop menyala kalau jamnya terlewat). Jalan sesudah checker
+05.00 (upload.py cek), dan naskahnya dipilih dari hasil evaluasi checker itu (data/evaluasi.json).
 
 python -X utf8 setup/harian_lokal.py            buat + bersih
 python -X utf8 setup/harian_lokal.py bersih     bersih saja
 python -X utf8 setup/harian_lokal.py cek        tampilkan yang akan dihapus, tanpa menghapus
 
 Buat: slot hari ini yang belum lewat dan semua slot besok yang masih kosong (naskah dari bank naskah).
-Bersih: semua video di [02] CONTENT/<Bulan YY>/ yang sudah 7 hari di Drive dan jadwal tayangnya sudah lewat.
+Bersih: semua video di [02] CONTENT/[MM] <Bulan YYYY>/ yang sudah 7 hari di Drive dan jadwal tayangnya sudah lewat.
   - Kalau env GOOGLE_CLIENT_ID/SECRET/REFRESH_TOKEN ada: hapus permanen lewat Drive API (sama dengan cloud).
   - Kalau belum: hapus lewat G:, Google Drive for desktop memindahnya ke Sampah Drive (kuota lega setelah
     Sampah dikosongkan atau 30 hari).
@@ -23,7 +24,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "agent"))
 sys.path.insert(0, str(REPO / "setup"))
 import main as M  # noqa: E402
-from buat_lokal import AKAR, slot_terisi  # noqa: E402
+from buat_lokal import AKAR, sisa_bank, slot_terisi  # noqa: E402
 
 LOG = REPO / "_tmp" / "log harian.txt"
 
@@ -36,7 +37,23 @@ def log(teks):
         f.write(baris + "\n")
 
 
+def pastikan_evaluasi():
+    """Konten dibuat dari hasil checker 05.00. Kalau laptop baru menyala dan checker hari ini belum jalan,
+    evaluasi dijalankan di sini dulu supaya urutannya tetap checker lalu buat konten."""
+    import tema as T
+    if T.baca(T.EVALUASI, {}).get("tanggal") == dt.date.today().isoformat():
+        return
+    sys.path.insert(0, str(REPO.parent / "auto upload ig"))
+    try:
+        import evaluasi
+        for baris in evaluasi.jalankan():
+            log(baris)
+    except Exception as e:  # noqa: BLE001  tanpa evaluasi, naskah pakai urutan bank
+        log(f"evaluasi gagal, naskah pakai urutan bank: {e}")
+
+
 def buat():
+    pastikan_evaluasi()
     kini = dt.datetime.now()
     for d in (kini.date(), kini.date() + dt.timedelta(days=1)):
         slot = []
@@ -55,10 +72,9 @@ def buat():
             log("  " + baris)
         if r.returncode:
             log(f"  GAGAL buat {d:%d/%m} (kode {r.returncode})")
-    bank = json.loads(M.BANK.read_text(encoding="utf-8"))
-    pos = json.loads(M.POS.read_text(encoding="utf-8")).get("berikutnya", 0)
-    if len(bank) - pos <= 5:
-        log(f"PERINGATAN: bank naskah sisa {len(bank) - pos} hari, minta Mbut isi bank naskah")
+    sisa = sisa_bank()
+    if sisa <= 5:
+        log(f"PERINGATAN: bank naskah sisa {sisa} hari, minta Mbut isi bank naskah")
 
 
 def bersih_g(cek):
@@ -68,7 +84,7 @@ def bersih_g(cek):
         m = M.POLA_BULAN.match(bulan.name)
         if not (bulan.is_dir() and m):
             continue
-        tahun = 2000 + int(m[2])
+        tahun = int(m[2])
         for f in bulan.rglob("*"):
             if not f.is_file():
                 continue

@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       tugas:
-        description: "buat | story | posting 12.00 | posting 19.00 | bersih"
+        description: "buat | story | posting 12.00 | posting 19.00 | bersih | cek"
         required: true
         default: "buat"
 
@@ -52,7 +52,7 @@ jobs:
         with:
           node-version: "22"
       - name: Pasang ffmpeg
-        if: steps.t.outputs.tugas != 'bersih'
+        if: steps.t.outputs.tugas != 'bersih' && steps.t.outputs.tugas != 'cek'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji > /dev/null
       - run: pip install -q -r agent/requirements.txt
       - name: Jalankan

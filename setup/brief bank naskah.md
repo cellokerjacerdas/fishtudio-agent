@@ -61,6 +61,16 @@ FOOTAGE:
 - `tagar_topik` huruf kecil tanpa spasi (wajib isi untuk Fishtudio; untuk Goldfish boleh isi tapi tidak dipakai).
 - Kata terlarang: si jambul (pakai "wen"), Molly Feeds, Koi Feeds, ternak sendiri, sortiran, protein angka, delapan tahun, ekspor, harga ikan. Harga yang boleh hanya Gold Feeds Rp43 ribu per 300 g.
 
+## Narasi Threads (field `threads`, sejak 21 Nov 2026)
+
+Tiap konten (edukasi dan footage) diberi field `threads`: versi Threads dari konten yang sama, ditulis jadi `threads.txt` dan diposting bersama video. FB memakai caption IG apa adanya; Threads tidak.
+
+- Lebih panjang dan manusiawi dari caption: 500 sampai 1400 karakter, 3 sampai 5 paragraf, tiap paragraf maks 480 karakter (Threads membatasi 500 karakter per post; paragraf lanjutan jadi balasan berantai).
+- Suara orang toko yang cerita, bukan iklan. Buka dengan kejadian yang umum (pelanggan yang tanya, kesalahan yang sering dilihat tim, momen di toko), baru masuk ke tipsnya. Boleh "kami", "kamu", "nggak".
+- Tanpa daftar bernomor, tanpa hashtag, tanpa emoji, tanpa tanda pisah, tanpa link.
+- Satu ajakan di paragraf terakhir: tanya balik ke pembaca (biar ada balasan) atau WA 08569990738. Tanpa tagline dan kredit musik.
+- Kata terlarang dan aturan fakta sama dengan caption.
+
 ## Variasi
 
 - Jenis visual edukasi divariasikan antar hari; jangan semua adegan "akuarium".

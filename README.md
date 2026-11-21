@@ -11,22 +11,22 @@ Jalan di GitHub Actions (repo privat `fishtudio-agent`), tidak butuh laptop meny
 
 Per akun per hari: **12.00 edukasi** motion graphic (`render/edukasi.cjs`, mesin edu.js) dan **19.00 footage** dari Stock Footage Drive (`render/footage.py`).
 
-Folder Drive: `Fish Studio/[02] CONTENT/<Bulan YY>/<Fishtudio|Goldfish and Richman>/[d m HH.MM] judul/` berisi video, `Thumbnail.png`, `caption.txt`, `kredit musik.txt`, `dibuat agent.txt`.
+Folder Drive: `Fish Studio/[02] CONTENT/[MM] <Bulan YYYY>/<Fishtudio|Goldfish and Richman>/[d m HH.MM] judul/` berisi video, `Thumbnail.png`, `caption.txt`, `kredit musik.txt`, `dibuat agent.txt`.
 
 **Thumbnail otomatis** (sejak 21 Nov 2026): tiap konten dapat `Thumbnail.png` dari `render/thumbnail.py` + `render/thumbnail/thumbnail.html`. Edukasi = gaya vlog stiker (plat hitam berisi headline adegan pertama, foto klip latar berbingkai, ikan stiker untuk G&R); footage = foto penuh dari klip footage (frame paling terang) dengan panel maroon dan judul dari teks adegan pertama. Tanpa font script dan tanpa sub-judul kecil. Saat posting, thumbnail jadi cover Reels lewat `agent/cover.py`. Thumbnail gagal tidak membatalkan konten. Saat posting (cloud `agent/main.py` dan laptop `auto upload ig/upload.py`), folder yang belum punya thumbnail, termasuk konten manual, dibuatkan dulu lewat `thumbnail.buat_dari_folder` (judul dari nama video, foto dari Stock Footage untuk non-edukasi) lalu baru diunggah dengan cover itu. Setelah tayang muncul `sudah tayang.txt` berisi link.
 
 - Konten di Drive dianggap sudah disetujui. Mau ganti: edit/ganti video atau `caption.txt` sebelum jam tayang. Mau batal: hapus foldernya atau taruh file `sudah tayang.txt`.
 - Konten manual tetap bisa: buat folder `[d m 12.00] judul` atau `[d m 19.00] judul` berisi 1 mp4 + caption.txt. Folder tanpa jam dianggap 19.00. Agent hanya membuat konten untuk slot yang masih kosong.
-- Bersih (sejak 21 Nov 2026): semua video di `[02] CONTENT/<Bulan YY>/`, buatan agent maupun manual, yang sudah 7 hari atau lebih di Drive dan jadwal tayangnya sudah lewat, dihapus permanen. Hanya file videonya; folder, `caption.txt`, dan `sudah tayang.txt` tetap. Stock Footage dan folder lain tidak disentuh. Konten yang dijadwalkan jauh hari aman sampai tanggal tayangnya lewat.
+- Bersih (sejak 21 Nov 2026): semua video di `[02] CONTENT/[MM] <Bulan YYYY>/`, buatan agent maupun manual, yang sudah 7 hari atau lebih di Drive dan jadwal tayangnya sudah lewat, dihapus permanen. Hanya file videonya; folder, `caption.txt`, dan `sudah tayang.txt` tetap. Stock Footage dan folder lain tidak disentuh. Konten yang dijadwalkan jauh hari aman sampai tanggal tayangnya lewat.
 
 ## Versi laptop (selama login Google cloud belum selesai)
 
-Task Scheduler "Fishtudio agent harian" 05.00 (jalan begitu laptop menyala kalau jamnya terlewat) menjalankan `setup/harian_lokal.py`: bikin slot hari ini yang belum lewat dan semua slot besok yang kosong, lalu bersih lewat G:. Lewat G:, Drive for desktop memindah video ke Sampah Drive (kuota lega setelah Sampah dikosongkan atau 30 hari). Begitu env `GOOGLE_*` ada, bersih otomatis pakai hapus permanen lewat API. Cek tanpa menghapus: `python -X utf8 setup/harian_lokal.py cek`. Log: `_tmp/log harian.txt`. Setelah cloud jalan, matikan task ini supaya tidak dobel.
+Task Scheduler "Fishtudio agent harian" 08.00 (jalan begitu laptop menyala kalau jamnya terlewat) menjalankan `setup/harian_lokal.py`, sesudah checker 05.00 (`auto upload ig/upload.py cek`). Naskah dipilih dari hasil checker `data/evaluasi.json` (`setup/buat_lokal.py` + `agent/tema.py`): tema yang terbukti kuat didahulukan, tema lemah ditahan, tema yang baru tayang diberi jeda, dan caption diberi pertanyaan penutup kalau komentar sepi. Kalau checker hari ini belum jalan, evaluasi dijalankan dulu. Bikin slot hari ini yang belum lewat dan semua slot besok yang kosong, lalu bersih lewat G:. Lewat G:, Drive for desktop memindah video ke Sampah Drive (kuota lega setelah Sampah dikosongkan atau 30 hari). Begitu env `GOOGLE_*` ada, bersih otomatis pakai hapus permanen lewat API. Cek tanpa menghapus: `python -X utf8 setup/harian_lokal.py cek`. Log: `_tmp/log harian.txt`. Setelah cloud jalan, matikan task ini supaya tidak dobel.
 - Judul yang sudah dipakai tersimpan di `data/riwayat.json` supaya tidak berulang.
 
 ## Gratis: bank naskah
 
-Naskah ditulis di muka (`data/bank.json`, satu entri = 4 konten satu hari) lewat chat dengan Mbut, dicek `setup/cek_bank.py`. Posisi pemakaian di `data/bank_pos.json`. Kalau sisa 5 hari atau kurang, ringkasan run GitHub memberi peringatan: minta Mbut "isi bank naskah". Claude API (`agent/rencana.py`) hanya cadangan kalau bank habis dan secret `ANTHROPIC_API_KEY` diisi (berbayar, saat ini tidak dipakai).
+Naskah ditulis di muka (`data/bank.json`, satu entri = 4 konten satu hari) lewat chat dengan Mbut, dicek `setup/cek_bank.py`. Naskah terpakai dicatat per brand dan jenis di `data/bank_pos.json` (`terpakai`; `berikutnya` tetap ditulis untuk agent cloud). Kalau sisa 5 hari atau kurang, ringkasan run GitHub memberi peringatan: minta Mbut "isi bank naskah". Claude API (`agent/rencana.py`) hanya cadangan kalau bank habis dan secret `ANTHROPIC_API_KEY` diisi (berbayar, saat ini tidak dipakai).
 
 ## Rahasia (GitHub > Settings > Secrets > Actions)
 

@@ -171,7 +171,7 @@ def buat_dari_folder(folder, brand=None, out_nama="Thumbnail.png"):
     return buat(item, brand, "footage", klip_stok(brand, ikan) or video, folder / out_nama)
 
 
-STOK = Path(r"G:\My Drive\Fish Studio\[02] CONTENT\Stock Footage")
+STOK = Path(r"G:\My Drive\Fish Studio\[02] CONTENT\[00] Other\Stock Footage")
 SUB_STOK = {"oranda": ["VIDEO IKAN/ORANDA"], "ryukin": ["VIDEO IKAN/RYUKIN"], "ranchu": ["VIDEO IKAN/RANCHU/Satuan"],
             "fishtudio": ["Footage Abe 9 Nov", "Footage 25 Okt/ngasih makan"]}
 

@@ -89,6 +89,13 @@ def cek_item(lok, brand, jenis, it):
         salah.append(f"{lok} caption: baris pertama tanpa KATA KUNCI huruf besar")
     if len(cap) > 1200:
         salah.append(f"{lok} caption: terlalu panjang ({len(cap)})")
+    th = it.get("threads")
+    if th:  # opsional: narasi Threads (Cello 21 Nov 2026)
+        cek_teks(f"{lok} threads", th)
+        if not 500 <= len(th) <= 1400:
+            salah.append(f"{lok} threads: {len(th)} karakter (500 sampai 1400)")
+        if any(len(p) > 480 for p in th.split("\n\n")):
+            salah.append(f"{lok} threads: ada paragraf lebih dari 480 karakter")
     if brand == "fishtudio" and not re.fullmatch(r"[a-z0-9]+", it.get("tagar_topik", "")):
         salah.append(f"{lok}: tagar_topik harus huruf kecil tanpa spasi")
 

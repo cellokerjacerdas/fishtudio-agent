@@ -2,7 +2,9 @@
 
 python -X utf8 setup/buat_lokal.py <d> <m> <jumlah hari> [--slot 12.00|19.00|12.00,19.00]
 Contoh: buat_lokal.py 20 11 5   -> 20 sampai 24 Nov, slot yang masih kosong saja.
-Naskah diambil dari data/bank.json mulai posisi data/bank_pos.json, posisi maju satu per hari yang benar-benar dibuat.
+Naskah dipilih per slot dari data/bank.json berdasarkan data/evaluasi.json (hasil checker 05.00):
+tema yang terbukti kuat didahulukan, tema lemah ditahan. Tanpa evaluasi, urutan bank dipakai.
+Naskah terpakai dicatat per brand:jenis di data/bank_pos.json.
 """
 import datetime as dt
 import json
@@ -17,6 +19,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "agent"))
 sys.path.insert(0, str(REPO / "render"))
 import main as M  # noqa: E402
+import tema as T  # noqa: E402
 import thumbnail as THUMB  # noqa: E402
 
 AKAR = Path(r"G:\My Drive\Fish Studio\[02] CONTENT")
@@ -40,12 +43,81 @@ def klip_lokal(kategori, dest, jumlah=4):
         sisa.unlink(missing_ok=True)
     calon = []
     for sub in M.SUMBER_FOOTAGE[kategori]:
-        p = AKAR / "Stock Footage" / sub
+        p = AKAR / "[00] Other" / "Stock Footage" / sub
         if p.exists():
             calon += [f for f in p.iterdir() if f.suffix.lower() in (".mp4", ".mov")]
     for f in random.sample(calon, min(jumlah, len(calon))):
         shutil.copy(f, dest / f.name)
     return dest
+
+
+AJAKAN_KOMENTAR = {  # dipasang kalau checker menemukan komentar sepi
+    "fishtudio": "Akuariummu pernah ngalamin ini? Cerita di komentar, tim Fishtudio bantu jawab.",
+    "goldfish": "Mas koki kamu pernah begini? Cerita di komentar, nanti kami bantu jawab.",
+}
+
+
+def muat_terpakai(bank, riwayat, pos_data):
+    """Naskah yang sudah dipakai per brand:jenis. Data lama cuma punya posisi hari, jadi diisi dari sana + riwayat."""
+    if "terpakai" in pos_data:
+        return {k: set(v) for k, v in pos_data["terpakai"].items()}
+    awal = pos_data.get("berikutnya", 0)
+    terpakai = {f"{b}:{j}": set(range(awal)) for b in M.FOLDER for j in M.SLOT}
+    idx = T.indeks_judul(bank)
+    for r in riwayat:
+        hit = idx.get(T.norm(r.get("judul")))
+        if hit:
+            terpakai[f"{hit[1]}:{hit[2]}"].add(hit[0])
+    return terpakai
+
+
+def simpan_terpakai(bank, terpakai):
+    # "berikutnya" tetap ditulis untuk agent cloud (main.py), = hari pertama yang masih punya naskah kosong
+    sisa = [i for i in range(len(bank)) if any(i not in v for v in terpakai.values())]
+    M.POS.write_text(json.dumps({"berikutnya": sisa[0] if sisa else len(bank),
+                                 "terpakai": {k: sorted(v) for k, v in terpakai.items()}}), encoding="utf-8")
+
+
+def sisa_bank():
+    bank = json.loads(M.BANK.read_text(encoding="utf-8"))
+    pos_data = T.baca(M.POS, {})
+    riwayat = T.baca(M.RIWAYAT, [])
+    terpakai = muat_terpakai(bank, riwayat, pos_data)
+    return min(len(bank) - len(v) for v in terpakai.values())
+
+
+def evaluasi_segar():
+    """Hasil checker pagi; dipakai kalau umurnya paling lama 2 hari."""
+    ev = T.baca(T.EVALUASI, {})
+    try:
+        if dt.date.today() - dt.date.fromisoformat(ev["tanggal"]) <= dt.timedelta(days=2):
+            return ev
+    except (KeyError, ValueError):
+        pass
+    return {}
+
+
+def pilih_naskah(bank, brand, jenis, terpakai, riwayat, ev):
+    """Naskah yang jadi solusi evaluasi: tema yang skornya tinggi didahulukan, tema lemah ditahan,
+    tema yang baru tayang 2 kali terakhir diberi jeda supaya feed tidak monoton."""
+    skor_tema = ((ev.get("akun") or {}).get(brand) or {}).get("tema", {}).get(jenis, {})
+    baru = [r.get("tema") or T.tema_riwayat(r, bank) for r in riwayat
+            if r.get("brand") == brand and r.get("slot") == M.SLOT[jenis]][-2:]
+    calon = []
+    for i, hari in enumerate(bank):
+        item = (hari.get(brand) or {}).get(jenis)
+        if not item or i in terpakai[f"{brand}:{jenis}"]:
+            continue
+        t = T.tema(brand, jenis, item)
+        s = skor_tema.get(t)
+        nilai = (s["jumlah"] * s["skor"] + 2) / (s["jumlah"] + 2) if s else 1.0  # data sedikit ditarik ke rata rata
+        if t in baru:
+            nilai *= 0.85
+        calon.append((-nilai, i, t, item))
+    if not calon:
+        return None, None, None
+    _, i, t, item = min(calon, key=lambda c: (c[0], c[1]))
+    return i, t, item
 
 
 def main():
@@ -57,22 +129,25 @@ def main():
         d0 = d0.replace(year=d0.year + 1)
     hari = int(args[2])
     bank = json.loads(M.BANK.read_text(encoding="utf-8"))
-    pos = json.loads(M.POS.read_text(encoding="utf-8")).get("berikutnya", 0) if M.POS.exists() else 0
+    pos_data = T.baca(M.POS, {})
     riwayat = json.loads(M.RIWAYAT.read_text(encoding="utf-8")) if M.RIWAYAT.exists() else []
+    terpakai = muat_terpakai(bank, riwayat, pos_data)
+    ev = evaluasi_segar()
+    print(f"evaluasi checker: {ev.get('tanggal', 'tidak ada, pakai urutan bank')}")
     TMP.mkdir(exist_ok=True)
     for k in range(hari):
         d = d0 + dt.timedelta(days=k)
-        if pos >= len(bank):
-            print("BANK NASKAH HABIS: minta Mbut isi bank naskah")
-            break
-        naskah = bank[pos]
-        dibuat = 0
         for brand in M.FOLDER:
             fb = AKAR / M.nama_bulan(d) / M.FOLDER[brand]
             for jenis, slot in M.SLOT.items():
                 if (hanya and slot not in hanya) or slot_terisi(fb, d, slot):
                     continue
-                item = naskah[brand][jenis]
+                i, tema, item = pilih_naskah(bank, brand, jenis, terpakai, riwayat, ev)
+                if item is None:
+                    print(f"BANK NASKAH HABIS untuk {brand} {jenis}: minta Mbut isi bank naskah")
+                    continue
+                if ((ev.get("akun") or {}).get(brand) or {}).get("komentar_rendah"):
+                    item = dict(item, caption=item["caption"].rstrip() + "\n\n" + AJAKAN_KOMENTAR[brand])
                 musik = random.choice(M.MUSIK[brand])
                 judul = re.sub(r"[^a-z0-9 ]", "", item["judul"].lower()).strip()
                 caption = M.susun_caption(brand, item, musik)
@@ -103,18 +178,21 @@ def main():
                 except Exception as e:  # noqa: BLE001  thumbnail gagal jangan batalkan konten
                     print(f"PERINGATAN thumbnail {tujuan.name}: {e}")
                 (tujuan / "caption.txt").write_text(caption, encoding="utf-8")
+                if item.get("threads"):  # narasi Threads, lebih panjang dari caption (Cello 21 Nov 2026)
+                    (tujuan / "threads.txt").write_text(item["threads"].strip() + "\n", encoding="utf-8")
                 (tujuan / "kredit musik.txt").write_text(M.kredit(musik) + "\n", encoding="utf-8")
                 (tujuan / M.TANDA_AGENT).write_text(
                     f"dibuat {dt.datetime.now():%d/%m/%Y %H:%M} WIB, dihapus otomatis setelah 7 hari\n", encoding="utf-8")
-                riwayat.append({"tanggal": d.isoformat(), "brand": brand, "slot": slot, "judul": judul})
-                dibuat += 1
-                print(f"SIAP {tujuan}", flush=True)
-        pos += 1 if dibuat else 0
-        M.POS.write_text(json.dumps({"berikutnya": pos}), encoding="utf-8")
-        M.RIWAYAT.write_text(json.dumps(riwayat, ensure_ascii=False, indent=1), encoding="utf-8")
+                riwayat.append({"tanggal": d.isoformat(), "brand": brand, "slot": slot, "judul": judul,
+                                "tema": tema, "bank": i})
+                terpakai[f"{brand}:{jenis}"].add(i)
+                simpan_terpakai(bank, terpakai)
+                M.RIWAYAT.write_text(json.dumps(riwayat, ensure_ascii=False, indent=1), encoding="utf-8")
+                print(f"SIAP {tujuan} (tema {tema}, naskah hari {i + 1})", flush=True)
+    simpan_terpakai(bank, terpakai)
     shutil.rmtree(TMP / "kerja", ignore_errors=True)
     shutil.rmtree(TMP / "klip", ignore_errors=True)
-    print(f"selesai, posisi bank sekarang {pos}")
+    print(f"selesai, sisa naskah paling sedikit {min(len(bank) - len(v) for v in terpakai.values())}")
 
 
 if __name__ == "__main__":

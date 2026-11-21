@@ -10,6 +10,9 @@ import requests
 
 API = "https://graph.facebook.com/v23.0"
 _page = {}
+# Page tujuan dikunci per brand (Cello 21 Nov 2026): Goldfish and Richman = "Cello Goldfish Richman" di portofolio
+# Fishtudio. Page "Goldfish & Richman" 836173102908025 tidak dipakai. Fishtudio belum punya Page FB.
+PAGE_ID = {"goldfish": "1374624335737416"}
 
 
 def _req(metode, url, **kw):
@@ -36,6 +39,8 @@ def page(brand, token):
     for p in d.get("data", []):
         n = p["name"].lower()
         k = "goldfish" if "goldfish" in n else "fishtudio" if ("fishtudio" in n or "fish studio" in n) else None
+        if k in PAGE_ID and p["id"] != PAGE_ID[k]:
+            continue  # Page lain bernama mirip, bukan Page resmi brand
         if k and k not in _page:
             _page[k] = (p["id"], p.get("access_token") or token)
     if brand not in _page:
