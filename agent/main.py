@@ -218,6 +218,17 @@ def ig(metode, jalur, token, **kw):
     return d
 
 
+def unggah_coba(*a, **kw):
+    """Ulangi sekali dengan wadah baru kalau Meta gagal memproses (ProcessingFailedError, 20 Nov 2026)."""
+    for coba in range(3):
+        try:
+            return unggah_reel(*a, **kw)
+        except RuntimeError as e:
+            if coba == 2 or not any(k in str(e) for k in ("ProcessingFailed", " 50", "processing failed")):
+                raise
+            time.sleep(30)
+
+
 def unggah_reel(ig_id, token, video, caption, jenis="REELS"):
     data = {"media_type": jenis, "upload_type": "resumable"}
     if jenis == "REELS":
@@ -273,7 +284,7 @@ def cmd_posting(argumen):
             video = gdrive.unduh(mp4[0]["id"], TMP / "posting.mp4")
             if perlu_ig:
                 try:
-                    link = unggah_reel(ig_id, token, video, caption)
+                    link = unggah_coba(ig_id, token, video, caption)
                     gdrive.tulis_teks(f["id"], TANDA_TAYANG, f"{sekarang():%d/%m/%Y %H:%M} WIB\n{link}\n")
                     lapor(f"TAYANG IG {brand}: {f['name']}\n{link}")
                 except Exception as e:
