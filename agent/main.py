@@ -406,6 +406,61 @@ def cmd_story(_):
             lapor(f"GAGAL story FB {nama}: {e}")
 
 
+# ---------------- Threads teks harian (09.00 viral, 11.00 promosi) ----------------
+# Teks ditulis routine Claude tiap 07.30 WIB ke sheet "Antrian Threads Fishtudio"
+# (Drive [02] CONTENT/Threads). Agent ini hanya memposting baris hari ini untuk jam itu.
+SHEET_THREADS = "1lFNB55cnrfENHdM2yqjfDXjfOdQa_9XIX02Y_vaRoO4"
+FOLDER_THREADS = "1mc-a6IFWx-6mccSaWUxojI-lFgT09_Fy"
+
+
+def antrian_threads():
+    import csv
+    import io
+    r = requests.get(f"{gdrive.API}/files/{SHEET_THREADS}/export", headers=gdrive._h(), timeout=60,
+                     params={"mimeType": "text/csv"})
+    r.raise_for_status()
+    return list(csv.reader(io.StringIO(r.content.decode("utf-8"))))[1:]
+
+
+def cmd_threads(argumen):
+    slot = argumen[0] if argumen else "09.00"
+    jam, menit = map(int, slot.split("."))
+    target = sekarang().replace(hour=jam, minute=menit, second=0, microsecond=0)
+    tunggu = (target - sekarang()).total_seconds()
+    if 0 < tunggu < 30 * 60:
+        time.sleep(tunggu)
+    hari = sekarang().date().isoformat()
+    tercatat = {x["name"] for x in gdrive.daftar(FOLDER_THREADS, False)}
+    baris = [b + [""] * (8 - len(b)) for b in antrian_threads()]
+    pilih = [b for b in baris if b[0].strip() == hari and b[1].strip() == slot and b[5].strip().lower() not in ("batal", "tayang")]
+    if not pilih:
+        lapor(f"Threads {slot}: tidak ada teks antrian untuk {hari}")
+        return
+    gagal = 0
+    for b in pilih:
+        brand = b[2].strip().lower()
+        tanda = f"tayang {hari} {slot} {brand}.txt"
+        if tanda in tercatat:
+            lapor(f"SUDAH Threads {brand} {slot}")
+            continue
+        token = os.environ.get(f"THREADS_TOKEN_{brand.upper()}")
+        if not token or brand not in THREADS_AKUN:
+            lapor(f"LEWAT Threads {brand} {slot}: token belum ada di GitHub Secrets")
+            continue
+        try:
+            akun = TH.profil(token).get("username", "")
+            if akun != THREADS_AKUN[brand]:
+                raise RuntimeError(f"token THREADS_TOKEN_{brand.upper()} milik @{akun}, bukan @{THREADS_AKUN[brand]}")
+            link = TH.posting(token, b[4].strip())
+            gdrive.tulis_teks(FOLDER_THREADS, tanda, f"{sekarang():%d/%m/%Y %H:%M} WIB\n{link}\n{b[3]}\n")
+            lapor(f"TAYANG Threads {brand} {slot} ({b[3]}): {link}")
+        except Exception as e:  # noqa: BLE001
+            lapor(f"GAGAL Threads {brand} {slot}: {str(e)[:200]}")
+            gagal += 1
+    if gagal:
+        raise SystemExit(f"{gagal} post Threads gagal")
+
+
 def cmd_cek(argumen):
     """Tes aman tanpa posting: daftar folder konten hari ini (atau 'd m') di Drive dan kelengkapannya."""
     d = sekarang().date()
@@ -476,7 +531,7 @@ def cmd_bersih(_):
 
 
 if __name__ == "__main__":
-    perintah = {"buat": cmd_buat, "posting": cmd_posting, "bersih": cmd_bersih, "story": cmd_story, "cek": cmd_cek}
+    perintah = {"buat": cmd_buat, "posting": cmd_posting, "bersih": cmd_bersih, "story": cmd_story, "cek": cmd_cek, "threads": cmd_threads}
     if len(sys.argv) < 2 or sys.argv[1] not in perintah:
         print(__doc__)
         sys.exit(1)

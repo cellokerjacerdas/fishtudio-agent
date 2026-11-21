@@ -3,13 +3,15 @@ name: agent konten harian
 on:
   schedule:
     - cron: "0 21 * * *"    # 04.00 WIB: buat konten hari ini + bersih
+    - cron: "45 1 * * *"    # 08.45 WIB: Threads teks viral (tayang 09.00)
     - cron: "45 2 * * *"    # 09.45 WIB: story STORE OPEN Goldfish and Richman (tayang 10.00)
+    - cron: "45 3 * * *"    # 10.45 WIB: Threads teks promosi (tayang 11.00)
     - cron: "45 4 * * *"    # 11.45 WIB: posting slot 12.00
     - cron: "45 11 * * *"   # 18.45 WIB: posting slot 19.00
   workflow_dispatch:
     inputs:
       tugas:
-        description: "buat | story | posting 12.00 | posting 19.00 | bersih | cek"
+        description: "buat | story | posting 12.00 | posting 19.00 | bersih | cek | threads 09.00 | threads 11.00"
         required: true
         default: "buat"
 
@@ -43,7 +45,9 @@ jobs:
         run: |
           case "${{ github.event.schedule }}" in
             "0 21 * * *")  echo "tugas=buat" >> "$GITHUB_OUTPUT" ;;
+            "45 1 * * *")  echo "tugas=threads 09.00" >> "$GITHUB_OUTPUT" ;;
             "45 2 * * *")  echo "tugas=story" >> "$GITHUB_OUTPUT" ;;
+            "45 3 * * *")  echo "tugas=threads 11.00" >> "$GITHUB_OUTPUT" ;;
             "45 4 * * *")  echo "tugas=posting 12.00" >> "$GITHUB_OUTPUT" ;;
             "45 11 * * *") echo "tugas=posting 19.00" >> "$GITHUB_OUTPUT" ;;
             *)             echo "tugas=${{ github.event.inputs.tugas }}" >> "$GITHUB_OUTPUT" ;;
@@ -56,7 +60,7 @@ jobs:
         with:
           node-version: "22"
       - name: Pasang ffmpeg
-        if: steps.t.outputs.tugas != 'bersih' && steps.t.outputs.tugas != 'cek'
+        if: steps.t.outputs.tugas != 'bersih' && steps.t.outputs.tugas != 'cek' && !startsWith(steps.t.outputs.tugas, 'threads')
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji > /dev/null
       - run: pip install -q -r agent/requirements.txt
       - name: Jalankan
