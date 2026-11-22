@@ -396,6 +396,18 @@ def cmd_story(_):
             lapor(f"LEWAT story {nama}: {video.name} belum ada")
             continue
         token = os.environ.get(f"IG_TOKEN_{brand.upper()}") or os.environ["IG_TOKEN"]
+        # 22 Nov 2026: laptop juga posting story 10.00 (jadwal GitHub sering telat berjam-jam),
+        # jadi lewati kalau story hari ini sudah ada di akun.
+        try:
+            ada = any(dt.datetime.strptime(s["timestamp"], "%Y-%m-%dT%H:%M:%S%z").astimezone(WIB).date()
+                      == sekarang().date()
+                      for s in ig("GET", f"{os.environ[f'IG_ID_{brand.upper()}']}/stories", token,
+                                  params={"fields": "timestamp"}).get("data", []))
+        except Exception:
+            ada = False
+        if ada:
+            lapor(f"LEWAT story {nama}: hari ini sudah tayang")
+            continue
         try:
             link = unggah_reel(os.environ[f"IG_ID_{brand.upper()}"], token, video, None, jenis="STORIES")
             lapor(f"STORY opening {nama} tayang: {link}")
